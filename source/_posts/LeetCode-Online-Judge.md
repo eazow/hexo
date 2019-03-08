@@ -2,7 +2,7 @@ title: LeetCode Online Judge
 tags:
   - LeetCode
 categories: []
-date: 2018-08-01 15:01:20
+date: 2019-02-01 15:01:20
 ---
 
 | # | Problems   | Difficulty          | Solutions    |
@@ -16,6 +16,7 @@ date: 2018-08-01 15:01:20
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|Medium|[Integer to Roman](http://www.jianshu.com/p/e0bd6ab68df3)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Generate Parentheses](http://www.jianshu.com/p/ff0ef6914107) |
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](http://www.eazow.com/2016/08/19/LeetCode-39-Combination-Sum/)|
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|Hard|[Trapping Rain Water](https://www.jianshu.com/p/6104f19eec85)|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| Medium | [Binary Tree Inorder Traversal(简书)](http://www.jianshu.com/p/c117026c269a)|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| Medium | [Convert Sorted Array to Binary Search Tree](http://www.jianshu.com/p/9ed4e9bef533) |
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| Medium |[Best Time to Buy and Sell Stock II](http://www.jianshu.com/p/1de0d839dfb4)|
@@ -40,7 +41,8 @@ date: 2018-08-01 15:01:20
 |606| [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)   | Easy | [Construct String from Binary Tree](http://www.jianshu.com/p/9df545283b21) |
 
 ##### 进度
-![](https://upload-images.jianshu.io/upload_images/1425939-f6d41516bdb7c4e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1425939-dfb2f1dd4cd957d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 
 ##### Github
@@ -50,7 +52,7 @@ https://github.com/eazow/leetcode
 [Eazow](http://www.eazow.com)
 
 ##### 版本
-0.2.8.8
+0.2.9.6
 
 ##### 更新日志
 ```
@@ -96,3 +98,4 @@ https://github.com/eazow/leetcode
 
 持续更新中...
 ```
+
