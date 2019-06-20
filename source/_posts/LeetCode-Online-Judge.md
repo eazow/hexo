@@ -41,9 +41,7 @@ date: 2019-02-01 15:01:20
 |606| [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)   | Easy | [Construct String from Binary Tree](http://www.jianshu.com/p/9df545283b21) |
 
 ##### 进度
-![](https://upload-images.jianshu.io/upload_images/1425939-dfb2f1dd4cd957d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
+![](https://upload-images.jianshu.io/upload_images/1425939-f7f6fe4ba7d03d79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### Github
 https://github.com/eazow/leetcode
@@ -52,10 +50,10 @@ https://github.com/eazow/leetcode
 [Eazow](http://www.eazow.com)
 
 ##### 版本
-0.2.9.6
+0.3.0.0
 
 ##### 更新日志
-```
+<!--
 2016.06.01
 347. Top K Frequent Elements
 
@@ -88,14 +86,18 @@ https://github.com/eazow/leetcode
 39. Combination Sum 
 167. Two Sum II - Input array is sorted
 
-2018.07.25
-调整排序为按题号排序，这样比较容易对照leetcode整理
-
 2018.07.26
 2. Add Two Numbers
 3. Longest Substring Without Repeating Characters
 4. Median of Two Sorted Arrays
+-->
+2018.07.25
+调整排序为按题号排序，这样比较容易对照leetcode整理
+
+2019.06.20
+完成300题
 
 持续更新中...
-```
+
+
 
