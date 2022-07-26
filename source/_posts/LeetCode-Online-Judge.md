@@ -41,7 +41,7 @@ date: 2019-02-01 15:01:20
 |606| [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)   | Easy | [Construct String from Binary Tree](http://www.jianshu.com/p/9df545283b21) |
 
 ##### 进度
-![](https://upload-images.jianshu.io/upload_images/1425939-f7f6fe4ba7d03d79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://bartiern.sirv.com/blog/leetcode.png)
 
 ##### Github
 https://github.com/eazow/leetcode
