@@ -4,4 +4,4 @@ date: 2016-03-28 18:15:11
 
 ---
 
-![](https://bartiern.sirv.com/blog/ability.png)
+![](https://s1.ax1x.com/2022/07/28/vCn1Fx.png)
