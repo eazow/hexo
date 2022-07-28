@@ -7,7 +7,7 @@ title: Eazow
 subtitle: Coding
 description:
 author: Eazow
-language: zh-Hans
+language: en-US #zh-CN
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next  #fluid #next
 
 vBanner:
   enable: true  # true or false
