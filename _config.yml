@@ -4,7 +4,7 @@
 
 # Site
 title: Eazow
-subtitle: 点滴积累
+subtitle: Coding
 description:
 author: Eazow
 language: zh-Hans
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://eazow.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/ #:year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -64,6 +64,10 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+vBanner:
+  enable: true  # true or false
+  vTuber_name: Kizuna AI  # vTuber's name or vup's name
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
