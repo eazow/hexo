@@ -1,10 +1,9 @@
 ---
-title: The-Pragmatic-Programer
-date: 2022-07-31 23:25:23
-tags: 
+title: The Pragmatic Programer
+date: 2020-01-20 23:25:22
+tags: Coding
 categories: Coding
 ---
-
 
 
 
@@ -65,136 +64,92 @@ Eliminate Effects between Unrelated Things
 设计自足、独立，并具有单一、良好定义的目的的组件 
 
 14. 不存在最终决策
-
-    There Are No Final Decisions
-
-    没有决策是浇铸在石头上的。相反，要把每项决策都视为是写在沙滩上的，并为变化做好计划
+There Are No Final Decisions
+没有决策是浇铸在石头上的。相反，要把每项决策都视为是写在沙滩上的，并为变化做好计划
 
 15. 用曳光弹找到目标
-
-    Use Tracer Bullets to Find the Target
-
-    曳光弹能通过试验各种事物并检查它们离目标有多远来让你追踪目标
+Use Tracer Bullets to Find the Target
+曳光弹能通过试验各种事物并检查它们离目标有多远来让你追踪目标
 
 16. 为了学习而制作原型
-
-    Prototype to Learn
-
-    原型制作是一种学习经验。其价值并不在于所产生的代码，而在于所学到的经验教训
+Prototype to Learn
+原型制作是一种学习经验。其价值并不在于所产生的代码，而在于所学到的经验教训
 
 17. 靠近问题领域编程
-
-    Program Close to the Problem domain
-
-    用你的用户的语言进行设计和编码
+Program Close to the Problem domain
+用你的用户的语言进行设计和编码
 
 18. 估算，以避免发生意外
-
-    Estimate to Avoid Surprises
-
-    在着手之前先进行估算。你将提前发现潜在的问题
+Estimate to Avoid Surprises
+在着手之前先进行估算。你将提前发现潜在的问题
 
 19. 通过代码对进度表进行迭代
-
-    Iterate the Schedule with the Code
-
-    用你在进行实现时获得的经验提炼项目的时间标度
+Iterate the Schedule with the Code
+用你在进行实现时获得的经验提炼项目的时间标度
 
 20. 用纯文本保存知识
-
-    Keep Knowledge in Plain Text
-
-    纯文本不会过时。它能够帮助你有效利用你的工作，并简化调试和测试
+Keep Knowledge in Plain Text
+纯文本不会过时。它能够帮助你有效利用你的工作，并简化调试和测试
 
 21. 利用命令shell的力量
-
-    Use the Power of Command Shells
-
-    当图形用户界面无能为力时使用shell
+Use the Power of Command Shells
+当图形用户界面无能为力时使用shell
 
 22. 用好一种编辑器
-
-    Use a Single Editor Well
-
-    编辑器应该是你的手的延伸；确保你的编辑器是可配置、可扩展和可编程的
+Use a Single Editor Well
+编辑器应该是你的手的延伸；确保你的编辑器是可配置、可扩展和可编程的
 
 23. 总是使用源码控制
-
-    Always Use Source Code Control
-
-    源码控制是你的工作的时间机器—你能够回到过去
+Always Use Source Code Control
+源码控制是你的工作的时间机器—你能够回到过去
 
 24. 要修正问题，而不是发出指责
-
-    Fix the Problem,Not the Blame
-
-    bug你的过错还是别人的过错，并不是真的很有关系—它仍然是你的问题，它仍然需要修正
+Fix the Problem,Not the Blame
+bug你的过错还是别人的过错，并不是真的很有关系—它仍然是你的问题，它仍然需要修正
 
 25. 调试时不要恐慌
-
-    Don't Panic When Debuging
-
-    做一次深呼吸，思考什么可能是bug的原因
+Don't Panic When Debugging
+做一次深呼吸，思考什么可能是bug的原因
 
 26. "Select"没有问题
-
-    "Select"Isn't Broken
-
-    在OS或编译器、甚或是第三方产品或库中很少发现bug，bug很可能在应用中
+"Select"Isn't Broken
+在OS或编译器、甚或是第三方产品或库中很少发现bug，bug很可能在应用中
 
 27. 不要假定，要证明
-
-    Don't Assume It-Prove It
-
-    在实际环境中—使用真正的数据和边界条件—证明你的假定
+Don't Assume It-Prove It
+在实际环境中—使用真正的数据和边界条件—证明你的假定
 
 28. 学习一种文本操纵语言
-
-    Learn a Text Manipulation Language
-
-    你用每天的很大一部分时间处理文本，为什么不让计算机替你完成部分工作呢
+Learn a Text Manipulation Language
+你用每天的很大一部分时间处理文本，为什么不让计算机替你完成部分工作呢
 
 29. 编写能编写代码的代码
-
-    Write Code That Writes Code
-
-    代码生成器能提高你的生产率，并有助于避免重复
+Write Code That Writes Code
+代码生成器能提高你的生产率，并有助于避免重复
 
 30. 你不可能写出完美的软件
-
-    You Can't Write Perfect Software
-
-    软件不可能完美，保护你的代码和用户，使它（他）们免于能够预见的错误
+You Can't Write Perfect Software
+软件不可能完美，保护你的代码和用户，使它（他）们免于能够预见的错误
 
 31. 通过合约进行设计
-
-    Design with Contracts
-
-    使用合约建立文档，并检验代码所做的事情正好是它声明要做的
+Design with Contracts
+使用合约建立文档，并检验代码所做的事情正好是它声明要做的
 
 32. 早崩溃
-
-    Crash Early
-
-    死程序造成的危害通常比有问题的程序要小得多
+Crash Early
+死程序造成的危害通常比有问题的程序要小得多
 
 33. 用断言避免不可能发生的事情
-
-    Use Assertions to Prevent the Impossible
-
-    断言验证你的各种假定。在一个不确定的世界里，用断言保护你的代码
+Use Assertions to Prevent the Impossible
+断言验证你的各种假定。在一个不确定的世界里，用断言保护你的代码
 
 34. 将异常用于异常的问题
-
-    Use Exceptions for Exceptional Problems
-
-    异常可能会遭受经典的意大利面条式代码的所有可读性和可维护性问题的折磨。将异常保留给异常的事物。
+Use Exceptions for Exceptional Problems
+异常可能会遭受经典的意大利面条式代码的所有可读性和可维护性问题的折磨。将异常保留给异常的事物。
 
 35. 要有始有终
-
-    Finish What You Start
-
-    只要可能，分配某资源的例程或对象也应该负责解除其分配
+Finish What You Start
+只要可能，分配某资源的例程或对象也应该负责解除其分配
 
 36. 使模块之间的耦合减至最少
 
@@ -495,3 +450,5 @@ Eliminate Effects between Unrelated Things
 
 
 ![](https://upload-images.jianshu.io/upload_images/1425939-569321bf2b021d08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+

@@ -1,6 +1,6 @@
 ---
 title: The Zen of Python
-date: 2020-07-29 11:52:50
+date: 2019-05-20 11:52:50
 tags: Python
 categories: Coding
 ---
