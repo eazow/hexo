@@ -373,6 +373,6 @@ How can you motivate them to listen to you？你如何促使他们听你说话�
 - 对测试自身测试
 
 
-![](https://upload-images.jianshu.io/upload_images/1425939-569321bf2b021d08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/the-pragmatic-programmer.jpg)
 
 
