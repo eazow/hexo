@@ -152,230 +152,154 @@ Finish What You Start
 只要可能，分配某资源的例程或对象也应该负责解除其分配
 
 36. 使模块之间的耦合减至最少
-
-    Minimize Coupling Between Modules
-
-    通过编写“羞怯的”代码并应用得墨忒耳法则来避免耦合
+Minimize Coupling Between Modules
+通过编写“羞怯的”代码并应用得墨忒耳法则来避免耦合
 
 37. 要配置，不要集成
-
-    Configure, Don't Integrate
-
-    要将应用的各种技术选择实现为配置选项，而不是通过集成或工程方法实现
+Configure, Don't Integrate
+要将应用的各种技术选择实现为配置选项，而不是通过集成或工程方法实现
 
 38. 把抽象放进代码，细节放进元数据
-
-    Put Abstractions in Code, Details in Metadata
-
-    为一般情况编程，将细节放在被编译的代码库之外。
+Put Abstractions in Code, Details in Metadata
+为一般情况编程，将细节放在被编译的代码库之外。
 
 39. 分析工作流，以改善并发性
-
-    Analyze Workflow to Improve Concurrency
-
-    利用你的用户的工作流中的并发性
+Analyze Workflow to Improve Concurrency
+利用你的用户的工作流中的并发性
 
 40. 用服务进行设计
-
-    Design Using Services
-
-    根据服务—独立的、在良好定义、一致的接口之后的并发对象—进行设计
+Design Using Services
+根据服务—独立的、在良好定义、一致的接口之后的并发对象—进行设计
 
 41. 总是为并发进行设计
-
-    Always Design for Concurrency
-
-    容许并发，你将会设计出更整洁、具有更少假定的接口
+Always Design for Concurrency
+容许并发，你将会设计出更整洁、具有更少假定的接口
 
 42. 使视图与模型分离
-
-    Separate Views from Models
-
-    要根据模型和视图设计你的应用，从而以低廉的代码获取灵活性
+Separate Views from Models
+要根据模型和视图设计你的应用，从而以低廉的代码获取灵活性
 
 43. 用黑板协调工作流
-
-    Use Blackboards to Coordinate Workflow
-
-    用黑板协调完全不同的事实和因素，同时又使各参与方保持独立和隔离
+Use Blackboards to Coordinate Workflow
+用黑板协调完全不同的事实和因素，同时又使各参与方保持独立和隔离
 
 44. 不要靠巧合编程
-
-    Don't Program by Coincidence
-
-    只依靠可靠的事物。注意偶发的复杂性，不要把幸运的巧合与有目的的计划混为一谈
+Don't Program by Coincidence
+只依靠可靠的事物。注意偶发的复杂性，不要把幸运的巧合与有目的的计划混为一谈
 
 45. 估算你的算法的阶
-
-    Estimate the Order of Your Algorithms
-
-    在你编写代码之前，先大致估算事情需要多长时间
+Estimate the Order of Your Algorithms
+在你编写代码之前，先大致估算事情需要多长时间
 
 46. 测试你的估算
-
-    Test Your Estimates
-
-    对算法的数学分析并不会告诉你每一件事情。在你的代码的目标环境中测定它的速度
+Test Your Estimates
+对算法的数学分析并不会告诉你每一件事情。在你的代码的目标环境中测定它的速度
 
 47. 早重构，常重构
-
-    Refactor Early,Refactor Often
-
-    就和你会在花园里除草、并重新布置一样，在需要时对代码进行重写、重做和重新架构。要铲除问题的根源
+Refactor Early, Refactor Often
+就和你会在花园里除草、并重新布置一样，在需要时对代码进行重写、重做和重新架构。要铲除问题的根源
 
 48. 为测试而设计
-
-    Design to Test
-
-    在你还没有编写代码时就开始思考测试问题
+Design to Test
+在你还没有编写代码时就开始思考测试问题
 
 49. 测试你的软件，否则你的用户就得测试
-
-    Test Your Software,or Your Users Will
-
-    无情地测试。不要让你的用户为你查找bug
+Test Your Software, or Your Users Will
+无情地测试。不要让你的用户为你查找bug
 
 50. 不要使用你不理解的向导代码
-
-    Don't Use Wizard Code You Don't Understand
-
-    向导可以生成大量代码。在你把它们合并进你的项目之前，确保你理解全部这些代码
+Don't Use Wizard Code You Don't Understand
+向导可以生成大量代码。在你把它们合并进你的项目之前，确保你理解全部这些代码
 
 51. 不要搜集需求—挖掘它们
-
-    Don't Gather Requirements—Dig for Them
-
-    需求很少存在于表面上。它们深深地埋藏在层层假定、误解和政治手段的下面
+Don't Gather Requirements—Dig for Them
+需求很少存在于表面上。它们深深地埋藏在层层假定、误解和政治手段的下面
 
 52. 与用户一同工作，以像用户一样思考
-
-    Work with a User to Think Like a User
-
-    要了解系统实际上将如何被使用，这是最好的方法
+Work with a User to Think Like a User
+要了解系统实际上将如何被使用，这是最好的方法
 
 53. 抽象比细节活得更长久
-
-    Abstractions Live Longer than Details
-
-    “投资”于抽象，而不是实现。抽象能在来自不同的实现和新技术的变化的“攻击”之下存活下去
+Abstractions Live Longer than Details
+“投资”于抽象，而不是实现。抽象能在来自不同的实现和新技术的变化的“攻击”之下存活下去
 
 54. 使用项目词汇表
-
-    Use a Project Glossary
-
-    创建并维护项目中使用的专用术语和词汇的单一信息源
+Use a Project Glossary
+创建并维护项目中使用的专用术语和词汇的单一信息源
 
 55. 不要在盒子外面思考—要找到盒子
-
-    Don't Think Outside the Box—Find the Box
-
-    在遇到不可能解决的问题时，要确定真正的约束。问问你自己：“它必须以这种方式完成吗？它真的必须完成吗？”
+Don't Think Outside the Box—Find the Box
+在遇到不可能解决的问题时，要确定真正的约束。问问你自己：“它必须以这种方式完成吗？它真的必须完成吗？”
 
 56. 等你准备好再开始
-
-    Start When You're Ready
-
-    你的一生都在积累经验。不要忽视反复出现的疑虑
+Start When You're Ready
+你的一生都在积累经验。不要忽视反复出现的疑虑
 
 57. 对某些事情“做”胜于“描述”
-
-    Some Things Are Better Done than Described
-
-    不要掉进规范的螺旋——在某个时刻，你需要开始编码
+Some Things Are Better Done than Described
+不要掉进规范的螺旋——在某个时刻，你需要开始编码
 
 58. 不要做形式方法的奴隶
-
-    Don't Be a Slave to Formal Methods
-
-    如果你没有把某项技术放进你的开发实践和能力的语境中，不要盲目地采用它
+Don't Be a Slave to Formal Methods
+如果你没有把某项技术放进你的开发实践和能力的语境中，不要盲目地采用它
 
 59. 昂贵的工具不一定能制作出更好的设计
-
-    Costly Tools Don't Produce Better Designs
-
-    小心供应商的炒作，行业教条、以及价格标签的诱惑。要根据工具的价值判断它们
+Costly Tools Don't Produce Better Designs
+小心供应商的炒作，行业教条、以及价格标签的诱惑。要根据工具的价值判断它们
 
 60. 围绕功能组织团队
-
-    Organize Teams Around Functionality
-
-    不要把设计师与编码员分开，也不要把测试员与数据建模员分开。按照你构建代码的方式构建团
+Organize Teams Around Functionality
+不要把设计师与编码员分开，也不要把测试员与数据建模员分开。按照你构建代码的方式构建团
 
 61. 不要使用手工流程
-
-    Don't Use Manual Procedures
-
-    shell脚本或批文件会一次次地以同一顺序执行同样的指令
+Don't Use Manual Procedures
+shell脚本或批文件会一次次地以同一顺序执行同样的指令
 
 62. 早测试，常测试，自动测试
-
-    Test Early. Test Often. Test Automatically
-
-    与呆在书架上的测试计划相比，每次构建时运行的测试要有效得多
+Test Early. Test Often. Test Automatically
+与呆在书架上的测试计划相比，每次构建时运行的测试要有效得多
 
 63. 要通过全部测试，编码才算完成
-
-    Coding Ain’t Done ’Til All the Tests Run
+Coding Ain’t Done ’Til All the Tests Run
 
 64. 通过“蓄意破坏”测试你的测试
-
-    Use Saboteurs to Test Your Testing
-
-    在单独的软件副本上故意引入bug，以检验测试能够抓住它们
+Use Saboteurs to Test Your Testing
+在单独的软件副本上故意引入bug，以检验测试能够抓住它们
 
 65. 测试状态覆盖，而不是代码覆盖
-
-    Test State Coverage, Not Code Coverage
-
-    确定并测试重要的程序状态。只是测试代码行是不够的
+Test State Coverage, Not Code Coverage
+确定并测试重要的程序状态。只是测试代码行是不够的
 
 66. 一个bug只抓一次
-
-    Find Bugs Once
-
-    一旦测试员找到一个bug，这应该是测试员最后一次找到它。此后自动测试应该对其进行检查
+Find Bugs Once
+一旦测试员找到一个bug，这应该是测试员最后一次找到它。此后自动测试应该对其进行检查
 
 67. 英语就是一种编程语言
-
-    English is Just a Programming Language
-
-    像你编写代码一样编写文档：遵守DRY原则、使用元数据、MVC、自动生成等等
+English is Just a Programming Language
+像你编写代码一样编写文档：遵守DRY原则、使用元数据、MVC、自动生成等等
 
 68. 把文档建在里面，不要拴在外面
-
-    Build Documentation In, Don't Bolt It On
-
-    与代码分离的文档不太可能被修正和更新
+Build Documentation In, Don't Bolt It On
+与代码分离的文档不太可能被修正和更新
 
 69. 温和地超出用户的期望
-
-    Gently Exceed Your Users'Expectations
-
-    要理解你的用户的期望，然后给他们的东西要多那么一点
+Gently Exceed Your Users' Expectations
+要理解你的用户的期望，然后给他们的东西要多那么一点
 
 70. 在你的作品上签名
-
-    Sign Your Work
-
-    过去时代的手艺人为能在他们的作品上签名而自豪。你也应该如此
+Sign Your Work
+过去时代的手艺人为能在他们的作品上签名而自豪。你也应该如此
 
 71. 要学习的语言
-
-    厌倦了C、C++和JAVA？试试CLOS、Dylan、Eiffel、Objective C、Prolog、Smalltalk或TOM。它们每一种都有不同的能力和不同的“风味”。用其中的一种或多种语言在家里开发一个小项目
+厌倦了C、C++和JAVA？试试CLOS、Dylan、Eiffel、Objective C、Prolog、Smalltalk或TOM。它们每一种都有不同的能力和不同的“风味”。用其中的一种或多种语言在家里开发一个小项目
 
 72. WISDOM离合诗
-
-    What do you want them to learn？你想让他们学到什么？
-
-    What is their interest in what you’ve got to say？他们对你讲的什么感兴趣？　
-
-    How sophisticated are they？他们有多富有经验？
-
-    How much detail do they want？他们想要多少细节？
-
-    Whom do you want to own the information？你想要让谁拥有这些信息？
-
-    How can you motivate them to listen to you？你如何促使他们听你说话？
+What do you want them to learn？你想让他们学到什么？
+What is their interest in what you’ve got to say？他们对你讲的什么感兴趣？　
+How sophisticated are they？他们有多富有经验？
+How much detail do they want？他们想要多少细节？
+Whom do you want to own the information？你想要让谁拥有这些信息？
+How can you motivate them to listen to you？你如何促使他们听你说话？
 
 73. 怎样维持正交性
 - 设计独立、良好定义的组件
@@ -407,11 +331,11 @@ Finish What You Start
 - 造成这个bug的条件是否存在于系统中的其他任何地方？
 
 77. 函数的得墨忒尔法则
-    某个对象的方法应该只调用属于以下情形的方法：
-    - 它自身
-    - 传入的任何参数
-    - 它创建的对象
-    - 组件对象
+某个对象的方法应该只调用属于以下情形的方法：
+- 它自身
+- 传入的任何参数
+- 它创建的对象
+- 组件对象
 
 78. 怎样深思熟虑的编程
 - 总是意识到你在做什么
@@ -431,13 +355,13 @@ Finish What You Start
 - 你需要改善性能
 
 80. 劈开戈尔迪斯结
-    在解决不可能解决的问题时，问问你自己：
-    - 有更容易的方法吗？
-    - 我是在解决正确的问题吗？
-    - 这件事情为什么是一个问题？
-    - 是什么使它如此难以解决？
-    - 它必须以这种方式完成吗？
-    - 它真的必须完成吗？
+在解决不可能解决的问题时，问问你自己：
+- 有更容易的方法吗？
+- 我是在解决正确的问题吗？
+- 这件事情为什么是一个问题？
+- 是什么使它如此难以解决？
+- 它必须以这种方式完成吗？
+- 它真的必须完成吗？
 
 81. 测试的各个方面
 - 单元测试
