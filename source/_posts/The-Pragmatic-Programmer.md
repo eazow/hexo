@@ -1,15 +1,12 @@
 ---
-title: The Pragmatic Programer
+title: The Pragmatic Programmer
 date: 2020-01-20 23:25:22
 tags: Coding
 categories: Coding
 ---
 
 
-
-
-#### 注重实效的程序员快速参考指南
-The Pragmatic Programmer Quick Reference Guide
+#### The Pragmatic Programmer Quick Reference Guide
 
 1. 关心你的技艺
 Care About Your Craft
