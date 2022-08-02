@@ -372,4 +372,3 @@ How can you motivate them to listen to you？你如何促使他们听你说话�
 
 ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/the-pragmatic-programmer.jpg)
 
-

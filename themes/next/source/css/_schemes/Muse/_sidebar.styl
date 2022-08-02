@@ -29,10 +29,10 @@ if (hexo-config('sidebar.position') == 'right') {
 }
 
 .sidebar {
-  background: $black-deep;
+  //background: $black-deep;
   bottom: 0;
   if (not hexo-config('back2top.sidebar')) {
-    box-shadow: inset 0 2px 6px black;
+  //  box-shadow: inset 0 2px 6px black;
   }
   position: fixed;
   top: 0;
@@ -42,7 +42,8 @@ if (hexo-config('sidebar.position') == 'right') {
 
   a {
     border-bottom-color: $black-light;
-    color: $grey-dark;
+    //color: $grey-dark;
+    color: $black-deep;
 
     &:hover {
       border-bottom-color: $gainsboro;
