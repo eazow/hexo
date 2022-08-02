@@ -50,8 +50,10 @@ darkmode: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  # small: /images/favicon-16x16-next.png
+  # medium: /images/favicon-32x32-next.png
+  small: favicon.png
+  medium: favicon.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /manifest.json
@@ -576,7 +578,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active: changyan
+  active: utterances
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -623,8 +625,8 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 gitalk:
   enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
+  github_id: eazow # GitHub repo owner
+  repo: hexo-issues# Repository name to store issues
   client_id: # GitHub Application Client ID
   client_secret: # GitHub Application Client Secret
   admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
