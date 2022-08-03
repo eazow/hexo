@@ -48,6 +48,8 @@ Critically Analyze What You Read and Hear
 It's Both What You Say and the Way You Say It
 如果你不能有效地向他人传达你的了不起的想法，这些想法就毫无用处
 
+<!-- more -->
+
 11. 不要重复你自己
 DRY — Don't Repeat Yourself
 系统中的每一项知识都必须具有单一、无歧义、权威的表示
