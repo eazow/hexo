@@ -89,13 +89,37 @@ symbols_count_time:
   wpm: 275
   suffix: "mins."
 
+
+giscus:
+  enable: true
+  repo: eazow/hexo # Github repository name
+  repo_id: MDEwOlJlcG9zaXRvcnkxNjI1NTM4Nzk= # Github repository id
+  category: Announcements # Github discussion category
+  category_id: DIC_kwDOCbBgF84CQl0J # Github discussion category id
+  # Available values: pathname | url | title | og:title
+  mapping: pathname
+  # Available values: 0 | 1 
+  reactions_enabled: 1
+   # Available values: 0 | 1 
+  emit_metadata: 0
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+  theme: light
+  # Available values: en | zh-C
+  lang: en
+  # Available value: anonymous
+  crossorigin: anonymous
+  # Place the comment box above the comments
+  input_position: top
+  # Load the comments lazily
+  loading: lazy
+
 # Waline Config File
 # For more information:
 # - https://waline.js.org
 # - https://waline.js.org/reference/component.html
 waline:
   # New! Whether enable this plugin
-  enable: true
+  enable: false
 
   # Waline server address url, you should set this to your own link
   # serverURL: https://comments-eight-chi.vercel.app/ # https://waline.vercel.app
@@ -103,17 +127,17 @@ waline:
 
 
   # Waline library CDN url, you can set this to your preferred CDN
-  # libUrl: https://unpkg.com/@waline/client@v2/dist/waline.js
+  libUrl: https://unpkg.com/@waline/client@v2/dist/waline.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
   cssUrl: https://unpkg.com/@waline/client@v2/dist/waline.css
 
   # Custom locales
-  # locale:
-  #   placeholder: Welcome to comment # Comment box placeholder
+  locale:
+    placeholder: 筛选后的留言将会公开显示，欢迎踊跃留言。(填写邮箱可在被回复时收到邮件提醒) #Welcome to comment # Comment box placeholder
 
   # If false, comment count will only be displayed in post page, not in home page
-  commentCount: true
+  commentCount: false
 
   # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
   pageview: false
@@ -148,6 +172,7 @@ waline:
 
   # comment per page
   # pageSize: 10
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
