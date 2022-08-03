@@ -65,19 +65,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next  #fluid #next
 
-vBanner:
-  enable: false  # true or false
-  vTuber_name: Kizuna AI  # vTuber's name or vup's name
+# vBanner:
+#   enable: false  # true or false
+#   vTuber_name: Kizuna AI  # vTuber's name or vup's name
 
-moon_menu:
-  back2top:
-    enable: true
-    icon: fas fa-chevron-up
-    order: -1
-  back2bottom:
-    enable: true
-    icon: fas fa-chevron-down
-    order: -2
+# moon_menu:
+#   back2top:
+#     enable: false
+#     icon: fas fa-chevron-up
+#     order: -1
+#   back2bottom:
+#     enable: false
+#     icon: fas fa-chevron-down
+#     order: -2
 
 symbols_count_time:
   symbols: false

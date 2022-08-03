@@ -1,7 +1,7 @@
 title: LeetCode Online Judge
 tags:
   - LeetCode
-categories: []
+categories: Coding
 date: 2019-02-01 15:01:20
 ---
 
@@ -52,8 +52,10 @@ https://github.com/eazow/leetcode
 ##### 版本
 0.3.0.0
 
-##### 更新日志
+
 <!--
+##### 更新日志
+
 2016.06.01
 347. Top K Frequent Elements
 
@@ -90,7 +92,7 @@ https://github.com/eazow/leetcode
 2. Add Two Numbers
 3. Longest Substring Without Repeating Characters
 4. Median of Two Sorted Arrays
--->
+
 2018.07.25
 调整排序为按题号排序，这样比较容易对照leetcode整理
 
@@ -99,5 +101,5 @@ https://github.com/eazow/leetcode
 
 持续更新中...
 
-
+-->
 
