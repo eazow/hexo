@@ -65,9 +65,9 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next  #fluid #next
 
-# vBanner:
-#   enable: false  # true or false
-#   vTuber_name: Kizuna AI  # vTuber's name or vup's name
+vBanner:
+  enable: false  # true or false
+  vTuber_name: Kizuna AI  # vTuber's name or vup's name
 
 # moon_menu:
 #   back2top:
