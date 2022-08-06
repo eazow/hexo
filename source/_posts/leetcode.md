@@ -7,7 +7,7 @@ date: 2019-02-01 15:01:20
 
 | # | Problems   | Difficulty          | Solutions    |
 |:--|:--------- |:------------- |:---------- |
-|1|[Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Two Sum](http://www.jianshu.com/p/c34886c78e17) |
+|1|[Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Two Sum](/leetcode1-two-sum/) |
 |2|[Add Two Sum](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Add Two Number](https://www.jianshu.com/p/11224e015ae3)|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)|Medium|[Longest Substring Without Repeating Characters](https://www.jianshu.com/p/1803f19afc1d)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)|Hard|[Median of Two Sorted Arrays](https://www.jianshu.com/p/e6831a647d5b)|
