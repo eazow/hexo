@@ -103,9 +103,9 @@ menu:
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
   # tomcat: 
-  #   default: /tomcat/ || fa
-  #   ch01: /tomcat/ch01.html || fa fa-eye
-  #   ch02: /tomcat/ch02.html || fa fa-tags
+  #   default: /tomcat/ || fa fa-home
+  #   ch01: /ch01.html || fa fa-eye
+  #   ch02: /ch02.html || fa fa-tags
   # schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
