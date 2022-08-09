@@ -1,15 +1,15 @@
-title: '[LeetCode]1. Two Sum'
-tags:
-  - LeetCode
-categories: []
+---
+title: "[LeetCode]1. Two Sum"
+tags: LeetCode
+categories: Coding
 date: 2016-06-02 18:03:00
 ---
 
 
 #### Problem
-> Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
-> You may assume that each input would have ***exactly*** one solution.
-> **Example:**
+Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
+You may assume that each input would have ***exactly*** one solution.
+**Example:**
 ```
 Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
@@ -19,7 +19,7 @@ return [0, 1].
 
 #### Solution
 对数组排序后，第一个数字从数组开始遍历，二分查找满足条件的第二个数字，返回2个数字的位置。
-由于排序导致数字位置发生了变换，因此需要一个数组记录变化后第i个数字之前的位置numsLocation[i]。
+由于排序导致数字位置发生了变换，因此需要一个数组记录变化后第`i`个数字之前的位置`numsLocation[i]`。
 
 ``` c
 #include <assert.h>
