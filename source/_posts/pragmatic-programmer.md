@@ -22,7 +22,7 @@ Provide Options, Don't Make Lame Excuses
 
 4. 不要容忍破窗户
 Don't Live with Broken Windows
-当你看到糟糕的设计、错误的决策
+当你看到糟糕的设计、错误的决策和糟糕的代码时，修正它们
 
 5. 做变化的催化剂
 Be a Catalyst for Change
@@ -111,7 +111,7 @@ Don't Panic When Debugging
 做一次深呼吸，思考什么可能是bug的原因
 
 26. "Select"没有问题
-"Select"Isn't Broken
+"Select" Isn't Broken
 在OS或编译器、甚或是第三方产品或库中很少发现bug，bug很可能在应用中
 
 27. 不要假定，要证明
@@ -144,7 +144,7 @@ Use Assertions to Prevent the Impossible
 
 34. 将异常用于异常的问题
 Use Exceptions for Exceptional Problems
-异常可能会遭受经典的意大利面条式代码的所有可读性和可维护性问题的折磨。将异常保留给异常的事物。
+异常可能会遭受经典的意大利面条式代码的所有可读性和可维护性问题的折磨。将异常保留给异常的事物
 
 35. 要有始有终
 Finish What You Start
@@ -228,7 +228,7 @@ Use a Project Glossary
 
 55. 不要在盒子外面思考—要找到盒子
 Don't Think Outside the Box—Find the Box
-在遇到不可能解决的问题时，要确定真正的约束。问问你自己：“它必须以这种方式完成吗？它真的必须完成吗？”
+在遇到不可能解决的问题时，要确定真正的约束。问问你自己: "它必须以这种方式完成吗？它真的必须完成吗？"
 
 56. 等你准备好再开始
 Start When You're Ready
