@@ -1,3 +1,4 @@
+---
 title: LeetCode Online Judge
 tags:
   - LeetCode
@@ -12,7 +13,7 @@ date: 2019-02-01 15:01:20
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)|Medium|[Longest Substring Without Repeating Characters](https://www.jianshu.com/p/1803f19afc1d)|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)|Hard|[Median of Two Sorted Arrays](https://www.jianshu.com/p/e6831a647d5b)|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)| Medium | [Longest Palindromic Substring](https://www.jianshu.com/p/3fcd19e900c6) |
-|10|[10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|Hard|[10. Regular Expression Matching](https://www.jianshu.com/p/a26a54fab687)|
+|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|Hard|[Regular Expression Matching](https://www.jianshu.com/p/a26a54fab687)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|Medium|[Integer to Roman](http://www.jianshu.com/p/e0bd6ab68df3)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Generate Parentheses](http://www.jianshu.com/p/ff0ef6914107) |
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](http://www.eazow.com/2016/08/19/LeetCode-39-Combination-Sum/)|
