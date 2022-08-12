@@ -16,14 +16,14 @@ date: 2019-02-01 15:01:20
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|Hard|[Regular Expression Matching](https://www.jianshu.com/p/a26a54fab687)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|Medium|[Integer to Roman](http://www.jianshu.com/p/e0bd6ab68df3)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Generate Parentheses](http://www.jianshu.com/p/ff0ef6914107) |
-|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](http://www.eazow.com/2016/08/19/LeetCode-39-Combination-Sum/)|
+|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](/leetcode39-combination-sum/)|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|Hard|[Trapping Rain Water](https://www.jianshu.com/p/6104f19eec85)|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| Medium | [Binary Tree Inorder Traversal(简书)](http://www.jianshu.com/p/c117026c269a)|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| Medium | [Convert Sorted Array to Binary Search Tree](http://www.jianshu.com/p/9ed4e9bef533) |
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| Medium |[Best Time to Buy and Sell Stock II](http://www.jianshu.com/p/1de0d839dfb4)|
 |136| [Single Number](https://leetcode.com/problems/single-number/)| Medium | [Single Number(简书)](http://www.jianshu.com/p/7c4ed69dcc77) |
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)| Medium | [Binary Tree Preorder Traversal](http://www.jianshu.com/p/02d614c43fcf)|
-|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)| Medium | [Two Sum II - Input array is sorted](http://www.eazow.com/2016/09/01/LeetCode-167-Two-Sum-II-Input-array-is-sorted/)|
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)| Medium | [Two Sum II - Input array is sorted](/leetcode167-two-sum-2-input-array-is-sorted/)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| Medium |[Product of Array Except Self(简书)](http://www.jianshu.com/p/247bbcc105f9)|
 |260| [Single Number III](https://leetcode.com/problems/single-number-iii/) | Medium | [Single Number III(简书)](http://www.jianshu.com/p/15dca43b225b) |
 |268|[Missing Number](https://leetcode.com/problems/missing-number/)| Medium | [Missing Number](http://www.jianshu.com/p/61e569117c43) |
@@ -35,11 +35,11 @@ date: 2019-02-01 15:01:20
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)| Medium |[Top K Frequent Elements(简书)](http://www.jianshu.com/p/b22bfd5cc5b8)|
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|Medium|[Count Numbers with Unique Digits](http://www.jianshu.com/p/8fa9fc9a46ed)|
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|Medium|[Combination Sum IV](http://www.jianshu.com/p/6dcb2c66da36)|
-|492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)   |Easy| [Construct the Rectangle](http://www.jianshu.com/p/f4da2927fffe)|
-|530| [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst)   | Easy | [Minimum Absolute Difference in BST](http://www.jianshu.com/p/f6ce5df1895f) |
-|535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)  | Medium | [Encode and Decode TinyURL](http://www.jianshu.com/p/09d79186f859) |
-|599| [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists)    |  Easy|  [Minimum Index Sum of Two lists](http://www.jianshu.com/p/b2fceb996062) |
-|606| [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)   | Easy | [Construct String from Binary Tree](http://www.jianshu.com/p/9df545283b21) |
+|492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)|Easy| [Construct the Rectangle](http://www.jianshu.com/p/f4da2927fffe)|
+|530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst)| Easy | [Minimum Absolute Difference in BST](http://www.jianshu.com/p/f6ce5df1895f) |
+|535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl) | Medium | [Encode and Decode TinyURL](http://www.jianshu.com/p/09d79186f859) |
+|599| [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) |Easy|  [Minimum Index Sum of Two lists](http://www.jianshu.com/p/b2fceb996062) |
+|606| [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree) | Easy | [Construct String from Binary Tree](http://www.jianshu.com/p/9df545283b21) |
 
 ##### 进度
 ![](https://bartiern.sirv.com/blog/leetcode.png)
