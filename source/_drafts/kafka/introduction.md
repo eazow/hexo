@@ -7,7 +7,7 @@ date: 2020-02-01 15:01:20
 
 
 
-#### [What is event streaming?](https://kafka.apache.org/intro#intro_streaming)
+#### What is event streaming?
 
 Event streaming is the digital equivalent of the human body's central nervous system. It is the technological foundation for the 'always-on' world where businesses are increasingly software-defined and automated, and where the user of software is more software.
 
@@ -21,7 +21,7 @@ Technically speaking, event streaming is the practice of capturing data in real-
 
 #### What can I use event streaming for?
 
-Event streaming is applied to a [wide variety of use cases](https://kafka.apache.org/powered-by) across a plethora of industries and organizations. Its many examples include:
+Event streaming is applied to a wide variety of use cases across a plethora of industries and organizations. Its many examples include:
 
 - To process payments and financial transactions in real-time, such as in stock exchanges, banks, and insurances.
 - To track and monitor cars, trucks, fleets, and shipments in real-time, such as in logistics and the automotive industry.
@@ -31,17 +31,35 @@ Event streaming is applied to a [wide variety of use cases](https://kafka.apache
 - To connect, store, and make available data produced by different divisions of a company.
 - To serve as the foundation for data platforms, event-driven architectures, and microservices.
 
+事件流应用于众多行业和组织的各种用例。它的许多例子包括：
+
+- 实时处理支付和金融交易，例如在证券交易所、银行和保险中。
+- 实时跟踪和监控汽车、卡车、车队和货运，例如物流和汽车行业。
+- 持续捕获和分析来自物联网设备或其他设备的传感器数据，例如工厂和风电场。
+- 收集并立即响应客户互动和订单，例如零售、酒店和旅游行业以及移动应用程序。
+- 监测住院病人，预测病情变化，确保在紧急情况下及时治疗。
+- 连接、存储和提供公司不同部门产生的数据。
+- 作为数据平台、事件驱动架构和微服务的基础。
+
 
 
 #### Apache Kafka® is an event streaming platform. What does that mean?
 
-Kafka combines three key capabilities so you can implement [your use cases](https://kafka.apache.org/powered-by) for event streaming end-to-end with a single battle-tested solution:
+Kafka combines three key capabilities so you can implement your use cases for event streaming end-to-end with a single battle-tested solution:
 
 1. To **publish** (write) and **subscribe to** (read) streams of events, including continuous import/export of your data from other systems.
 2. To **store** streams of events durably and reliably for as long as you want.
 3. To **process** streams of events as they occur or retrospectively.
 
+Kafka 结合了三个关键功能，因此您可以 通过一个经过实战考验的解决方案实现端到端的事件流用例：
+
+1. **发布**（写入）和**订阅**（读取）事件流，包括从其他系统持续导入/导出数据 。
+2. 根据需要持久可靠地 **存储事件流。**
+3. 在事件发生时或回顾性地**处理事件流。**
+
 And all this functionality is provided in a distributed, highly scalable, elastic, fault-tolerant, and secure manner. Kafka can be deployed on bare-metal hardware, virtual machines, and containers, and on-premises as well as in the cloud. You can choose between self-managing your Kafka environments and using fully managed services offered by a variety of vendors.
+
+所有这些功能都以分布式、高度可扩展、弹性、容错和安全的方式提供。Kafka可以部署在裸机硬件、虚拟机和容器上，也可以部署在本地和云端。您可以在自行管理 Kafka 环境和使用各种供应商提供的完全托管服务之间进行选择。
 
 
 
