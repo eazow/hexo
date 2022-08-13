@@ -1,12 +1,11 @@
 ---
-title: Kafka
+title: Introduction
 tags: Kafka
-Categories: Kafka
+categories: Kafka
+date: 2020-02-01 15:01:20
 ---
 
 
-
-### Introduction
 
 #### [What is event streaming?](https://kafka.apache.org/intro#intro_streaming)
 
