@@ -7,7 +7,7 @@ date: 2020-02-01 15:01:20
 
 
 
-#### What is event streaming?
+#### 1. What is event streaming?
 
 Event streaming is the digital equivalent of the human body's central nervous system. It is the technological foundation for the 'always-on' world where businesses are increasingly software-defined and automated, and where the user of software is more software.
 
@@ -19,7 +19,7 @@ Technically speaking, event streaming is the practice of capturing data in real-
 
 
 
-#### What can I use event streaming for?
+#### 2. What can I use event streaming for?
 
 Event streaming is applied to a wide variety of use cases across a plethora of industries and organizations. Its many examples include:
 
@@ -43,7 +43,7 @@ Event streaming is applied to a wide variety of use cases across a plethora of i
 
 
 
-#### Apache Kafka® is an event streaming platform. What does that mean?
+#### 3. Apache Kafka® is an event streaming platform. What does that mean?
 
 Kafka combines three key capabilities so you can implement your use cases for event streaming end-to-end with a single battle-tested solution:
 
@@ -63,7 +63,7 @@ And all this functionality is provided in a distributed, highly scalable, elasti
 
 
 
-#### How does Kafka work in a nutshell?
+#### 4. How does Kafka work in a nutshell?
 
 Kafka is a distributed system consisting of **servers** and **clients** that communicate via a high-performance [TCP network protocol](https://kafka.apache.org/protocol.html). It can be deployed on bare-metal hardware, virtual machines, and containers in on-premise as well as cloud environments.
 
@@ -79,7 +79,7 @@ Kafka 是一个分布式系统，由通过高性能[TCP 网络协议进行通信
 
 
 
-#### Main Concepts and Terminology
+#### 5. Main Concepts and Terminology
 
 An **event** records the fact that "something happened" in the world or in your business. It is also called record or message in the documentation. When you read or write data to Kafka, you do this in the form of events. Conceptually, an event has a key, value, timestamp, and optional metadata headers. Here's an example event:
 
