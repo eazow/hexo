@@ -98,14 +98,14 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  # categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
   # tomcat: 
-  #   default: /tomcat/ || fa fa-home
-  #   ch01: /ch01.html || fa fa-eye
-  #   ch02: /ch02.html || fa fa-tags
+  #   default: /tomcat/ || fa fa-cat
+  #   introduction: /introduction/ || fa fa-leaf
+    # introduction2: /tomcat/introduction/ || fa fa-user
   # schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
