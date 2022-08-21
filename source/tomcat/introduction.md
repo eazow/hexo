@@ -1,13 +1,13 @@
 ---
-title: Introduction
+title: Tomcat Introduction
 categories: Java
 tags: Tomcat
-date: 2020-08-01 17:05:05
+date: 2019-08-01
 ---
 
 
 
-### OverView
+#### OverView
 
 Welcome to How Tomcat Works. This book dissects Tomcat 4.1.12 and 5.0.18 and explains the internal workings of its free, open source, and most popular servlet container code-named Catalina. Tomcat is a complex system, consisting of many different components. Those who want to learn how Tomcat works often do know where to start. What this book does is provide the big picture and then build a simpler version of each component to make understanding that component easier. Only after that will the real component be explained.
 
@@ -15,7 +15,7 @@ You should start by reading this Introduction as it explains the structure of th
 
 
 
-### Who This Book Is for
+#### Who This Book Is for
 
 This book is for anyone working with the Java technology.
 
@@ -28,7 +28,7 @@ To understand the discussion in this book, you need to understand object-oriente
 
 
 
-### How A Servlet Container Works
+#### How A Servlet Container Works
 
 A servlet container is a complex system. However, basically there are three things that a servlet container does to service a request for a servlet:
 
@@ -38,7 +38,9 @@ A servlet container is a complex system. However, basically there are three thin
 
 As you read the chapters, you will find detailed discussions of Catalina servlet container.
 
-### Catalina Block Diagram
+
+
+#### Catalina Block Diagram
 
 Catalina is a very sophisticated piece of software, which was elegantly designed and developed. It is also modular too. Based on the tasks mentioned in the section "How A Servlet Container Works", you can view Catalina as consisting of two main modules: the connector and the container.
 
@@ -50,7 +52,9 @@ Now, back to Figure I.1, the connector is there to connect a request with the co
 
 Bear in mind though, that the description above is only the tip of the iceberg. There are a lot of things that a container does. For example, before it can invoke a servlet's service method, it must load the servlet, authenticate the user (if required), update the session for that user, etc. It's not surprising then that a container uses many ￼￼￼￼￼different modules for processing. For example, the manager module is for processing user sessions, the loader is for loading servlet classess, etc.
 
-### Tomcat 4 and 5
+
+
+#### Tomcat 4 and 5
 
 This book covers both Tomcat 4 and 5. Here are some of the differences between the two:
 
@@ -60,7 +64,9 @@ This book covers both Tomcat 4 and 5. Here are some of the differences between t
 - components all have their own threads for background processing. Therefore, Tomcat 5 uses less resources in this regard.
 - Tomcat 5 does not need a mapper component to find a child component, therefore simplifying the code.
 
-### Overview of Each Chapter
+
+
+#### Overview of Each Chapter
 
 There are 20 chapters in this book. The first two chapters serve as an introduction. Chapter 1 explains how an HTTP server works and Chapter 2 features a simple servlet container. The next two chapters focus on the connector and Chapters 5 to 20 cover each of the components in the container. The following is the summary of each of the chapters.
 
@@ -109,11 +115,15 @@ Note For each chapter, there is an accompanying application similar to the compo
 
 **Chapter 20** discusses JMX and how Tomcat make its internal objects manageable by creating MBeans for those objects.
 
-### The Application for Each Chapter
+
+
+#### The Application for Each Chapter
 
 Each chapter comes with one or more applications that focus on a specific component in Catalina. Normally you'll find the simplified version of the component being explained or code that explains how to use a Catalina component. All classes and interfaces in the chapters' applications reside in the ex[chapter ￼￼￼￼￼￼￼￼number].pyrmont package or its subpackages. For example, the classes in the application in **Chapter 1** are part of the ex01.pyrmont package.
 
-### Preparing the Prerequisite Software
+
+
+#### Preparing the Prerequisite Software
 
 The applications accompanying this book run with J2SE version 1.4. The zipped source files can be downloaded from the authors' web site [www.brainysoftware.com](http://www.brainysoftware.com/). It contains the source code for Tomcat 4.1.12 and the applications used in this book. Assuming you have installed J2SE 1.4 and your path environment variable includes the location of the JDK, follow these steps:
 
