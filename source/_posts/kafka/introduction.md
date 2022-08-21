@@ -17,7 +17,7 @@ Technically speaking, event streaming is the practice of capturing data in real-
 
 从技术上讲，事件流是从事件源（如数据库、传感器、移动设备、云服务和软件应用程序）以事件流的形式实时捕获数据的实践；持久存储这些事件流以供以后检索；实时和回顾性地操作、处理和响应事件流；并根据需要将事件流路由到不同的目标技术。因此，事件流确保了数据的连续流动和解释，以便正确的信息在正确的时间出现在正确的位置。
 
-
+<!-- more -->
 
 #### 2. What can I use event streaming for?
 

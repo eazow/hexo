@@ -39,6 +39,7 @@ $ bin/kafka-server-start.sh config/server.properties
 
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use.
 
+<!-- more -->
 
 
 #### 3. CREATE A TOPIC TO STORE YOUR EVENTS

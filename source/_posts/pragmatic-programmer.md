@@ -32,6 +32,8 @@ Be a Catalyst for Change
 Remember the Big Picture
 不要太过专注于细节，已忘了查看周围正在发生什么
 
+<!-- more -->
+
 7. 使质量成为需求问题
 Make Quality a Requirements Issue
 让你的用户参与确定项目真正的质量需求
@@ -47,8 +49,6 @@ Critically Analyze What You Read and Hear
 10. 你说什么和你怎样说同样重要
 It's Both What You Say and the Way You Say It
 如果你不能有效地向他人传达你的了不起的想法，这些想法就毫无用处
-
-<!-- more -->
 
 11. 不要重复你自己
 DRY — Don't Repeat Yourself
