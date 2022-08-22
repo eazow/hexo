@@ -52,3 +52,45 @@ An HTTP request consists of three components:
 
 An example of an HTTP request is the following:
 
+```
+POST /examples/default.jsp HTTP/1.1Accept: text/plain; text/html
+Accept-Language: en-gb
+Connection: Keep-Alive
+Host: localhost
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows 98)
+Content-Length: 33
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+
+lastName=Franks&firstName=Michael
+```
+
+The method—URI—protocol version appears as the first line of the request.
+
+```
+POST /examples/default.jsp HTTP/1.1
+```
+
+where POST is the request method, /examples/default.jsp represents the URI and
+HTTP/1.1 the Protocol/Version section.
+
+Each HTTP request can use one of the many request methods as specified in the
+HTTP standards. The HTTP 1.1 supports seven types of request: GET, POST,
+HEAD, OPTIONS, PUT, DELETE, and TRACE. GET and POST are the most
+commonly used in Internet applications.
+
+The URI specifies an Internet resource completely. A URI is usually interpreted as
+being relative to the server's root directory. Thus, it should always begin with a
+forward slash /. A Uniform Resource Locator (URL) is actually a type of URI (see
+http://www.ietf.org/rfc/rfc2396.txt). The protocol version represents the version of
+the HTTP protocol being used.
+
+The request header contains useful information about the client environment and the
+entity body of the request. For example, it could contain the language the browser is
+set for, the length of the entity body, and so on. Each header is separated by a
+carriage return/linefeed (CRLF) sequence.
+
+Between the headers and the entity body, there is a blank line (CRLF) that is
+important to the HTTP request format. The CRLF tells the HTTP server where the
+entity body begins. In some Internet programming books, this CRLF is considered
+the fourth component of an HTTP request.
