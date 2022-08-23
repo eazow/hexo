@@ -94,3 +94,33 @@ Between the headers and the entity body, there is a blank line (CRLF) that is
 important to the HTTP request format. The CRLF tells the HTTP server where the
 entity body begins. In some Internet programming books, this CRLF is considered
 the fourth component of an HTTP request.
+
+
+
+
+
+HTTP Responses
+Similar to an HTTP request, an HTTP response also consists of three parts:
+
+- Protocol—Status code—Description
+- Response headers
+- Entity body
+  The following is an example of an HTTP response:
+
+```
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/4.0
+Date: Mon, 5 Jan 2004 13:13:33 GMT
+Content-Type: text/html
+Last-Modified: Mon, 5 Jan 2004 13:13:12 GMT
+Content-Length: 112
+<html>
+<head>
+<title>HTTP Response Example</title>
+</head>
+<body>
+Welcome to Brainy Software
+</body>
+</html>
+```
+
