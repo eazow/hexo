@@ -125,7 +125,7 @@ $ hexo d
 ```
 $ hexo new "Markdown"
 ```
-会在`source/_posts/`目录下生成`Markdown参考.md`文件，编辑该文件后
+会在`source/_posts/`目录下生成`Markdown.md`文件，编辑该文件后
 ```
 $ hexo g
 $ hexo d
