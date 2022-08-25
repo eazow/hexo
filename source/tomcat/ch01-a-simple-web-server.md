@@ -99,12 +99,18 @@ the fourth component of an HTTP request.
 
 
 
-HTTP Responses
+#### HTTP Responses
+
 Similar to an HTTP request, an HTTP response also consists of three parts:
 
 - Protocol—Status code—Description
+
 - Response headers
+
 - Entity body
+
+  
+
   The following is an example of an HTTP response:
 
 ```
@@ -124,3 +130,24 @@ Welcome to Brainy Software
 </html>
 ```
 
+The first line of the response header is similar to the first line of the request header.
+The first line tells you that the protocol used is HTTP version 1.1, the request
+succeeded (200 = success), and that everything went okay.
+
+
+
+The response headers contain useful information similar to the headers in the request.
+The entity body of the response is the HTML content of the response itself. The
+headers and the entity body are separated by a sequence of CRLFs.
+
+
+
+#### The Socket Class
+
+A socket is an endpoint of a network connection. A socket enables an application to
+read from and write to the network. Two software applications residing on two
+different computers can communicate with each other by sending and receiving byte
+streams over a connection. To send a message from your application to another
+application, you need to know the IP address as well as the port number of the socket
+of the other application. In Java, a socket is represented by the java.net.Socket
+class.
