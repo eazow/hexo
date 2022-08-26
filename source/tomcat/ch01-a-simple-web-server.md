@@ -151,3 +151,26 @@ streams over a connection. To send a message from your application to another
 application, you need to know the IP address as well as the port number of the socket
 of the other application. In Java, a socket is represented by the java.net.Socket
 class.
+
+To create a socket, you can use one of the many constructors of the Socket class.
+One of these constructors accepts the host name and the port number:
+
+```
+public Socket (java.lang.String host, int port)
+```
+
+where host is the remote machine name or IP address and port is the port number of
+the remote application. For example, to connect to yahoo.com at port 80, you would
+construct the following Socket object:
+
+```
+new Socket ("yahoo.com", 80);
+```
+
+Once you create an instance of the Socket class successfully, you can use it to send
+and receive streams of bytes. To send byte streams, you must first call the Socket
+class's getOutputStream method to obtain a `java.io.OutputStream` object. To send
+text to a remote application, you often want to construct a `java.io.PrintWriter`
+object from the OutputStream object returned. To receive byte streams from the
+other end of the connection, you call the Socket class's `getInputStream` method that
+returns a `java.io.InputStream`.
