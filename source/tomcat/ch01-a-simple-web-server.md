@@ -174,3 +174,49 @@ text to a remote application, you often want to construct a `java.io.PrintWriter
 object from the OutputStream object returned. To receive byte streams from the
 other end of the connection, you call the Socket class's `getInputStream` method that
 returns a `java.io.InputStream`.
+
+The following code snippet creates a socket that can communicate with a local HTTP
+server (127.0.0.1 denotes a local host), sends an HTTP request, and receives the
+response from the server. It creates a StringBuffer object to hold the response and
+prints it on the console.
+
+```
+Socket socket = new Socket("127.0.0.1", "8080");
+OutputStream os = socket.getOutputStream();
+boolean autoflush = true;
+PrintWriter out = new PrintWriter(
+socket.getOutputStream(), autoflush);
+BufferedReader in = new BufferedReader(
+new InputStreamReader( socket.getInputstream() ));
+// send an HTTP request to the web server
+out.println("GET /index.jsp HTTP/1.1");
+out.println("Host: localhost:8080");
+out.println("Connection: Close");
+out.println();
+// read the response
+boolean loop = true;
+StringBuffer sb = new StringBuffer(8096);
+while (loop) {
+if ( in.ready() ) {
+int i=0;while (i!=-1) {
+i = in.read();
+sb.append((char) i);
+}
+loop = false;
+}
+Thread.currentThread().sleep(50);
+}
+// display the response to the out console
+System.out.println(sb.toString());
+socket.close();
+```
+
+Note that to get a proper response from the web server, you need to send an HTTP
+request that complies with the HTTP protocol. If you have read the previous section,
+The Hypertext Transfer Protocol (HTTP), you should be able to understand the
+HTTP request in the code above.
+
+**Note** *You can use the com.brainysoftware.pyrmont.util.HttpSniffer class included*
+*with this book to send an HTTP request and display the response. To use this*
+*Java program, you must be connected to the Internet. Be warned, though, that*
+*it may not work if you are behind a firewall.*
