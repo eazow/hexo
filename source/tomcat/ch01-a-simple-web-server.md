@@ -220,3 +220,19 @@ HTTP request in the code above.
 *with this book to send an HTTP request and display the response. To use this*
 *Java program, you must be connected to the Internet. Be warned, though, that*
 *it may not work if you are behind a firewall.*
+
+
+
+#### The ServerSocket Class
+
+The Socket class represents a "client" socket, i.e. a socket that you construct
+whenever you want to connect to a remote server application. Now, if you want to
+implement a server application, such as an HTTP server or an FTP server, you need
+a different approach. This is because your server must stand by all the time as it does
+not know when a client application will try to connect to it. In order for your
+application to be able to stand by all the time, you need to use the
+`java.net.ServerSocket` class. This is an implementation of a server socket.
+
+`ServerSocket` is different from Socket. The role of a server socket is to wait for
+connection requests from clients. Once the server socket gets a connection request,
+it creates a Socket instance to handle the communication with the client.
