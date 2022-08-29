@@ -111,7 +111,7 @@ Similar to an HTTP request, an HTTP response also consists of three parts:
 
   
 
-  The following is an example of an HTTP response:
+  ###### The following is an example of an HTTP response:
 
 ```
 HTTP/1.1 200 OK
@@ -236,3 +236,18 @@ application to be able to stand by all the time, you need to use the
 `ServerSocket` is different from Socket. The role of a server socket is to wait for
 connection requests from clients. Once the server socket gets a connection request,
 it creates a Socket instance to handle the communication with the client.
+
+To create a server socket, you need to use one of the four constructors the
+`ServerSocket` class provides. You need to specify the IP address and port number the
+server socket will be listening on. Typically, the IP address will be 127.0.0.1,
+meaning that the server socket will be listening on the local machine. The IP address
+the server socket is listening on is referred to as the binding address. Another
+important property of a server socket is its backlog, which is the maximum queue length of incoming connection requests before the server socket starts to refuse the
+incoming requests.
+
+One of the constructors of the ServerSocket class has the following signature:
+
+```
+public ServerSocket(int port, int backLog, InetAddress bindingAddress);
+```
+
