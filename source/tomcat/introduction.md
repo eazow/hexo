@@ -130,8 +130,11 @@ Each chapter comes with one or more applications that focus on a specific compon
 The applications accompanying this book run with J2SE version 1.4. The zipped source files can be downloaded from the authors' web site [www.brainysoftware.com](http://www.brainysoftware.com/). It contains the source code for Tomcat 4.1.12 and the applications used in this book. Assuming you have installed J2SE 1.4 and your path environment variable includes the location of the JDK, follow these steps:
 
 1. Extractthezipfiles.Allextractedfileswillresideinanewdirectorycalled **HowTomcatWorks**. HowTomcatWorks is your working directory. There will be several subdirectories under HowTomcatWorks, including **lib** (containing all needed libraries), **src** (containing the source files), **webroot** (containing an HTML file and three sample servlets), and **webapps** (containing sample applications).
-2. Changedirectorytotheworkingdirectoryandcompilethejavafiles.Ifyou are using Windows, run the **win-compile.bat** file. If your computer is a Linux machine, type the following: (don't forget to chmod the file if necessary)./linux-compile.sh
+2. Changedirectorytotheworkingdirectoryandcompilethejavafiles.Ifyou are using Windows, run the **win-compile.bat** file. If your computer is a Linux machine, type the following: (don't forget to chmod the file if necessary)
+
+```
+./linux-compile.sh
+```
 
 Note More information can be found in the Readme.txt file included in the ZIP file.
 
-Note: All examples with Servlet API 3.1.0 and JDK 6

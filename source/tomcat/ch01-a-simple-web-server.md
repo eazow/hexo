@@ -31,8 +31,6 @@ http://www.w3.org/Protocols/HTTP/1.1/rfc2616.pdf.
 *understand the messages sent by web server applications. If you are interested*
 *in more details, read RFC 2616*
 
-
-
 In HTTP, it is always the client who initiates a transaction by establishing a
 connection and sending an HTTP request. The web server is in no position to
 contact a client or make a callback connection to the client. Either the client or the
@@ -95,7 +93,13 @@ important to the HTTP request format. The CRLF tells the HTTP server where the
 entity body begins. In some Internet programming books, this CRLF is considered
 the fourth component of an HTTP request.
 
+In the previous HTTP request, the entity body is simply the following line:
 
+```
+lastName=Franks&firstName=Michael
+```
+
+The entity body can easily become much longer in a typical HTTP request.
 
 
 
@@ -104,14 +108,10 @@ the fourth component of an HTTP request.
 Similar to an HTTP request, an HTTP response also consists of three parts:
 
 - Protocol—Status code—Description
-
 - Response headers
-
 - Entity body
 
-  
-
-  ###### The following is an example of an HTTP response:
+The following is an example of an HTTP response:
 
 ```
 HTTP/1.1 200 OK
@@ -133,8 +133,6 @@ Welcome to Brainy Software
 The first line of the response header is similar to the first line of the request header.
 The first line tells you that the protocol used is HTTP version 1.1, the request
 succeeded (200 = success), and that everything went okay.
-
-
 
 The response headers contain useful information similar to the headers in the request.
 The entity body of the response is the HTML content of the response itself. The
@@ -159,7 +157,7 @@ One of these constructors accepts the host name and the port number:
 public Socket (java.lang.String host, int port)
 ```
 
-where host is the remote machine name or IP address and port is the port number of
+where `host` is the remote machine name or IP address and `port` is the port number of
 the remote application. For example, to connect to yahoo.com at port 80, you would
 construct the following Socket object:
 
@@ -185,9 +183,9 @@ Socket socket = new Socket("127.0.0.1", "8080");
 OutputStream os = socket.getOutputStream();
 boolean autoflush = true;
 PrintWriter out = new PrintWriter(
-socket.getOutputStream(), autoflush);
+	socket.getOutputStream(), autoflush);
 BufferedReader in = new BufferedReader(
-new InputStreamReader( socket.getInputstream() ));
+	new InputStreamReader( socket.getInputstream() ));
 // send an HTTP request to the web server
 out.println("GET /index.jsp HTTP/1.1");
 out.println("Host: localhost:8080");
@@ -197,15 +195,17 @@ out.println();
 boolean loop = true;
 StringBuffer sb = new StringBuffer(8096);
 while (loop) {
-if ( in.ready() ) {
-int i=0;while (i!=-1) {
-i = in.read();
-sb.append((char) i);
+	if ( in.ready() ) {
+		int i=0;
+		while (i!=-1) {
+			i = in.read();
+			sb.append((char) i);
+		}
+		loop = false;
+	}
+	Thread.currentThread().sleep(50);
 }
-loop = false;
-}
-Thread.currentThread().sleep(50);
-}
+
 // display the response to the out console
 System.out.println(sb.toString());
 socket.close();
@@ -225,25 +225,11 @@ HTTP request in the code above.
 
 #### The ServerSocket Class
 
-The Socket class represents a "client" socket, i.e. a socket that you construct
-whenever you want to connect to a remote server application. Now, if you want to
-implement a server application, such as an HTTP server or an FTP server, you need
-a different approach. This is because your server must stand by all the time as it does
-not know when a client application will try to connect to it. In order for your
-application to be able to stand by all the time, you need to use the
-`java.net.ServerSocket` class. This is an implementation of a server socket.
+The Socket class represents a "client" socket, i.e. a socket that you construct whenever you want to connect to a remote server application. Now, if you want to implement a server application, such as an HTTP server or an FTP server, you need a different approach. This is because your server must stand by all the time as it does not know when a client application will try to connect to it. In order for your application to be able to stand by all the time, you need to use the `java.net.ServerSocket` class. This is an implementation of a server socket.
 
-`ServerSocket` is different from Socket. The role of a server socket is to wait for
-connection requests from clients. Once the server socket gets a connection request,
-it creates a Socket instance to handle the communication with the client.
+`ServerSocket` is different from Socket. The role of a server socket is to wait for connection requests from clients. Once the server socket gets a connection request, it creates a Socket instance to handle the communication with the client.
 
-To create a server socket, you need to use one of the four constructors the
-`ServerSocket` class provides. You need to specify the IP address and port number the
-server socket will be listening on. Typically, the IP address will be 127.0.0.1,
-meaning that the server socket will be listening on the local machine. The IP address
-the server socket is listening on is referred to as the binding address. Another
-important property of a server socket is its backlog, which is the maximum queue length of incoming connection requests before the server socket starts to refuse the
-incoming requests.
+To create a server socket, you need to use one of the four constructors the `ServerSocket` class provides. You need to specify the IP address and port number the server socket will be listening on. Typically, the IP address will be 127.0.0.1, meaning that the server socket will be listening on the local machine. The IP address the server socket is listening on is referred to as the binding address. Another important property of a server socket is its backlog, which is the maximum queue length of incoming connection requests before the server socket starts to refuse the incoming requests.
 
 One of the constructors of the ServerSocket class has the following signature:
 
@@ -251,3 +237,16 @@ One of the constructors of the ServerSocket class has the following signature:
 public ServerSocket(int port, int backLog, InetAddress bindingAddress);
 ```
 
+Notice that for this constructor, the binding address must be an instance of `java.net.InetAddress`. An easy way to construct an InetAddress object is by calling its static method `getByName`, passing a String containing the host name, such as in the following code.
+
+```
+InetAddress.getByName("127.0.0.1");
+```
+
+The following line of code constructs a ServerSocket that listens on port 8080 of the local machine. The ServerSocket has a backlog of 1.
+
+```
+new ServerSocket(8080, 1, InetAddress.getByName("127.0.0.1"));
+```
+
+Once you have a `ServerSocket` instance, you can tell it to wait for an incoming connection request to the binding address at the port the server socket is listening on. You do this by calling the `ServerSocket` class's accept method. This method will only return when there is a connection request and its return value is an instance of the Socket class. This Socket object can then be used to send and receive byte streams from the client application, as explained in the previous section, "The Socket Class". Practically, the accept method is the only method used in the application accompanying this chapter.
