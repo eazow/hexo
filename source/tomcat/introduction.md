@@ -46,7 +46,9 @@ Catalina is a very sophisticated piece of software, which was elegantly designed
 
 The block diagram in Figure I.1 is, of course, simplistic. Later in the following chapters you will unveil all smaller components one by one.
 
-Figure I.1: Catalina's main modules
+<img src="figureI_1.png" alt="image-20220830173407730" style="zoom:50%;" />
+
+*Figure I.1: Catalina's main modules*
 
 Now, back to Figure I.1, the connector is there to connect a request with the container. Its job is to construct a request object and a response object for each HTTP request it receives. It then passes processing to the container. The container receives the request and response objects from the connector and is responsible for invoking the servlet's service method.
 
