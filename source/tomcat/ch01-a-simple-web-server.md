@@ -250,3 +250,27 @@ new ServerSocket(8080, 1, InetAddress.getByName("127.0.0.1"));
 ```
 
 Once you have a `ServerSocket` instance, you can tell it to wait for an incoming connection request to the binding address at the port the server socket is listening on. You do this by calling the `ServerSocket` class's accept method. This method will only return when there is a connection request and its return value is an instance of the Socket class. This Socket object can then be used to send and receive byte streams from the client application, as explained in the previous section, "The Socket Class". Practically, the accept method is the only method used in the application accompanying this chapter.
+
+
+
+#### The Application
+
+Our web server application is part of the ex01.pyrmont package and consists of three
+classes:
+
+- HttpServer
+- Request
+- Response
+
+The entry point of this application (the static main method) can be found in the `HttpServer` class. The main method creates an instance of HttpServer and calls its await method. The await method, as the name implies, waits for HTTP requests on a designated port, processes them, and sends responses back to the clients. It keeps waiting until a shutdown command is received.
+
+The application cannot do more than sending static resources, such as HTML files and image files, residing in a certain directory. It also displays the incoming HTTP request byte streams on the console. However, it does not send any header, such as dates or cookies, to the browser.
+
+We will now take a look at the three classes in the following subsections.
+
+
+
+#### The HttpServer Class
+
+The HttpServer class represents a web server and is presented in Listing 1.1. Note that the await method is given in Listing 1.2 and is not repeated in Listing 1.1 to save space.
+
