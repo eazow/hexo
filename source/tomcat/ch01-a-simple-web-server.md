@@ -274,3 +274,43 @@ We will now take a look at the three classes in the following subsections.
 
 The HttpServer class represents a web server and is presented in Listing 1.1. Note that the await method is given in Listing 1.2 and is not repeated in Listing 1.1 to save space.
 
+Listing 1.1: The HttpServer Class
+
+```
+package ex01.pyrmont;
+import java.net.Socket;
+import java.net.ServerSocket;
+import java.net.InetAddress;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.IOException;
+import java.io.File;
+public class HttpServer {
+/** WEB_ROOT is the directory where our HTML and other files reside.
+* For this package, WEB_ROOT is the "webroot" directory under the
+* working directory.
+* The working directory is the location in the file system
+* from where the java command was invoked.
+*/
+    public static final String WEB_ROOT =
+         System.getProperty("user.dir") + File.separator + "webroot";
+    // shutdown command
+    private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
+
+    // the shutdown command received
+    private boolean shutdown = false;
+
+    public static void main(String[] args) {
+        HttpServer server = new HttpServer();
+
+        server.await();
+    }
+
+    public void await() {
+
+    }
+}
+```
+
+
+
