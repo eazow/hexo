@@ -358,3 +358,44 @@ public void await() {
 }
 ```
 
+This web server can serve static resources found in the directory indicated by the public static final WEB_ROOT and all subdirectories under it. WEB_ROOT is initialized as follows:
+
+```
+public static final String WEB_ROOT =
+    System.getProperty("user.dir") + File.separator + "webroot";
+```
+
+The code listings include a directory called webroot that contains some static
+resources that you can use for testing this application. You can also find several
+servlets in the same directory for testing applications in the next chapters.
+
+To request for a static resource, you type the following URL in your browser's
+Address or URL box:
+
+http://machineName:port/staticResource
+
+If you are sending a request from a different machine from the one running your
+application, machineName is the name or IP address of the computer running this
+application. If your browser is on the same machine, you can use localhost for the
+machineName.port is 8080 and staticResource is the name of the file requested and
+must reside in WEB_ROOT.
+
+For instance, if you are using the same computer to test the application and you want
+to ask the HttpServer object to send the index.html file, you use the following URL:
+
+http://localhost:8080/index.html
+
+To stop the server, you send a shutdown command from a web browser by typing the
+pre-defined string in the browser's Address or URL box, after the host:port section
+of the URL. The shutdown command is defined by the SHUTDOWN static final
+variable in the HttpServer class:
+
+```
+private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
+```
+
+Therefore, to stop the server, you use the following URL:
+
+http://localhost:8080/SHUTDOWN
+
+Now, let's look at the await method printed in Listing 1.2
