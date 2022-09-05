@@ -7,36 +7,17 @@ date: 2019-08-01
 
 
 
-This chapter explains how Java web servers work. A web server is also called a
-Hypertext Transfer Protocol (HTTP) server because it uses HTTP to communicate
-with its clients, which are usually web browsers. A Java-based web server uses two
-important classes: java.net.Socket and java.net.ServerSocket, and communications
-are done through HTTP messages. It is therefore natural to start this chapter with a
-discussion of HTTP and the two classes. Afterwards, it goes on to explain the simple
-web server application that accompanies this chapter.
+This chapter explains how Java web servers work. A web server is also called a Hypertext Transfer Protocol (HTTP) server because it uses HTTP to communicate with its clients, which are usually web browsers. A Java-based web server uses two important classes: java.net.Socket and java.net.ServerSocket, and communications are done through HTTP messages. It is therefore natural to start this chapter with a discussion of HTTP and the two classes. Afterwards, it goes on to explain the simple web server application that accompanies this chapter.
 
 
 
 #### The Hypertext Transfer Protocol (HTTP)
 
-HTTP is the protocol that allows web servers and browsers to send and receive data
-over the Internet. It is a request and response protocol. The client requests a file
-and the server responds to the request. HTTP uses reliable TCP connections—by
-default on TCP port 80. The first version of HTTP was HTTP/0.9, which was then
-overridden by HTTP/1.0. Replacing HTTP/1.0 is the current version of HTTP/1.1,
-which is defined in Request for Comments (RFC) 2616 and downloadable from
-http://www.w3.org/Protocols/HTTP/1.1/rfc2616.pdf.
+HTTP is the protocol that allows web servers and browsers to send and receive data over the Internet. It is a request and response protocol. The client requests a file and the server responds to the request. HTTP uses reliable TCP connections—by default on TCP port 80. The first version of HTTP was HTTP/0.9, which was then overridden by HTTP/1.0. Replacing HTTP/1.0 is the current version of HTTP/1.1, which is defined in Request for Comments (RFC) 2616 and downloadable from http://www.w3.org/Protocols/HTTP/1.1/rfc2616.pdf.
 
-*Note This section covers HTTP 1.1 only briefly and is intended to help you*
-*understand the messages sent by web server applications. If you are interested*
-*in more details, read RFC 2616*
+*Note This section covers HTTP 1.1 only briefly and is intended to help you understand the messages sent by web server applications. If you are interested in more details, read RFC 2616*
 
-In HTTP, it is always the client who initiates a transaction by establishing a
-connection and sending an HTTP request. The web server is in no position to
-contact a client or make a callback connection to the client. Either the client or the
-server can prematurely terminate a connection. For example, when using a web
-browser you can click the Stop button on your browser to stop the download process
-of a file, effectively closing the HTTP connection with the web server.
+In HTTP, it is always the client who initiates a transaction by establishing a connection and sending an HTTP request. The web server is in no position to contact a client or make a callback connection to the client. Either the client or the server can prematurely terminate a connection. For example, when using a web browser you can click the Stop button on your browser to stop the download process of a file, effectively closing the HTTP connection with the web server.
 
 
 
@@ -69,29 +50,15 @@ The method—URI—protocol version appears as the first line of the request.
 POST /examples/default.jsp HTTP/1.1
 ```
 
-where POST is the request method, /examples/default.jsp represents the URI and
-HTTP/1.1 the Protocol/Version section.
+where POST is the request method, /examples/default.jsp represents the URI and HTTP/1.1 the Protocol/Version section.
 
-Each HTTP request can use one of the many request methods as specified in the
-HTTP standards. The HTTP 1.1 supports seven types of request: GET, POST,
-HEAD, OPTIONS, PUT, DELETE, and TRACE. GET and POST are the most
-commonly used in Internet applications.
+Each HTTP request can use one of the many request methods as specified in the HTTP standards. The HTTP 1.1 supports seven types of request: GET, POST, HEAD, OPTIONS, PUT, DELETE, and TRACE. GET and POST are the most commonly used in Internet applications.
 
-The URI specifies an Internet resource completely. A URI is usually interpreted as
-being relative to the server's root directory. Thus, it should always begin with a
-forward slash /. A Uniform Resource Locator (URL) is actually a type of URI (see
-http://www.ietf.org/rfc/rfc2396.txt). The protocol version represents the version of
-the HTTP protocol being used.
+The URI specifies an Internet resource completely. A URI is usually interpreted as being relative to the server's root directory. Thus, it should always begin with a forward slash /. A Uniform Resource Locator (URL) is actually a type of URI (see http://www.ietf.org/rfc/rfc2396.txt). The protocol version represents the version of the HTTP protocol being used.
 
-The request header contains useful information about the client environment and the
-entity body of the request. For example, it could contain the language the browser is
-set for, the length of the entity body, and so on. Each header is separated by a
-carriage return/linefeed (CRLF) sequence.
+The request header contains useful information about the client environment and the entity body of the request. For example, it could contain the language the browser is set for, the length of the entity body, and so on. Each header is separated by a carriage return/linefeed (CRLF) sequence.
 
-Between the headers and the entity body, there is a blank line (CRLF) that is
-important to the HTTP request format. The CRLF tells the HTTP server where the
-entity body begins. In some Internet programming books, this CRLF is considered
-the fourth component of an HTTP request.
+Between the headers and the entity body, there is a blank line (CRLF) that is important to the HTTP request format. The CRLF tells the HTTP server where the entity body begins. In some Internet programming books, this CRLF is considered the fourth component of an HTTP request.
 
 In the previous HTTP request, the entity body is simply the following line:
 
@@ -130,53 +97,31 @@ Welcome to Brainy Software
 </html>
 ```
 
-The first line of the response header is similar to the first line of the request header.
-The first line tells you that the protocol used is HTTP version 1.1, the request
-succeeded (200 = success), and that everything went okay.
+The first line of the response header is similar to the first line of the request header. The first line tells you that the protocol used is HTTP version 1.1, the request succeeded (200 = success), and that everything went okay.
 
-The response headers contain useful information similar to the headers in the request.
-The entity body of the response is the HTML content of the response itself. The
-headers and the entity body are separated by a sequence of CRLFs.
+The response headers contain useful information similar to the headers in the request. The entity body of the response is the HTML content of the response itself. The headers and the entity body are separated by a sequence of CRLFs.
 
 
 
 #### The Socket Class
 
-A socket is an endpoint of a network connection. A socket enables an application to
-read from and write to the network. Two software applications residing on two
-different computers can communicate with each other by sending and receiving byte
-streams over a connection. To send a message from your application to another
-application, you need to know the IP address as well as the port number of the socket
-of the other application. In Java, a socket is represented by the java.net.Socket
-class.
+A socket is an endpoint of a network connection. A socket enables an application to read from and write to the network. Two software applications residing on two different computers can communicate with each other by sending and receiving byte streams over a connection. To send a message from your application to another application, you need to know the IP address as well as the port number of the socket of the other application. In Java, a socket is represented by the java.net.Socket class.
 
-To create a socket, you can use one of the many constructors of the Socket class.
-One of these constructors accepts the host name and the port number:
+To create a socket, you can use one of the many constructors of the Socket class. One of these constructors accepts the host name and the port number:
 
 ```
 public Socket (java.lang.String host, int port)
 ```
 
-where `host` is the remote machine name or IP address and `port` is the port number of
-the remote application. For example, to connect to yahoo.com at port 80, you would
-construct the following Socket object:
+where `host` is the remote machine name or IP address and `port` is the port number of the remote application. For example, to connect to yahoo.com at port 80, you would construct the following Socket object:
 
 ```
 new Socket ("yahoo.com", 80);
 ```
 
-Once you create an instance of the Socket class successfully, you can use it to send
-and receive streams of bytes. To send byte streams, you must first call the Socket
-class's getOutputStream method to obtain a `java.io.OutputStream` object. To send
-text to a remote application, you often want to construct a `java.io.PrintWriter`
-object from the OutputStream object returned. To receive byte streams from the
-other end of the connection, you call the Socket class's `getInputStream` method that
-returns a `java.io.InputStream`.
+Once you create an instance of the Socket class successfully, you can use it to send and receive streams of bytes. To send byte streams, you must first call the Socket class's getOutputStream method to obtain a `java.io.OutputStream` object. To send text to a remote application, you often want to construct a `java.io.PrintWriter` object from the OutputStream object returned. To receive byte streams from the other end of the connection, you call the Socket class's `getInputStream` method that returns a `java.io.InputStream`.
 
-The following code snippet creates a socket that can communicate with a local HTTP
-server (127.0.0.1 denotes a local host), sends an HTTP request, and receives the
-response from the server. It creates a StringBuffer object to hold the response and
-prints it on the console.
+The following code snippet creates a socket that can communicate with a local HTTP server (127.0.0.1 denotes a local host), sends an HTTP request, and receives the response from the server. It creates a StringBuffer object to hold the response and prints it on the console.
 
 ```
 Socket socket = new Socket("127.0.0.1", "8080");
@@ -211,15 +156,9 @@ System.out.println(sb.toString());
 socket.close();
 ```
 
-Note that to get a proper response from the web server, you need to send an HTTP
-request that complies with the HTTP protocol. If you have read the previous section,
-The Hypertext Transfer Protocol (HTTP), you should be able to understand the
-HTTP request in the code above.
+Note that to get a proper response from the web server, you need to send an HTTP request that complies with the HTTP protocol. If you have read the previous section, The Hypertext Transfer Protocol (HTTP), you should be able to understand the HTTP request in the code above.
 
-**Note** *You can use the com.brainysoftware.pyrmont.util.HttpSniffer class included*
-*with this book to send an HTTP request and display the response. To use this*
-*Java program, you must be connected to the Internet. Be warned, though, that*
-*it may not work if you are behind a firewall.*
+**Note** *You can use the com.brainy software.pyrmont.util.HttpSniffer class included with this book to send an HTTP request and display the response. To use this Java program, you must be connected to the Internet. Be warned, though, that it may not work if you are behind a firewall.*
 
 
 
@@ -255,8 +194,7 @@ Once you have a `ServerSocket` instance, you can tell it to wait for an incoming
 
 #### The Application
 
-Our web server application is part of the ex01.pyrmont package and consists of three
-classes:
+Our web server application is part of the ex01.pyrmont package and consists of three classes:
 
 - HttpServer
 - Request
@@ -365,30 +303,19 @@ public static final String WEB_ROOT =
     System.getProperty("user.dir") + File.separator + "webroot";
 ```
 
-The code listings include a directory called webroot that contains some static
-resources that you can use for testing this application. You can also find several
-servlets in the same directory for testing applications in the next chapters.
+The code listings include a directory called webroot that contains some static resources that you can use for testing this application. You can also find several servlets in the same directory for testing applications in the next chapters.
 
-To request for a static resource, you type the following URL in your browser's
-Address or URL box:
+To request for a static resource, you type the following URL in your browser's Address or URL box:
 
 http://machineName:port/staticResource
 
-If you are sending a request from a different machine from the one running your
-application, machineName is the name or IP address of the computer running this
-application. If your browser is on the same machine, you can use localhost for the
-machineName.port is 8080 and staticResource is the name of the file requested and
-must reside in WEB_ROOT.
+If you are sending a request from a different machine from the one running your application, machineName is the name or IP address of the computer running this application. If your browser is on the same machine, you can use localhost for the machineName.port is 8080 and staticResource is the name of the file requested and must reside in WEB_ROOT.
 
-For instance, if you are using the same computer to test the application and you want
-to ask the HttpServer object to send the index.html file, you use the following URL:
+For instance, if you are using the same computer to test the application and you want to ask the HttpServer object to send the index.html file, you use the following URL:
 
 http://localhost:8080/index.html
 
-To stop the server, you send a shutdown command from a web browser by typing the
-pre-defined string in the browser's Address or URL box, after the host:port section
-of the URL. The shutdown command is defined by the SHUTDOWN static final
-variable in the HttpServer class:
+To stop the server, you send a shutdown command from a web browser by typing the pre-defined string in the browser's Address or URL box, after the host:port section of the URL. The shutdown command is defined by the SHUTDOWN static final variable in the HttpServer class:
 
 ```
 private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
