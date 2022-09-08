@@ -325,4 +325,48 @@ Therefore, to stop the server, you use the following URL:
 
 http://localhost:8080/SHUTDOWN
 
-Now, let's look at the await method printed in Listing 1.2
+Now, let's look at the await method printed in Listing 1.2.
+
+The method name await is used instead of wait because wait is an important method in the java.lang.Object class for working with threads.
+
+The await method starts by creating an instance of ServerSocket and then going into a while loop.
+
+```
+serverSocket = new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
+...
+// Loop waiting for a request
+while (!shutdown) {
+    ...
+}
+```
+
+The code inside the while loop stops at the accept method of ServerSocket, which returns only when an HTTP request is received on port 8080:
+
+```
+socket = serverSocket.accept();
+```
+
+Upon receiving a request, the await method obtains java.io.InputStream and java.io.OutputStream objects from the Socket instance returned by the accept method.
+
+```
+input = socket.getInputStream();
+output = socket.getOutputStream();
+```
+
+The await method then creates an ex01.pyrmont.Request object and calls its parse method to parse the HTTP request raw data.
+
+```
+// create Request object and parse
+Request request = new Request(input);
+request.parse ();
+```
+
+Afterwards, the await method creates a Response object, sets the Request object to it, and calls its sendStaticResource method.
+
+```
+// create Response object
+Response response = new Response(output);
+response.setRequest(request);
+response.sendStaticResource();
+```
+
