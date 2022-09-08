@@ -370,3 +370,19 @@ response.setRequest(request);
 response.sendStaticResource();
 ```
 
+Finally, the await method closes the Socket and calls the getUri method of Request to check if the URI of the HTTP request is a shutdown command. If it is, the shutdown variable is set to true and the program exits the while loop.
+
+```
+// Close the socket
+socket.close();
+
+//check if the previous URI is a shutdown command
+shutdown = request.getUri().equals(SHUTDOWN_COMMAND);
+```
+
+
+
+#### The Request Class
+
+
+
