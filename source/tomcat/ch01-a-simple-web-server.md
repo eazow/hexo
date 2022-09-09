@@ -384,5 +384,56 @@ shutdown = request.getUri().equals(SHUTDOWN_COMMAND);
 
 #### The Request Class
 
+The ex01.pyrmont.Request class represents an HTTP request. An instance of this class is constructed by passing the InputStream object obtained from a Socket that handles the communication with the client. You call one of the read methods of the InputStream object to obtain the HTTP request raw data.
 
+The Request class is offered in Listing 1.3. The Request class has two public methods, parse and getUri, which are given in Listings 1.4 and 1.5, respectively.
+
+Listing 1.3: The Request class
+
+```
+package ex01.pyrmont;
+
+import java.io.InputStream;
+import java.io.IOException;
+
+public class Request {
+		private InputStream input;
+		private String uri;
+		
+		public Request(InputStream input) {
+				this.input = input;
+		}
+    public void parse() {
+    		...
+    }
+    private String parseUri(String requestString) {...
+    }
+    public String getUri() {
+		    return uri;
+    }
+}
+```
+
+Listing 1.4: The Request class's parse method
+
+```
+public void parse() {
+    // Read a set of characters from the socket
+    StringBuffer request = new StringBuffer(2048);
+    int i;
+    byte[] buffer = new byte[2048];
+    try {
+        i = input.read(buffer);
+    }
+    catch (IOException e) {
+        e.printStackTrace();
+        i = -1;
+    }
+    for (int j=0; j<i; j++) {
+   			request.append((char) buffer[j]);
+    }
+		System.out.print(request.toString());
+    uri = parseUri(request.toString());
+}
+```
 
