@@ -437,3 +437,40 @@ public void parse() {
 }
 ```
 
+
+
+Listing 1.5: the Request class's parseUri method
+
+```
+private String parseUri(String requestString) {
+		int index1, index2;
+		index1 = requestString.indexOf(' ');
+  	if (index1 != -1) {
+			  index2 = requestString.indexOf(' ', index1 + 1);
+  			if (index2 > index1)
+  				return requestString.substring(index1 + 1, index2);
+  	}
+	  return null;
+}
+```
+
+The parse method parses the raw data in the HTTP request. Not much is done by this method. The only information it makes available is the URI of the HTTP request that it obtains by calling the private method parseUri. The parseUri method stores the URI in the uri variable. The public getUri method is invoked to return the URI of the HTTP request.
+
+*Note More processing of the HTTP request raw data will be done in the applications*
+*accompanying Chapter 3 and the subsequent chapters.*
+
+To understand how the parse and parseUri methods work, you need to know the structure of an HTTP request, discussed in the previous section, "The Hypertext Transfer Protocol (HTTP)". In this chapter, we are only interested in the first part of the HTTP request, the request line. A request line begins with a method token, followed by the request URI and the protocol version, and ends with carriage-return linefeed (CRLF) characters. Elements in a request line are separated by a space character. For instance, the request line for a request for the index.html file using the GET method is as follows.
+
+```
+GET /index.html HTTP/1.1
+```
+
+The parse method reads the whole byte stream from the socket's InputStream that is passed to the Request object and stores the byte array in a buffer. It then populates a StringBuffer object called request using the bytes in the buffer byte array, and passes the String representation of the StringBuffer to the parseUri method.
+
+The parse method is given in Listing 1.4.
+
+The parseUri method then obtains the URI from the request line. Listing 1.5 presents the parseUri method. The parseUri method searches for the first and the second spaces in the request and obtains the URI from it.
+
+
+
+#### The Response Class
