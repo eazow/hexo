@@ -1,6 +1,6 @@
 ---
 title: Kafka Quickstart
-tags: kafka
+tags: Kafka
 categories: Kafka
 date: 2019-09-10
 ---
