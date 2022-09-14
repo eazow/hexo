@@ -535,5 +535,34 @@ public class Response {
 }
 ```
 
+First note that its constructor accepts a java.io.OutputStream object, such as the following.
+
+```
+public Response(OutputStream output) {
+    this.output = output;
+}
+```
+
+A Response object is constructed by the HttpServer class's await method by passing
+the OutputStream object obtained from the socket.
+
+The Response class has two public methods: setRequest and sendStaticResource
+method. The setRequest method is used to pass a Request object to the Response
+object.
+
+The sendStaticResource method is used to send a static resource, such as an HTML
+file. It first instantiates the java.io.File class by passing the parent path and child
+path to the File class's constructor.
+
+```
+File file = new File(HttpServer.WEB_ROOT, request.getUri());
+```
+
+It then checks if the file exists. If it does, sendStaticResource constructs a
+java.io.FileInputStream object by passing the File object. Then, it invokes the read
+method of the FileInputStream and writes the byte array to the OutputStream output.
+Note that in this case the content of the static resource is sent to the browser as raw
+data.
+
 
 
