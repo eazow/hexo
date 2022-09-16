@@ -61,7 +61,7 @@ $ vim syscall_table.S
 ```
 
 修改/usr/src/linux-2.6.23.12/include/asm-i386/unistd.h
-添加`#define _ _NR_mysyscall 325`, 并将里面的 `#define NR_syscall 325`改为326, 增加更多的系统调用依此类推
+添加`#define __NR_mysyscall 325`, 并将里面的`#define NR_syscall 325`改为326, 增加更多的系统调用依此类推
 
 开始编译内核了
 ```
