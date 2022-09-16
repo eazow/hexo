@@ -543,26 +543,54 @@ public Response(OutputStream output) {
 }
 ```
 
-A Response object is constructed by the HttpServer class's await method by passing
-the OutputStream object obtained from the socket.
+A Response object is constructed by the HttpServer class's await method by passing the OutputStream object obtained from the socket.
 
-The Response class has two public methods: setRequest and sendStaticResource
-method. The setRequest method is used to pass a Request object to the Response
-object.
+The Response class has two public methods: setRequest and sendStaticResource method. The setRequest method is used to pass a Request object to the Response object.
 
-The sendStaticResource method is used to send a static resource, such as an HTML
-file. It first instantiates the java.io.File class by passing the parent path and child
-path to the File class's constructor.
+The sendStaticResource method is used to send a static resource, such as an HTML file. It first instantiates the java.io.File class by passing the parent path and child path to the File class's constructor.
 
 ```
 File file = new File(HttpServer.WEB_ROOT, request.getUri());
 ```
 
-It then checks if the file exists. If it does, sendStaticResource constructs a
-java.io.FileInputStream object by passing the File object. Then, it invokes the read
-method of the FileInputStream and writes the byte array to the OutputStream output.
-Note that in this case the content of the static resource is sent to the browser as raw
-data.
+It then checks if the file exists. If it does, sendStaticResource constructs a `java.io.FileInputStream` object by passing the File object. Then, it invokes the read method of the FileInputStream and writes the byte array to the OutputStream output. Note that in this case the content of the static resource is sent to the browser as raw data.
+
+```
+if (file.exists()) {
+    fis = new FileInputstream(file);
+    int ch = fis.read(bytes, 0, BUFFER_SIZE);
+    while (ch!=-1) {
+        output.write(bytes, 0, ch);
+        ch = fis.read(bytes, 0, BUFFER_SIZE);
+    }
+}
+```
+
+If the file does not exist, the sendStaticResource method sends an error message to the browser.
+
+```
+String errorMessage = "HTTP/1.1 404 File Not Found\r\n" +
+    "Content-Type: text/html\r\n" +
+    "Content-Length: 23\r\n" +
+    "\r\n" +
+    "<h1>File Not Found</h1>";
+output.write(errorMessage.getBytes())
+```
 
 
+
+#### Running the Application
+
+To run the application, from the working directory, type the following:
+
+```
+$ java ex01.pyront.HttpServer
+```
+
+To test the application, open your browser and type the following in the URL or
+Address box:
+
+http://localhost:8080/index.html
+
+You will see the index.html page displayed in your browser, as in Figure 1.1
 
