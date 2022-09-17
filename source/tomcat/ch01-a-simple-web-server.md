@@ -594,3 +594,36 @@ http://localhost:8080/index.html
 
 You will see the index.html page displayed in your browser, as in Figure 1.1
 
+<img src="/Users/01398068/hexo/hexo/source/tomcat/figure1.1.png" alt="image-20220917231611295" style="zoom: 50%;" />
+
+Figure 1.1: The output from the web server
+
+On the console, you can see the HTTP request similar to the following:
+
+```
+GET /index.html HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg,
+application/vnd.ms-excel, application/msword, application/vnd.mspowerpoint, application/x-shockwave-flash, application/pdf, */*
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR
+1.1.4322)
+Host: localhost:8080
+Connection: Keep-Alive
+GET /images/logo.gif HTTP/1.1
+Accept: */*
+Referer: http://localhost:8080/index.html
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR
+1.1.4322)
+Host: localhost:8080
+Connection: Keep-Alive
+```
+
+
+
+#### Summary
+
+In this chapter you have seen how a simple web server works. The application accompanying this chapter consists of only three classes and is not fully functional. Nevertheless, it serves as a good learning tool. The next chapter will discuss the processing of dynamic contents.
+
