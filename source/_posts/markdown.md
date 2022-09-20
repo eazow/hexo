@@ -1,7 +1,7 @@
 ---
 title: Markdown参考
 date: 2016-03-25 16:21:21
-type: tags
+Categories: Coding
 tags: Markdown
 ---
 
@@ -27,14 +27,14 @@ tags: Markdown
 * 列表2
 * 列表3
 
-***  //分割线
+***  // 分割线
 
-//上标，下标
+// 上标，下标
 num^2^
 num~i~
 
-//图片
-![Osterseen Aerial](http://upload-images.jianshu.io/...)  
+// Image
+![Image](https://eazow.com/imgs/demo.jpg)  
 ```
 ##### 对应效果如下
 
@@ -57,7 +57,4 @@ num~i~
 
 ***
 
-![Osterseen Aerial](http://upload-images.jianshu.io/upload_images/1425939-886799a85be8112c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-##### 参考
-http://daringfireball.net/projects/markdown/
+![Demo](/images/markdown-demo.jpg)
