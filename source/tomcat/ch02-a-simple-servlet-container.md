@@ -42,3 +42,19 @@ The classes for both applications are part of the ex02.pyrmont package. To under
 
 
 #### The javax.servlet.Servlet Interface
+
+Servlet programming is made possible through the classes and interfaces in two packages: javax.servlet and javax.servlet.http. Of those classes and interfaces, the `javax.servlet.Servlet` interface is of the utmost importance. All servlets must implement this interface or extend a class that does.
+
+The Servlet interface has five methods whose signatures are as follows.
+
+```
+public void init(ServletConfig config) throws ServletException
+public void service(ServletRequest request, ServletResponse response)
+    throws ServletException, java.io.IOException
+public void destroy()
+public ServletConfig getServletConfig()
+public java.lang.String getServletInfo()
+```
+
+
+
