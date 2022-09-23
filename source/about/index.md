@@ -32,6 +32,10 @@ date: 2016-02-28 18:15:11
 <br/>
 
 
- <!-- ![](https://s1.ax1x.com/2022/07/28/vCn1Fx.png) -->
-![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/ability.jpeg)
+![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/ability.png)
+
+<!-- ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/languages.png)
+![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/technologies.png)
+ -->
+
 
