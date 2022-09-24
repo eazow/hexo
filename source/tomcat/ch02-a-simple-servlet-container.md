@@ -64,3 +64,22 @@ The servlet container calls the destroy method before removing a servlet instanc
 
 Listing 2.1 presents the code for a servlet named PrimitiveServlet, which is a very simple servlet that you can use to test the servlet container applications in this chapter. The PrimitiveServlet class implements javax.servlet.Servlet (as all servlets must) and provides implementations for all the five methods of Servlet. What PrimitiveServlet does is very simple. Each time any of the init, service, or destroy methods is called, the servlet writes the method's name to the standard console. In addition, the service method obtains the java.io.PrintWriter object from the ServletResponse object and sends strings to the browser.
 
+#### Application 1
+
+Now, let's examine servlet programming from a servlet container's perspective. In a nutshell, a fully-functional servlet container does the following for each HTTP request for a servlet:
+
+- When the servlet is called for the first time, load the servlet class and call the servlet's init method (once only)
+- For each request, construct an instance of javax.servlet.ServletRequest and an instance of javax.servlet.ServletResponse.
+- Invoke the servlet's service method, passing the ServletRequest and ServletResponse objects.
+- When the servlet class is shut down, call the servlet's destroy method and unload the servlet class.
+
+The first servlet container for this chapter is not fully functional. Therefore, it cannot run other than very simple servlets and does not call the servlets' init and destroy methods. Instead, it does the following:
+
+- Wait for HTTP requests.
+- Construct a ServletRequest object and a ServletResponse object.
+- If the request is for a static resource, invoke the process method of the StaticResourceProcessor instance, passing the ServletRequest and ServletResponse objects.
+- If the request is for a servlet, load the servlet class and invoke the service method of the servlet, passing the ServletRequest and ServletResponse objects.
+
+Note In this servlet container, the servlet class is loaded every time the servlet is requested.
+
+
