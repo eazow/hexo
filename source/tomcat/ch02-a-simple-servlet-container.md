@@ -82,4 +82,46 @@ The first servlet container for this chapter is not fully functional. Therefore,
 
 Note In this servlet container, the servlet class is loaded every time the servlet is requested.
 
+The first application consists of six classes:
+- HttpServer1
+- Request
+- Response
+- StaticResourceProcessor
+- ServletProcessor1
+- Constants
+
+Figure 2.1 displays the UML diagram of the first servlet container.
+
+![](imgs/figure2-1.png)
+Figure 2.1: The UML diagram of the first servlet container
+
+
+The entry point of this application (the static main method) is in the HttpServer1 class. The main method creates an instance of HttpServer1 and calls its await method. The await method waits for HTTP requests, creates a Request object and a Response object for every request, and dispatch them either to a StaticResourceProcessor instance or a ServletProcessor instance, depending on whether the request is for a static resource or a servlet.
+
+The Constants class contains the static final WEB_ROOT that is referenced from other classes. WEB_ROOT indicates the location of PrimitiveServlet and the static resource that can be served by this container.
+
+The HttpServer1 instance keeps waiting for HTTP requests until a shutdown command is received. You issue a shutdown command the same way as you did it in Chapter 1.
+
+Each of the classes in the application is discussed in the following sections.
+
+
+#### The HttpServer1 Class
+
+The HttpServer1 class in this application is similar to the HttpServer class in the simple web server application in Chapter 1. However, in this application the HttpServer1 class can serve both static resources and servlets. To request a static resource, you type a URL in the following format in your browser's Address or URL box:
+
+http://machineName:port/staticResource
+
+This is exactly how you requested a static resource in the web server application in Chapter 1.
+
+To request a servlet, you use the following URL:
+
+http://machineName:port/servlet/servletClass
+
+Therefore, if you are using a browser locally to request a servlet called PrimitiveServlet, you enter the following URL in the browser's Address or URL box:
+
+http://localhost:8080/servlet/PrimitiveServlet
+
+This servlet container can serve PrimitiveServlet. However, if you invoke the other servlet, ModernServlet, the servlet container will throw an exception. At the later chapters, you will build applications that can process both.
+
+The HttpServer1 class is presented in Listing 2.2.
 
