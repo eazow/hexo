@@ -21,13 +21,16 @@ categories: Linux
 
 ```
 $ tar jvxf linux-2.6.23.12.tar.gz2
-``` 
+```
 或者是
 ```
 $ tar zxvf linux-2.6.23.12.tar.gz
 ```
 
-##### 增加系统调用
+
+
+#### 增加系统调用
+
 修改sys.c
 ```
 $ cd /usr/src/linux-2.6.23.12
