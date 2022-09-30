@@ -46,7 +46,7 @@ Catalina is a very sophisticated piece of software, which was elegantly designed
 
 The block diagram in Figure I.1 is, of course, simplistic. Later in the following chapters you will unveil all smaller components one by one.
 
-<img src="figureI_1.png" alt="image-20220830173407730" style="zoom:50%;" />
+<img src="imgs/figure0-1.png" alt="image-20220830173407730" style="zoom:50%;" />
 
 *Figure I.1: Catalina's main modules*
 

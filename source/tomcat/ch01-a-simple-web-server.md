@@ -594,7 +594,7 @@ http://localhost:8080/index.html
 
 You will see the index.html page displayed in your browser, as in Figure 1.1
 
-<img src="/Users/01398068/hexo/hexo/source/tomcat/figure1.1.png" alt="image-20220917231611295" style="zoom: 50%;" />
+<img src="imgs/figure1-1.png" alt="image-20220917231611295" style="zoom: 50%;" />
 
 Figure 1.1: The output from the web server
 
