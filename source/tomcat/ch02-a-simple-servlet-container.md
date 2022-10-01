@@ -222,3 +222,140 @@ Otherwise, the request is passed to the StaticResourceProcessor instance. Notice
 
 A servlet's service method receives a javax.servlet.ServletRequest instance and a javax.servlet.ServletResponse instance from the servlet container. This is to say that for every HTTP request, a servlet container must construct a ServletRequest object and a ServletResponse object and pass them to the service method of the servlet it is serving.
 
+The ex02.pyrmont.Request class represents a request object to be passed to the servlet's service method. As such, it must implement the javax.servlet.ServletRequest interface. This class has to provide implementations for all methods in the interface. However, we would like to make it very simple and provide the implementations of some of the methods only we leave the full method implementations for the chapters to come. In order to compile the Request class, you sneed to provide "blank" implementations for those methods. If you look at the Request class in Listing 2.3, you will see that all methods whose signatures return an object instance return a null.
+
+Listing 2.3: The Request class
+
+```
+package ex02.pyrmont;
+import java.io.InputStream;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.UnsupportedEncodingException;
+import java.util.Enumeration;
+import java.util.Locale;
+import java.util.Map;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletInputStream;
+import javax.servlet.ServletRequest;
+
+
+public class Request implements ServletRequest {
+    private InputStream input;
+    private String uri;
+
+    public Request(InputStream input){
+        this.input = input;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    private String parseUri(String requestString) {
+        int index1, index2;
+        index1 = requestString.indexOf(' ');
+        if (index1 != -1) {
+            index2 = requestString.indexOf(' ', index1 + 1);
+            if (index2 > index1)
+                return requestString.substring(index1 + 1, index2);
+        }
+        return null;
+    }
+
+    public void parse() {
+        // Read a set of characters from the socket
+        StringBuffer request = new StringBuffer(2048);
+        int i;
+        byte[] buffer = new byte[2048];
+        try {
+        i = input.read(buffer);
+        }
+        catch (IOException e) {
+        e.printStackTrace();
+        i = -1;
+        }
+        for (int j=0; j<i; j++) {
+            request.append((char) buffer(j));
+        }
+        System.out.print(request.toString());
+        uri = parseUri(request.toString());
+    }
+    
+    /* implementation of ServletRequest */
+    public Object getAttribute(String attribute) {
+        return null;
+    }
+
+    public Enumeration getAttributeNames() {
+        return null;
+    }
+
+    public String getRealPath(String path) {
+        return null;
+    }
+
+    public RequestDispatcher getRequestDispatcher(String path) {
+        return null;
+    }
+    public boolean isSecure() {
+        return false;
+    }
+    public String getCharacterEncoding() {
+        return null;
+    }
+    public int getContentLength() {
+        return 0;
+    }
+    public String getContentType() {
+        return null;
+    }
+    public ServletInputStream getInputStream() throws IOException {
+        return null;
+    }
+    public Locale getLocale() {
+        return null;
+    }
+    public Enumeration getLocales() {
+        return null;
+    }
+    public String getParameter(String name) {
+        return null;
+    }
+    public Map getParameterMap() {
+        return null;
+    }
+    public Enumeration getParameterNames() {
+        return null;
+    }
+    public String[] getParameterValues(String parameter) {
+        return null;
+    }
+    public String getProtocol() {
+        return null;
+    }
+    public BufferedReader getReader() throws IOException {
+        return null;
+    }
+    public String getRemoteAddr() {
+        return null;
+    }
+    public String getRemoteHost() {
+        return null;
+    }
+    public String getScheme() {
+        return null;
+    }
+    public String getServerName() {
+        return null;
+    }
+    public int getServerPort() {
+        return 0;
+    }
+    public void removeAttribute(String attribute) { }
+    public void setAttribute(String key, Object value) { }
+    public void setCharacterEncoding(String encoding)
+        throws UnsupportedEncodingException { }
+}
+```
+
