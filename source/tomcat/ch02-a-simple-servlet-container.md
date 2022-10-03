@@ -432,25 +432,25 @@ public class Response implements ServletResponse {
     /** implementation of ServletResponse */
     public void flushBuffer() throws IOException ( }
     public int getBufferSize() {
-    return 0;
+        return 0;
     }
     public String getCharacterEncoding() {
-    return null;
+        return null;
     }
     public Locale getLocale() {
-    return null;
+        return null;
     }
     public ServletOutputStream getOutputStream() throws IOException {
-    return null;
+        return null;
     }
     public PrintWriter getWriter() throws IOException {
-    // autoflush is true, println() will flush,
-    // but print() will not.
-    writer = new PrintWriter(output, true);
-    return writer;
+        // autoflush is true, println() will flush,
+        // but print() will not.
+        writer = new PrintWriter(output, true);
+        return writer;
     }
     public boolean isCommitted() {
-    return false;
+        return false;
     }
     public void reset() { }
     public void resetBuffer() { }
@@ -461,4 +461,8 @@ public class Response implements ServletResponse {
 }
 ```
 
+In the getWriter method, the second argument to the PrintWriter class's constructor is a boolean indicating whether or not autoflush is enabled. Passing true as the second argument will make any call to a println method flush the output. However, a print method does not flush the output.
 
+Therefore, if a call to a print method happens to be the last line in a servlet's service method, the output will not be sent to the browser. This imperfection will be fixed in the later applications.
+
+The Response class still has the sendStaticResource method discussed in Chapter 1.
