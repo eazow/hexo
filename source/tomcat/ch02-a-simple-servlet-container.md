@@ -466,3 +466,30 @@ In the getWriter method, the second argument to the PrintWriter class's construc
 Therefore, if a call to a print method happens to be the last line in a servlet's service method, the output will not be sent to the browser. This imperfection will be fixed in the later applications.
 
 The Response class still has the sendStaticResource method discussed in Chapter 1.
+
+
+#### The StaticResourceProcessor Class
+
+The ex02.pyrmont.StaticResourceProcessor class is used to serve requests for static resources. The only method it has is the process method. Listing 2.5 offers the StaticResourceProcessor class.
+
+Listing 2.5: The StaticResourceProcessor class
+```
+package ex02.pyrmont;
+
+import java.io.IOException;
+
+public class StaticResourceProcessor {
+    public void process(Request request, Response response) {
+        try {
+            response.sendStaticResource();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+
+The process method receives two arguments: an ex02.pyrmont.Request instance and an ex02.pyrmont.Response instance. This method simply calls the
+sendStaticResource method on the Response object.
