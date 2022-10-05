@@ -493,3 +493,89 @@ public class StaticResourceProcessor {
 
 The process method receives two arguments: an ex02.pyrmont.Request instance and an ex02.pyrmont.Response instance. This method simply calls the
 sendStaticResource method on the Response object.
+
+
+#### The ServletProcessor1 Class
+
+The ex02.pyrmont.ServletProcessor1 class in Listing 2.6 is there to process HTTP requests for servlets.
+
+Listing 2.6: The ServletProcessor1 class
+```
+package ex02.pyrmont;
+
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.net.URLStreamHandler;
+import java.io.File;
+import java.io.IOException;
+import javax.servlet.Servlet;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+
+public class ServletProcessor1 {
+    public void process(Request request, Response response) {
+        String uri = request.getUri();
+        String servletName = uri.substring(uri.lastIndexOf("/") + 1);
+        URLClassLoader loader = null;
+        
+        try {
+            // create a URLClassLoader
+            URL[] urls = new URL[1];
+            URLStreamHandler streamHandler = null;
+            File classPath = new File(Constants.WEB_ROOT);
+            // the forming of repository is taken from the
+            // createClassLoader method in
+            // org.apache.catalina.startup.ClassLoaderFactory
+            String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString();
+            // the code for forming the URL is taken from
+            // the addRepository method in
+            // org.apache.catalina.loader.StandardClassLoader.
+            urls[0] = new URL(null, repository, streamHandler);
+            loader = new URLClassLoader(urls);
+        }
+        catch (IOException e) {
+            System.out.println(e.toString());
+        }
+
+        Class myClass = null;
+        try {
+            myClass = loader.loadClass(servletName);
+        }
+        catch (ClassNotFoundException e) {
+            System.out.println(e.toString());
+        }
+
+        Servlet servlet = null;
+        try {
+            servlet = (Servlet) myClass.newInstance();
+            servlet.service((ServletRequest) request,
+            (ServletResponse) response);
+        }
+        catch (Exception e) {
+            System.out.println(e.toString());
+        }
+        catch (Throwable e) {
+            System.out.println(e.toString());
+        }
+    }
+}
+```
+
+The ServletProcessor1 class is surprisingly simple, consisting only of one method: process. This method accepts two arguments: an instance of
+javax.servlet.ServletRequest and an instance of javax.servlet.ServletResponse. From the ServletRequest, the method obtains the URI by calling the getRequestUri method:
+```
+String uri = request.getUri();
+```
+
+Remember that the URI is in the following format:
+
+/servlet/servletName
+
+where servletName is the name of the servlet class.
+
+To load the servlet class, we need to know the servlet name from the URI. We can get the servlet name using the next line of the process method:
+```
+String servletName = uri.substring(uri.lastIndexOf("/") + 1);
+```
+
