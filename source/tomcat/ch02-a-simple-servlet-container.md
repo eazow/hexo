@@ -579,3 +579,88 @@ To load the servlet class, we need to know the servlet name from the URI. We can
 String servletName = uri.substring(uri.lastIndexOf("/") + 1);
 ```
 
+Next, the process method loads the servlet. To do this, you need to create a class loader and tell this class loader the location to look for the class to be loaded. For this servlet container, the class loader is directed to look in the directory pointed by Constants.WEB_ROOT, which points to the webroot directory under the working directory.
+
+Note Class loaders are discussed in detail in Chapter 8.
+
+To load a servlet, you use the java.net.URLClassLoader class, which is an indirect child class of the java.lang.ClassLoader class. Once you have an instance of URLClassLoader, you use its loadClass method to load a servlet class. Instantiating the URLClassLoader class is straightforward. This class has three constructors, the simplest of which being:
+```
+public URLClassLoader(URL[] urls);
+```
+
+where urls is an array of java.net.URL objects pointing to the locations on which searches will be conducted when loading a class. Any URL that ends with a / is assumed to refer to a directory. Otherwise, the URL is assumed to refer to a JAR file, which will be downloaded and opened as needed.
+
+Note In a servlet container, the location where a class loader can find servlet classes is called a repository.
+
+In our application, there is only one location that the class loader must look, i.e. the webroot directory under the working directory. Therefore, we start by creating an array of a single URL. The URL class provides a number of constructors, so there are many ways of constructing a URL object. For this application, we used the same constructor used in another class in Tomcat. The constructor has the following signature.
+
+```
+public URL(URL context, java.lang.String spec, URLStreamHandler hander) throws MalformedURLException
+```
+
+You can use this constructor by passing a specification for the second argument and null for both the first and the third arguments. However, there is another constructor that accepts three arguments:
+
+```
+public URL(java.lang.String protocol, java.lang.String host, java.lang.String file) throws MalformedURLException
+```
+
+Therefore, the compiler will not know which constructor you mean if you simply write the following code:
+```
+new URL(null, aString, null);
+```
+
+You can get around this by telling the compiler the type of the third argument, like this.
+
+```
+URLStreamHandler streamHandler = null;
+new URL(null, aString, streamHandler);
+```
+
+For the second argument, you pass a String containing the repository (the directory where servlet classes can be found), which you form by using the following code:
+
+```
+String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString();
+```
+
+Combining all the pieces together, here is the part of the process method that constructs the appropriate URLClassLoader instance:
+
+```
+// create a URLClassLoader
+URL[] urls = new URL[1];
+URLStreamHandler streamHandler = null;
+File classPath = new File(Constants.WEB_ROOT);
+String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString();
+urls[0] = new URL(null, repository, streamHandler);
+loader = new URLClassLoader(urls);
+```
+
+Note The code that forms the repository is taken from the createClassLoader method in org.apache.catalina.startup.ClassLoaderFactory and the code for forming the URL is taken from the addRepository method in org.apache.catalina.loader.StandardClassLoader. However, you don't have to
+worry about these classes until the later chapters.
+
+Having a class loader, you can load a servlet class using the loadClass method:
+```
+Class myClass = null;
+try {
+    myClass = loader.loadClass(servletName);
+}
+catch (ClassNotFoundException e) {
+    System.out.println(e.toString());
+}
+```
+
+Next, the process method creates an instance of the servlet class loaded, downcasts it to javax.servlet.Servlet, and invokes the servlet's service method:
+```
+Servlet servlet = null;
+try {
+    servlet = (Servlet) myClass.newInstance();
+    servlet.service((ServletRequest) request, (ServletResponse) response);
+}
+catch (Exception e) {
+    System.out.println(e.toString());
+}
+catch (Throwable e) {
+    System.out.println(e.toString());
+}
+```
+
+#### Running the Application
