@@ -664,3 +664,40 @@ catch (Throwable e) {
 ```
 
 #### Running the Application
+
+To run the application on Windows, type the following command from the working directory:
+```
+java -classpath ./lib/servlet.jar;./ ex02.pyrmont.HttpServer1
+```
+
+In Linux, you use a colon to separate two libraries:
+```
+java -classpath ./lib/servlet.jar:./ ex02.pyrmont.HttpServer1
+```
+
+To test the application, type the following in your URL or Address box of your browser:
+http://localhost:8080/index.html
+or
+http://localhost:8080/servlet/PrimitiveServlet
+
+When invoking PrimitiveServlet, you will see the following text in your browser:
+Hello. Roses are red.
+
+Note that you cannot see the second string Violets are blue, because only the first string is flushed to the browser. We will fix this problem in Chapter 3, though.
+
+
+#### Application 2
+
+There is a serious problem in the first application. In the ServletProcessor1 class's process method, you upcast the instance of ex02.pyrmont.Request to javax.servlet.ServletRequest and pass it as the first argument to the servlet's service method. You also upcast the instance of ex02.pyrmont.Response to javax.servlet.ServletResponse and pass it as the second argument to the servlet's service method.
+
+```
+try {
+    servlet = (Servlet) myClass.newInstance();
+    servlet.service((ServletRequest) request, (ServletResponse) response);
+}
+```
+
+This compromises security. Servlet programmers who know the internal workings of this servlet container can downcast the ServletRequest and ServletResponse instances back to ex02.pyrmont.Request and ex02.pyrmont.Response respectively and call their public methods. Having a Request instance, they can call its parse method. Having a Response instance, they can call its sendStaticResource method.
+
+You cannot make the parse and sendStaticResource methods private because they will be called from other classes. However, these two methods are not supposed to be available from inside a servlet. One solution is to make both Request and Response classes have default access modifier, so that they cannot be used from outside the ex02.pyrmont package. However, there is a more elegant solution: by using facade classes. See the UML diagram in Figure 2.2.
+
