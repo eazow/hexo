@@ -701,3 +701,7 @@ This compromises security. Servlet programmers who know the internal workings of
 
 You cannot make the parse and sendStaticResource methods private because they will be called from other classes. However, these two methods are not supposed to be available from inside a servlet. One solution is to make both Request and Response classes have default access modifier, so that they cannot be used from outside the ex02.pyrmont package. However, there is a more elegant solution: by using facade classes. See the UML diagram in Figure 2.2.
 
+In this second application, we add two façade classes: RequestFacade and ResponseFacade. RequestFacade implements the ServletRequest interface and is instantiated by passing a Request instance that it assigns to a ServletRequest object reference in its constructor. Implementation of each method in the ServletRequest interface invokes the corresponding method of the Request object. However, the ServletRequest object itself is private and cannot be accessed from outside the class. Instead of upcasting the Request object to ServletRequest and passing it to theservice method, we construct a RequestFacade object and pass it to the service method. Servlet programmers can still downcast the ServletRequest instance back to RequestFacade, however they can only access the methods available in the ServletRequest interface. Now, the parseUri method is safe.
+
+Listing 2.7 shows an incomplete RequestFacade class.
+
