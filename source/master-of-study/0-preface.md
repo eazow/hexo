@@ -1,4 +1,9 @@
-### 序
+---
+title: 序
+date: 2022-10-09
+categories: Reading
+tags: Method
+---
 
 
 
