@@ -705,3 +705,4 @@ In this second application, we add two façade classes: RequestFacade and Respon
 
 Listing 2.7 shows an incomplete RequestFacade class.
 
+    
