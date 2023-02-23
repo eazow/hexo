@@ -1,6 +1,6 @@
 ---
 title: 
-date: 2016-02-28 18:15:11
+date: 2013-02-22
 
 ---
 
@@ -8,14 +8,22 @@ date: 2016-02-28 18:15:11
 {% cq %}
 
 <!-- {{ ["唯一不变的就是变化","我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的"] | random }} -->
-世界上唯一不变的就是变化
+<!-- 世界上唯一不变的就是变化 -->
 
-我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的
+<!-- 我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的 -->
+
+
+
+If you are at the top of your life, remember to stay humble.
+If you are at the bottom of your life, remember to stay courageous.
+If you are in a problem, remember to stay calm.
+Always remember, stay kind and positive.
 
 {% endcq %}
 
 <!-- 
-> 唯一不变的就是变化
+
+> 世界上唯一不变的就是变化
 >
 > 我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的
  -->
@@ -37,5 +45,4 @@ date: 2016-02-28 18:15:11
 <!-- ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/languages.png)
 ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/technologies.png)
  -->
-
 
