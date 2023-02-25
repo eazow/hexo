@@ -16,7 +16,7 @@ date: 2019-02-01 15:01:20
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|Hard|[Regular Expression Matching](https://www.jianshu.com/p/a26a54fab687)|
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|Medium|[Integer to Roman](http://www.jianshu.com/p/e0bd6ab68df3)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Generate Parentheses](http://www.jianshu.com/p/ff0ef6914107) |
-|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](/leetcode39-combination-sum/)|
+|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| Medium | [Combination Sum](/leetcode/39-combination-sum/) |
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|Hard|[Trapping Rain Water](https://www.jianshu.com/p/6104f19eec85)|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| Medium | [Binary Tree Inorder Traversal(简书)](http://www.jianshu.com/p/c117026c269a)|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| Medium | [Convert Sorted Array to Binary Search Tree](http://www.jianshu.com/p/9ed4e9bef533) |

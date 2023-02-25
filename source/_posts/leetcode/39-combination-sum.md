@@ -1,5 +1,5 @@
 ---
-title: [LeetCode]39. Combination Sum
+title: "[LeetCode]39. Combination Sum"
 date: 2016-08-19 16:42:04
 tags: LeetCode
 category: Coding
