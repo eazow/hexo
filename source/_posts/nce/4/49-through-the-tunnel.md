@@ -1,6 +1,6 @@
 ---
-title: NCE4 Lesson 49 Though the Tunnel
-date: 2018-08-08 15:20:12
+title: Lesson 49 Though the Tunnel
+date: 2018-08-08
 tags: English
 categories: English
 ---

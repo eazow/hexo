@@ -19,7 +19,7 @@ But exactly how does a newcomer to the stock market go about achieving that?
 
 
 
-Well, if you go to five reputable stock brokers and ask them what you should do with your money, you're likely to get five different answers, — even if you give all the relevant information about your age age, family, finances and what you want from your investments. 
+Well, if you go to five reputable stockbrokers and ask them what you should do with your money, you're likely to get five different answers, — even if you give all the relevant information about your age age, family, finances and what you want from your investments. 
 
 Moral? There is no one "right" way to structure a portfolio.
 
