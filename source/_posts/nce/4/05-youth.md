@@ -1,12 +1,11 @@
 ---
 title: Lesson 05 Youth
-date: 2018-01-20
+date: 2018-01-10
 tags: English
 categories: English
 ---
 
 > How does the writer like to treat young people?
-
 
 
 People are always talking about 'the problem of youth'. If there is one—which I take leave to doubt—then it is older people who create it, not the young themselves. Let us get down to **fundamentals** and agree that the young are after all human beings—people just like their elders. There is only one difference between an old man and a young one: the young man has a **glorious** future before him and the old one has a **splendid** future behind him: and maybe that is where the **rub** is.
