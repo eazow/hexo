@@ -11,13 +11,11 @@ categories: English
 
 <p align="right"><b>Steve Jobs</b></p>
 
-I am honored to be with you today at your commencement from one of the finest universities in the world.Truth be told, I never graduated from college, and this is the closest I've ever gotten to a college graduation. Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
+I am honored to be with you today at your commencement from one of the finest universities in the world. Truth be told, I never graduated from college, and this is the closest I've ever gotten to a college graduation. Today I want to tell you three stories from my life. That's it. No big deal. Just three stories.
 
 
 
 #### The first story is about connecting the dots.
-
-
 
 I dropped out of Reed College after the first 6 months, but then stayed around as a drop-in for another 18 months or so before I really quit. So why did I drop out?
 
