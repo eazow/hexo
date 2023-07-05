@@ -21,6 +21,10 @@ Always remember, stay kind and positive.
 
 {% endcq %}
 
+<br/>
+
+> *What I cannot create, I do not understand — Richard Feynman.*
+
 <!-- 
 
 > 世界上唯一不变的就是变化
