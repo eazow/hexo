@@ -1,10 +1,9 @@
 ---
 title: Fake data
-date: 2023-07-03 23:56:31
-tags:
-categories:
+date: 2023-01-02 12:56:31
+tags: 
+categories: Coding
 ---
-
 
 
 当测试程序需要数据时，可以通过faker来构造测试数据
@@ -56,7 +55,7 @@ for _ in range(10):
 # '184.148.193.249'
 ```
 
-
+<!-- more -->
 
 ### 提供的providers
 
