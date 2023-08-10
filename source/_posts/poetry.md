@@ -1,10 +1,11 @@
 ---
 title: 我喜欢的古诗词
-date: 2023-08-06 17:23:39
-tags:
-categories:
+date: 2023-02-06 17:20:12
+tags: Poetry
+categories: Life
 ---
 
+读书时不太能读懂诗词，年纪大了便能体会到其中的韵味和阅历
 
 
 #### 将进酒
