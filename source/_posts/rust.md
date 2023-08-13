@@ -6,7 +6,6 @@ categories: Coding
 ---
 
 
-
 ### 安装
 
 ```
@@ -19,9 +18,8 @@ curl https:``//sh.rustup.rs -sSf | sh
 Rust is installed now. Great!
 ```
 
-
-
 ### 快速参考
+<!-- more -->
 
 ```
 // This is a comment. Line comments look like this...
