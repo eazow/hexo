@@ -6,6 +6,11 @@ categories: Coding
 ---
 
 
+
+###### <img src="images/rust.png" style="zoom:35%;" />
+
+
+
 ### 安装
 
 ```
@@ -18,7 +23,10 @@ curl https:``//sh.rustup.rs -sSf | sh
 Rust is installed now. Great!
 ```
 
+
+
 ### 快速参考
+
 <!-- more -->
 
 ```
@@ -333,6 +341,30 @@ fn main() {
     ref_var2; // no-op, but counts as a use and keeps the borrow active until here
 }
 ```
+
+
+
+### Rustlings
+
+此项目包含一些小练习，帮助习惯读写 Rust 代码，包括读取和响应编译器消息
+
+```
+curl -L https:``//raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
+```
+
+
+
+### Rust By Example
+
+https://doc.rust-lang.org/rust-by-example/index.html
+
+
+
+### Docs.rs
+
+https://docs.rs/
+
+Docs.rs是Rust语言中的crates的开源文档托管平台，所有发布到 [crates.io](http://crates.io/) 的库都是文档化的
 
 
 
