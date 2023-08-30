@@ -7,7 +7,7 @@ categories: Coding
 
 
 
-###### <img src="images/rust.png" style="zoom:35%;" />
+<img src="https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/rust.png" style="zoom:35%;" />
 
 
 
