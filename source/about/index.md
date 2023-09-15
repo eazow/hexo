@@ -1,7 +1,6 @@
 ---
-title: 
+title: About
 date: 2013-02-22
-
 ---
 
 
@@ -38,7 +37,8 @@ Always remember, stay kind and positive.
 
 ### Github Contributions
 
-<img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" />
+<!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
+![](../images/github-user-contribution.svg)
 
 <br/>
 <br/>
