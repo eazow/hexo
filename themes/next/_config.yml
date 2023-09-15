@@ -101,6 +101,7 @@ menu:
   archives: /archives/ || fa fa-archive
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
+  # books: /books/ || fa fa-book
   about: /about/ || fa fa-user
   # tomcat:
   #   default: /tomcat/ || fa fa-cat
