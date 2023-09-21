@@ -40,3 +40,17 @@ B 树与二叉树不同（“B”可能代表发明者的名字，但也可以�
 | 内部节点存储值       | Yes        | No              |
 | 每个节点的子节点数量 | 较少       | 更多            |
 | 内部节点与叶节点     | 结构相同   | 结构不同        |
+
+在开始实现索引之前，将只讨论 B+ 树，但将其称为B-tree or a btree。
+
+具有子节点的节点称为“内部”节点。内部节点和叶节点的结构不同：
+
+| **m 阶树.**                 | 内部节点                    | 叶节点                               |
+| :-------------------------- | :-------------------------- | :----------------------------------- |
+| 存储                        | 指向子项的键和指针          | 键和值                               |
+| Number of keys 按键数量     | up to m-1 最多 m-1          | as many as will fit 能装多少就装多少 |
+| Number of pointers 指针数量 | number of keys + 1 键数 + 1 | none 没有任何                        |
+| Number of values 值的数量   | none 没有任何               | number of keys 钥匙数量              |
+| Key purpose 主要目的        | used for routing 用于路由   | paired with value 与价值配对         |
+| Stores values? 储存价值？   | No                          | Yes                                  |
+
