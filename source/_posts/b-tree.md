@@ -20,13 +20,13 @@ B 树与二叉树不同（“B”可能代表发明者的名字，但也可以�
 <img src="https://cstack.github.io/db_tutorial/assets/images/B-tree.png" alt="example B-Tree (https://en.wikipedia.org/wiki/File:B-tree.svg)" style="zoom:50%;" />
 
 
-
 与二叉树不同，B 树中的每个节点可以有 2 个以上的子节点。每个节点最多可以有 m 个子节点，其中 m 称为树的“order”。为了保持树基本平衡，我们还说节点必须至少有 m/2 个子节点（向上舍入）。
+
+<!-- more -->
 
 例外情况：
 
 - 叶节点有 0 个子节点
-
 - 根节点可以有少于 m 个子节点，但必须至少有 2 个
 - 如果根节点是叶节点（唯一的节点），它仍然有 0 个子节点
 
