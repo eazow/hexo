@@ -31,6 +31,36 @@ categories: Coding
 
 
 
+### 节点头格式
+
+叶节点和内部节点有不同的布局。让我们创建一个枚举来跟踪节点类型：
+
+```
+typedef enum { NODE_INTERNAL, NODE_LEAF } NodeType;
+```
+
+每个节点将对应一页。内部节点将通过存储存储子节点的页码来指向其子节点。 btree 向分页器请求特定的页号，并返回指向页缓存的指针。页面按照页码顺序依次存储在数据库文件中。
+
+节点需要在页面开头的标头中存储一些元数据。每个节点将存储它是什么类型的节点，无论它是否是根节点，以及指向其父节点的指针（以允许查找节点的兄弟节点）。我为每个标头字段的大小和偏移量定义常量：
+
+```
+/*
+ * Common Node Header Layout
+ */
+const uint32_t NODE_TYPE_SIZE = sizeof(uint8_t);
+const uint32_t NODE_TYPE_OFFSET = 0;
+const uint32_t IS_ROOT_SIZE = sizeof(uint8_t);
+const uint32_t IS_ROOT_OFFSET = NODE_TYPE_SIZE;
+const uint32_t PARENT_POINTER_SIZE = sizeof(uint32_t);
+const uint32_t PARENT_POINTER_OFFSET = IS_ROOT_OFFSET + IS_ROOT_SIZE;
+const uint8_t COMMON_NODE_HEADER_SIZE = NODE_TYPE_SIZE + IS_ROOT_SIZE + PARENT_POINTER_SIZE;
+
+```
+
+
+
+
+
 ### 转
 
 https://cstack.github.io/db_tutorial/parts/part8.html
