@@ -59,6 +59,48 @@ const uint8_t COMMON_NODE_HEADER_SIZE = NODE_TYPE_SIZE + IS_ROOT_SIZE + PARENT_P
 
 
 
+###  叶节点格式
+
+除了这些常见的头字段之外，叶节点还需要存储它们包含多少个“单元”。单元格是键/值对。
+
+```
+/*
+ * Leaf Node Header Layout
+ */
+const uint32_t LEAF_NODE_NUM_CELLS_SIZE = sizeof(uint32_t);
+const uint32_t LEAF_NODE_NUM_CELLS_OFFSET = COMMON_NODE_HEADER_SIZE;
+const uint32_t LEAF_NODE_HEADER_SIZE = COMMON_NODE_HEADER_SIZE + LEAF_NODE_NUM_CELLS_SIZE;
+```
+
+叶节点的主体是一个单元格数组。每个单元格都是一个键，后跟一个值（序列化的行）。
+
+```
+/*
+ * Leaf Node Body Layout
+ */
+const uint32_t LEAF_NODE_KEY_SIZE = sizeof(uint32_t);
+const uint32_t LEAF_NODE_KEY_OFFSET = 0;
+const uint32_t LEAF_NODE_VALUE_SIZE = ROW_SIZE;
+const uint32_t LEAF_NODE_VALUE_OFFSET = LEAF_NODE_KEY_OFFSET + LEAF_NODE_KEY_SIZE;
+const uint32_t LEAF_NODE_CELL_SIZE = LEAF_NODE_KEY_SIZE + LEAF_NODE_VALUE_SIZE;
+const uint32_t LEAF_NODE_SPACE_FOR_CELLS = PAGE_SIZE - LEAF_NODE_HEADER_SIZE;
+const uint32_t LEAF_NODE_MAX_CELLS = LEAF_NODE_SPACE_FOR_CELLS / LEAF_NODE_CELL_SIZE;
+```
+
+基于这些常量，叶节点的布局当前如下所示：
+
+![Our leaf node format](https://cstack.github.io/db_tutorial/assets/images/leaf-node-format.png)
+
+在标头中每个布尔值使用整个字节的空间效率有点低，但这使得编写代码来访问这些值变得更容易。
+
+另请注意，末尾有一些浪费的空间。我们在标题后存储尽可能多的单元格，但剩余空间无法容纳整个单元格。我们将其留空以避免节点之间的单元格分裂。
+
+
+
+
+
+
+
 
 
 ### 转
