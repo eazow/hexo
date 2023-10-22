@@ -97,6 +97,38 @@ const uint32_t LEAF_NODE_MAX_CELLS = LEAF_NODE_SPACE_FOR_CELLS / LEAF_NODE_CELL_
 
 
 
+### 访问叶节点字段
+
+访问键、值和元数据的代码都涉及使用我们刚刚定义的常量进行指针算术。
+
+```
++uint32_t* leaf_node_num_cells(void* node) {
++  return node + LEAF_NODE_NUM_CELLS_OFFSET;
++}
++
++void* leaf_node_cell(void* node, uint32_t cell_num) {
++  return node + LEAF_NODE_HEADER_SIZE + cell_num * LEAF_NODE_CELL_SIZE;
++}
++
++uint32_t* leaf_node_key(void* node, uint32_t cell_num) {
++  return leaf_node_cell(node, cell_num);
++}
++
++void* leaf_node_value(void* node, uint32_t cell_num) {
++  return leaf_node_cell(node, cell_num) + LEAF_NODE_KEY_SIZE;
++}
++
++void initialize_leaf_node(void* node) { *leaf_node_num_cells(node) = 0; }
+```
+
+这些方法返回指向相关值的指针，因此它们既可以用作 getter 也可以用作 setter。
+
+
+
+### 对Pager和表的更改
+
+每个节点都将恰好占用一页，即使它未满。这意味着我们的Pager不再需要支持读/写部分页面。
+
 
 
 
