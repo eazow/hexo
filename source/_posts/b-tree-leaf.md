@@ -129,6 +129,56 @@ const uint32_t LEAF_NODE_MAX_CELLS = LEAF_NODE_SPACE_FOR_CELLS / LEAF_NODE_CELL_
 
 每个节点都将恰好占用一页，即使它未满。这意味着我们的Pager不再需要支持读/写部分页面。
 
+```
+-void pager_flush(Pager* pager, uint32_t page_num, uint32_t size) {
++void pager_flush(Pager* pager, uint32_t page_num) {
+   if (pager->pages[page_num] == NULL) {
+     printf("Tried to flush null page\n");
+     exit(EXIT_FAILURE);
+@@ -242,7 +337,7 @@ void pager_flush(Pager* pager, uint32_t page_num, uint32_t size) {
+   }
+ 
+   ssize_t bytes_written =
+-      write(pager->file_descriptor, pager->pages[page_num], size);
++      write(pager->file_descriptor, pager->pages[page_num], PAGE_SIZE);
+ 
+   if (bytes_written == -1) {
+     printf("Error writing: %d\n", errno);
+```
+
+```
+void db_close(Table* table) {
+   Pager* pager = table->pager;
+-  uint32_t num_full_pages = table->num_rows / ROWS_PER_PAGE;
+ 
+-  for (uint32_t i = 0; i < num_full_pages; i++) {
++  for (uint32_t i = 0; i < pager->num_pages; i++) {
+     if (pager->pages[i] == NULL) {
+       continue;
+     }
+-    pager_flush(pager, i, PAGE_SIZE);
++    pager_flush(pager, i);
+     free(pager->pages[i]);
+     pager->pages[i] = NULL;
+   }
+ 
+-  // There may be a partial page to write to the end of the file
+-  // This should not be needed after we switch to a B-tree
+-  uint32_t num_additional_rows = table->num_rows % ROWS_PER_PAGE;
+-  if (num_additional_rows > 0) {
+-    uint32_t page_num = num_full_pages;
+-    if (pager->pages[page_num] != NULL) {
+-      pager_flush(pager, page_num, num_additional_rows * ROW_SIZE);
+-      free(pager->pages[page_num]);
+-      pager->pages[page_num] = NULL;
+-    }
+-  }
+-
+   int result = close(pager->file_descriptor);
+   if (result == -1) {
+     printf("Error closing db file.\n");
+```
+
 
 
 
