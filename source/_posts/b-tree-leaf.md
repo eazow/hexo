@@ -181,6 +181,26 @@ void db_close(Table* table) {
 
 现在，在数据库中存储页数而不是行数更有意义。页数应该与分页器对象相关联，而不是与表相关联，因为它是数据库使用的页数，而不是特定的表。 B 树由其根节点页码标识，因此表对象需要跟踪它。
 
+```
+ const uint32_t PAGE_SIZE = 4096;
+ const uint32_t TABLE_MAX_PAGES = 100;
+-const uint32_t ROWS_PER_PAGE = PAGE_SIZE / ROW_SIZE;
+-const uint32_t TABLE_MAX_ROWS = ROWS_PER_PAGE * TABLE_MAX_PAGES;
+ 
+ typedef struct {
+   int file_descriptor;
+   uint32_t file_length;
++  uint32_t num_pages;
+   void* pages[TABLE_MAX_PAGES];
+ } Pager;
+ 
+ typedef struct {
+   Pager* pager;
+-  uint32_t num_rows;
++  uint32_t root_page_num;
+ } Table;
+```
+
 
 
 
