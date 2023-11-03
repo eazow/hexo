@@ -233,6 +233,37 @@ void db_close(Table* table) {
 
 
 
+### 光标对象的更改
+
+光标代表表中的位置。当我们的表是一个简单的行数组时，我们可以仅通过行号来访问行。现在它是一棵树，我们通过节点的页码以及该节点内的单元格编号来标识位置。
+
+```
+ typedef struct {
+   Table* table;
+-  uint32_t row_num;
++  uint32_t page_num;
++  uint32_t cell_num;
+   bool end_of_table;  // Indicates a position one past the last element
+ } Cursor;
+```
+
+```
+ Cursor* table_start(Table* table) {
+   Cursor* cursor = malloc(sizeof(Cursor));
+   cursor->table = table;
+-  cursor->row_num = 0;
+-  cursor->end_of_table = (table->num_rows == 0);
++  cursor->page_num = table->root_page_num;
++  cursor->cell_num = 0;
++
++  void* root_node = get_page(table->pager, table->root_page_num);
++  uint32_t num_cells = *leaf_node_num_cells(root_node);
++  cursor->end_of_table = (num_cells == 0);
+ 
+   return cursor;
+ }
+```
+
 
 
 
