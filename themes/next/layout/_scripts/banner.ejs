@@ -1,5 +1,5 @@
 <script>
-    var numberOfBanners = 6;
+    var numberOfBanners = 7;
     var randomNum = Math.floor(Math.random() * numberOfBanners);
-    document.getElementById("banner").src = "https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/bg" + randomNum + ".jpeg";
+    document.getElementsByClassName("banner")[0].src = "https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/bg" + randomNum + ".jpeg";
 </script>
