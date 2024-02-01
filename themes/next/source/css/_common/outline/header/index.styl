@@ -39,8 +39,12 @@ header.header {
 
 .banner {
   width: 100%;
-  height: 320px;
+  height: 360px;
   object-fit: cover;
+  
+  +mobile() {
+    height: 160px;
+  }
 }
 
 @import 'site-meta';
