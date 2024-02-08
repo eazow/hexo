@@ -1,5 +1,5 @@
 ---
-title: B-Tree叶节点格式
+title: "[译]B-Tree叶节点格式"
 date: 2023-09-20 23:57:20
 tags: Coding
 categories: Coding
