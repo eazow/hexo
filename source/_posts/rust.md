@@ -14,7 +14,7 @@ categories: Coding
 ### 安装
 
 ```
-curl https:``//sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf | sh
 ```
 
 安装完成后
