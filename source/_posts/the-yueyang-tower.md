@@ -18,6 +18,8 @@ categories: Reading
 
 　　时六年九月十五日。
 
+<!-- more -->
+
 ---
 
 ### 译
