@@ -19,49 +19,33 @@ On August 28, 1963, under a nearly cloudless sky, more than 250,000 people, a fi
 
 
 Dr. Martin Luther King Jr. had originally prepared a short and somewhat formal recitation of the sufferings of African Americans attempting to realize their freedom in a society chained by discrimination. He was about to sit down when gospel singer Mahalia Jackson called out, “Tell them about your dream, Martin! Tell them about the dream!” Encouraged by shouts from the audience, King drew upon some of his past talks, and the result became the landmark statement of civil rights in America — a dream of all people, of all races and colors and backgrounds, sharing in an America marked by freedom and democracy.
-马丁·路德·金博士最初准备了一段简短而正式的演讲，讲述非裔美国人在一个受歧视束缚的社会中争取自由时所遭受的苦难。他正要坐下时，福音歌手马哈莉亚·杰克逊喊道："告诉他们你的梦想，马丁！告诉他们那个梦想！"在观众的呼喊声鼓励下，金借鉴了他过去的一些演讲，最终形成了美国民权运动的里程碑声明——一个关于所有人，不分种族、肤色和背景，共同分享一个以自由和民主为标志的美国的梦想。
 
-For further reading: Herbert Garfinkel, When Negroes March: The March on Washington…(1969); Taylor Branch, Parting the Waters: America in the King Years, 1954-1963 (1988); Stephen B. Oates, Let the Trumpet Sound: The Life of Martin Luther King Jr. (1982).
-延伸阅读：赫伯特·加芬克尔《当黑人游行：华盛顿大游行》（1969年）；泰勒·布兰奇《分水岭：马丁·路德·金时代的美国，1954-1963》（1988年）；斯蒂芬·B·奥茨《让号角响起：马丁·路德·金的一生》（1982年）。  
+### “I HAVE A DREAM” (1963)
 
-“I HAVE A DREAM” (1963)
-我有一个梦想（1963）
 
 I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.
-今天，我很高兴能与你们一起参加这次将载入史册的、我们国家历史上最伟大的自由示威活动。
 
-Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon of hope to millions of slaves, who had been seared in the flames of whithering injustice. It came as a joyous daybreak to end the long night of their captivity. But one hundred years later, the colored America is still not free. One hundred years later, the life of the colored American is still sadly crippled by the manacle of segregation and the chains of discrimination.
-五十年前，一位伟大的美国人——我们今天就站在他的象征性身影下——签署了《解放宣言》。这项重要法令给数百万被不公正之火煎熬的奴隶带来了希望的曙光。它如同欢乐的黎明，终结了他们被囚禁的漫漫长夜。但是一百年后，有色人种的美国人依然没有获得自由。一百年后，有色人种美国人的生活仍然悲惨地被种族隔离的镣铐和歧视的枷锁所束缚。
+Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon of hope to millions of slaves, who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their **captivity**. But one hundred years later, the colored America is still not free. One hundred years later, the life of the colored American is still sadly **crippled** by the **manacle** of **segregation** and the chains of **discrimination**.
 
 One hundred years later, the colored American lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the colored American is still languishing in the corners of American society and finds himself an exile in his own land So we have come here today to dramatize a shameful condition.
-一百年后，有色人种的美国人生活在物质繁荣的广阔海洋中的一个贫穷孤岛上。一百年后，有色人种的美国人仍在美国社会的角落里苦苦挣扎，在自己的土地上成为了流亡者。因此，我们今天来到这里，要把这种可耻的状况戏剧化地展现出来。
 
 In a sense we have come to our Nation’s Capital to cash a check. When the architects of our great republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir.
-从某种意义上说，我们来到我们国家的首都是为了兑现一张支票。当我们伟大共和国的缔造者写下宪法和独立宣言这些辉煌的文字时，他们签署了一份每个美国人都将继承的承诺书。
 
-This note was a promise that all men, yes, black men as well as white men, would be guaranteed the inalienable rights of life liberty and the pursuit of happiness.
-这份声明承诺所有人，是的，包括黑人和白人在内，都将被保障生命、自由和追求幸福的不可剥夺的权利。
+This note was a promise that all men, yes, black men as well as white men, would be guaranteed the **inalienable** rights of life liberty and the pursuit of happiness.
 
-It is obvious today that America has defaulted on this promissory note insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given its colored people a bad check, a check that has come back marked “insufficient funds.”
-今天显而易见，就有色人种公民而言，美国已经拖欠了这份承诺。美国没有履行这个神圣的义务，反而给了有色人民一张空头支票，一张被退回并标注"资金不足"的支票。
+It is obvious today that America has defaulted on this **promissory** note insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given its colored people a bad check, a check that has come back marked “insufficient funds.”
 
 But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. So we have come to cash this check, a check that will give us upon demand the riches of freedom and security of justice.
-但是我们拒绝相信正义的银行已经破产。我们拒绝相信在这个国家巨大的机会宝库中资金不足。因此，我们前来兑现这张支票，这张支票将按要求给予我们自由的财富和正义的保障。
 
 We have also come to his hallowed spot to remind America of the fierce urgency of Now. This is not time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism.
-我们也来到这个神圣的地方，提醒美国当下的紧迫性。现在不是沉溺于冷却的奢侈，或服用渐进主义的镇静剂的时候。
 
 Now is the time to make real the promise of democracy.
-现在是实现民主承诺的时候了。
 
-Now it the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice.
-现在是时候从黑暗和荒凉的种族隔离山谷中崛起，走向阳光普照的种族正义之路。
+Now it the time to rise from the dark and desolate valley of **segregation** to the sunlit path of racial justice.
 
 Now it the time to lift our nation from the quicksand of racial injustice to the solid rock of brotherhood.
-现在是时候让我们的国家从种族不公的流沙中升起，站在兄弟情谊的坚实基石上。
 
 Now is the time to make justice a reality to all of God’s children.
-现在是时候让正义成为上帝所有子民的现实。
 
 I would be fatal for the nation to overlook the urgency of the moment and to underestimate the determination of it’s colored citizens. This sweltering summer of the colored people’s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end but a beginning. Those who hope that the colored Americans needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual.
 忽视当前时刻的紧迫性并低估有色人种公民的决心，这对国家来说将是致命的。有色人民正当不满的炎热夏季不会结束，直到迎来自由与平等的令人振奋的秋天。一九六三年不是终点而是开始。那些希望有色美国人需要发泄一下情绪就会满足的人，如果国家恢复如常运转，他们将会受到惊醒。
