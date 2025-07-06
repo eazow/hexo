@@ -1,6 +1,6 @@
 ---
-title: i-have-a-dream
-date: 2024-12-29 00:02:54
+title: I Have a Dream
+date: 2024-12-29 00:02:55
 tags:
   - English
 categories: English
@@ -14,6 +14,7 @@ As far as black Americans were concerned, the nation’s response to Brown was *
 
 A. Philip Randolph, a labor leader and longtime civil rights activist, called for a massive march on Washington to dramatize the issue. He welcomed the participation of white groups as well as black in order to demonstrate the multiracial backing for civil rights. The various elements of the civil rights movement, many of which had been wary of one another, agreed to participate. The National Association for the Advancement of Colored People, the Congress of Racial Equality, the Southern Christian Leadership Conference, the Student Non-violent Coordinating Committee and the Urban League all managed to bury their differences and work together. The leaders even agreed to tone down the rhetoric of some of the more militant activists for the sake of unity, and they worked closely with the Kennedy administration, which hoped the march would, in fact, lead to passage of the civil rights bill.
 
+<!-- more -->
 
 On August 28, 1963, under a nearly cloudless sky, more than 250,000 people, a fifth of them white, gathered near the Lincoln Memorial in Washington to rally for “jobs and freedom.” The roster of speakers included speakers from nearly every segment of society — labor leaders like Walter Reuther, clergy, film stars such as Sidney Poitier and Marlon Brando and folksingers such as Joan Baez. Each of the speakers was allotted fifteen minutes, but the day belonged to the young and charismatic leader of the Southern Christian Leadership Conference.
 
