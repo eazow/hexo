@@ -1,9 +1,10 @@
 <script>
-  var numberOfBanners = 9;
-  var randomNum = Math.floor(Math.random() * numberOfBanners);
+  const numberOfBanners = 10;
+  const randomNum = Math.random() * numberOfBanners | 0;
   const banner = document.querySelector('.banner');
 //   document.getElementsByClassName("banner")[0].style.backgroundImage =
-  const imageExtension = randomNum === 9 ? ".webp" : ".jpeg";
+//   const imageExtension = randomNum === 9 ? ".webp" : ".jpeg";
+  const imageExtension = ".webp";
   const url = "url('https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/banner" + randomNum + imageExtension + "')";
   banner.style.backgroundImage = url;
 </script>
