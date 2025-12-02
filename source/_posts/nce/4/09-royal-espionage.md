@@ -9,11 +9,11 @@ categories: English
 
 
 
-Alfred the Great acted his own spy, visiting Danish camps **disguised** as a **minstrel**. In those days **wandering** minstrels were welcome everywhere. They were not fighting men, and their **harp** was their passport. Alfred had learned many of their **ballads** in his youth, and could vary his programme with acrobatic tricks and simple **conjuring**.
+Alfred the Great acted his own spy, visiting Danish camps **disguised** as a **minstrel**. In those days **wandering** minstrels were welcome everywhere. They were not fighting men, and their **harp** was their passport. Alfred had learned many of their **ballads** in his youth, and could vary his programme with **acrobatic** **tricks** and simple **conjuring**.
 
 
 
-While Alfred's little army slowly began to gather at Athelney, the king himself set out to penetrate the camp of Guthrum, the **commander** of the Danish invaders. There had settled down for the winter at Chippenham: **thither** Alfred went. He noticed at once that discipline was slack: the Danes had the self-confidence of **conquerors**, and their security precautions were **casual**. They lived well, on the proceeds of **raids** on neighbouring regions. There they collected women as well as food and drink, and a life of ease had made them soft.
+While Alfred's little army slowly began to gather at Athelney, the king himself set out to **penetrate** the camp of Guthrum, the **commander** of the Danish invaders. There had settled down for the winter at Chippenham: **thither** Alfred went. He noticed at once that discipline was slack: the Danes had the self-confidence of **conquerors**, and their security precautions were **casual**. They lived well, on the proceeds of **raids** on neighbouring regions. There they collected women as well as food and drink, and a life of ease had made them soft.
 
 
 
@@ -21,7 +21,7 @@ Alfred stayed in the camp a week before he returned to Athelney. The force there
 
 
 
-So, faced with the Danish advance, Alfred did not risk open battle but harried the enemy. He was constantly on the move, drawing the Danes after him. His **patrols** halted the raiding parties: hunger **assailed** the Danish army. Now Alfred began a long series of **skirmishes** — and within a month the Danes had **surrendered**. The **episode** could reasonably serve as a unique epic of royal espionage!
+So, faced with the Danish advance, Alfred did not risk open battle but harried the enemy. He was constantly on the move, drawing the Danes after him. His **patrols** halted the raiding parties: hunger **assailed** the Danish army. Now Alfred began a long series of **skirmishes** — and within a month the Danes had **surrendered**. The **episode** could reasonably serve as a unique epic of royal **espionage**!
 
 
 # 阿尔弗雷德大帝间谍行动 - 讲解
