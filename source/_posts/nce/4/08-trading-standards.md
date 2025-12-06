@@ -16,6 +16,7 @@ As it happens, a razor that is safe in Europe is unlikely to **electrocute** Ame
 
 Why? One difficulty is to construct the agreements. The Americans would happily reach one accord on standards for medical devices and then **hammer** out different **pacts** covering, say, electronic goods and drug manufacturing. The EU—following fine continental traditions—wants agreement on general principles, which could be applied to many types of products and perhaps extended to other countries.
 
+<!-- more -->
 
 ---
 

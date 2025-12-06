@@ -15,7 +15,7 @@ Alfred the Great acted his own spy, visiting Danish camps **disguised** as a **m
 
 While Alfred's little army slowly began to gather at Athelney, the king himself set out to **penetrate** the camp of Guthrum, the **commander** of the Danish invaders. There had settled down for the winter at Chippenham: **thither** Alfred went. He noticed at once that discipline was slack: the Danes had the self-confidence of **conquerors**, and their security precautions were **casual**. They lived well, on the proceeds of **raids** on neighbouring regions. There they collected women as well as food and drink, and a life of ease had made them soft.
 
-
+<!-- more -->
 
 Alfred stayed in the camp a week before he returned to Athelney. The force there assembled was trivial compared with the Danish **horde**. But Alfred had deduced that the Danes were no longer fit for prolonged battle: and that their **commissariat** had no organization, but depended on irregular raids.
 
