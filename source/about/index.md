@@ -3,7 +3,6 @@ title:
 date: 2013-02-22
 ---
 
-
 {% cq %}
 
 <!-- {{ ["唯一不变的就是变化","我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的"] | random }} -->
@@ -34,7 +33,6 @@ Always remember, stay kind and positive.
 <br/>
 <br/>
 
-
 ### Github Contributions
 
 <!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
@@ -44,9 +42,8 @@ Always remember, stay kind and positive.
 <br/>
 
 
-![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/ability.png)
+![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/abilities.webp)
 
 <!-- ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/languages.png)
 ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/technologies.png)
  -->
-
