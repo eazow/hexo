@@ -88,7 +88,7 @@ Always remember, stay kind and positive.
 
 ## 🛠️ Technologies
 
-[![Technologies](https://skillicons.dev/icons?i=kafka,redis,mongodb,mysql,postgres,elasticsearch,react,graphql,git,fastapi,spark,hadoop&perline=10)](https://skillicons.dev)
+[![Technologies](https://skillicons.dev/icons?i=kafka,redis,mongodb,mysql,postgres,elasticsearch,sqlite,graphql,git,fastapi,flask,django,docker,jquery,laravel,nginx,nodejs,pnpm,yarn,react,vue,regex,sentry,vim,md&perline=13)](https://skillicons.dev)
 
 <!-- 用表格单行排列，强制一行 -->
 <table><tr>
