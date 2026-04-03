@@ -1,10 +1,8 @@
 ---
-title: '[TED]Do Schools Kill creativity?'
-date: 2026-03-25 15:17:03
-tags: English
-categories:
-  - English
-  - TED
+title: '[TED]Do Schools Kill Creativity?'
+date: 2026-02-20 15:17:03
+tags: TED
+categories: English
 ---
 
 ## Background
