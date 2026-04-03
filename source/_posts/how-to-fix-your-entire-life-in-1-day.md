@@ -1,5 +1,5 @@
 ---
-title: "[转]How to fix your entire life in 1 day"
+title: "[Repost]How to Fix Your Entire Life in 1 Day(by DAN KOE)"
 date: 2026-03-01 11:17:30
 tags: English
 categories: English
