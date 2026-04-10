@@ -61,7 +61,16 @@ class Eazow:
 *"The best code is the code you understand at 3am."* 🌙
 
 </div>
+
 <!-- 
+```
+Systems Programming  ████████████████░░░░  80%
+Backend Development  ███████████████████░  95%
+Linux / OS Internals ██████████████░░░░░░  70%  ← leveling up
+Security (IDS/IPS)   █████████████░░░░░░░  65%
+Frontend             ████████████░░░░░░░░  60%
+```
+
 {% cq %}
 {{ ["唯一不变的就是变化","我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的"] | random }} -->
 <!-- 世界上唯一不变的就是变化
