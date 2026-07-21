@@ -1,17 +1,33 @@
 ---
-title: About
+title: 
 date: 2013-02-22
 ---
 
 <div align="center">
 
-# 👾 Hey, I'm Eazow
+![EAZOW](../images/eazow-logo-typing.svg)
 
-*Builder by day. Gamer by night. OS explorer always.*
+<!-- # 👾 Hey, I'm Eazow -->
+
+![Typing SVG](../images/eazow-tagline-typing.svg)
 
 </div>
 
+```bash
+$ whoami
+eazow
 
+$ neofetch
+-------------------------------------------
+OS: Human 5.x (runs on caffeine)
+Host: Earth, Sol System
+Kernel: Linux 6.x — getting comfortable
+Shell: zsh
+Editor: neovim
+Uptime: since childhood, still compiling
+Languages: Python, C, Go, Rust, PHP, Java, TS, JS, Bash
+-------------------------------------------
+```
 
 ## 🧬 About Me
 
@@ -54,16 +70,9 @@ class Eazow:
 > *Always remember, stay kind and positive.*
 
 
-<div align="center">
+## 📊 Skill Levels
 
-*What I cannot create, I do not understand — Richard Feynman.*
-
-*"The best code is the code you understand at 3am."* 🌙
-
-</div>
-
-<!-- 
-```
+```text
 Systems Programming  ████████████████░░░░  80%
 Backend Development  ███████████████████░  95%
 Linux / OS Internals ██████████████░░░░░░  70%  ← leveling up
@@ -71,25 +80,26 @@ Security (IDS/IPS)   █████████████░░░░░░�
 Frontend             ████████████░░░░░░░░  60%
 ```
 
-{% cq %}
-{{ ["唯一不变的就是变化","我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的"] | random }} -->
-<!-- 世界上唯一不变的就是变化
+## 📟 Fortune
 
-<!-- 我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的
-If you are at the top of your life, remember to stay humble.
-If you are at the bottom of your life, remember to stay courageous.
-If you are in a problem, remember to stay calm.
-Always remember, stay kind and positive.
-{% endcq %}
--->
+```bash
+$ fortune
+```
 
+<p id="fortune" align="center"><em>rolling the dice...</em></p>
 
-<!-- 
-
-> 世界上唯一不变的就是变化
->
-> 我们必须接受失望, 因为失望是有限的, 但我们永远不能放弃希望, 因为希望是无限的
- -->
+<script>
+(function () {
+  var quotes = [
+    "What I cannot create, I do not understand. — Richard Feynman",
+    "The best code is the code you understand at 3am. 🌙",
+    "唯一不变的就是变化。",
+    "我们必须接受失望，因为失望是有限的，但我们永远不能放弃希望，因为希望是无限的。"
+  ];
+  var el = document.getElementById('fortune');
+  if (el) el.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+})();
+</script>
 
 ## 🖥️ Languages
 
@@ -114,9 +124,28 @@ Always remember, stay kind and positive.
 <!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
 ![](../images/github-user-contribution.svg)
 
+<p align="center">
+  <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="195"/>
+  <img src="https://streak-stats.demolab.com/?user=eazow&theme=tokyonight" alt="GitHub Streak" height="195"/>
+</p>
+
+## 🤖 AI Tools
+
+<table><tr>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claudecode&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logoColor=white"/></td>
+  <td style="border-width: 0"><img src="https://img.shields.io/badge/Codex-412991?style=for-the-badge&logoColor=white"/></td>
+</tr>
+</table>
+
 <br/>
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=eazow.eazow)
+
 
 <!--
 ## 🤖 AI & ML
