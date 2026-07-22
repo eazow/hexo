@@ -40,13 +40,28 @@ header.header {
 .banner {
   width: 100%;
   height: 480px;
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+
+  +mobile() {
+    height: 160px;
+  }
+}
+
+.banner-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;  /* 覆盖整个区域 */
   background-position: center;  /* 居中 */
   background-repeat: no-repeat;
-  
-  +mobile() {
-    height: 160px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+
+  &.is-active {
+    opacity: 1;
   }
 }
 

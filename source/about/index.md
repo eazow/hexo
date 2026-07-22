@@ -5,9 +5,9 @@ date: 2013-02-22
 
 <div align="center">
 
-![EAZOW](../images/eazow-logo-typing.svg)
+<!-- ![EAZOW](../images/eazow-logo-typing.svg) -->
 
-<!-- # 👾 Hey, I'm Eazow -->
+# 👾 Hey, I'm Eazow
 
 ![Typing SVG](../images/eazow-tagline-typing.svg)
 
@@ -15,7 +15,7 @@ date: 2013-02-22
 
 ```bash
 $ whoami
-eazow
+Eazow
 
 $ neofetch
 -------------------------------------------
