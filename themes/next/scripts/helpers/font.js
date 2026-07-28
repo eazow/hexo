@@ -6,7 +6,7 @@ module.exports = function() {
 
   if (!config || !config.enable) return '';
 
-  const fontStyles = ':300,300italic,400,400italic,700,700italic';
+  const fontStyles = ':300,300italic,400,400italic,700,700italic,900';
   const fontHost = config.host || 'https://fonts.googleapis.com';
 
   // Get a font list from config

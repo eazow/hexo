@@ -119,16 +119,6 @@ $ fortune
 </tr>
 </table>
 
-## Github Contributions
-
-<!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
-![](../images/github-user-contribution.svg)
-
-<p align="center">
-  <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="195"/>
-  <img src="https://streak-stats.demolab.com/?user=eazow&theme=tokyonight" alt="GitHub Streak" height="195"/>
-</p>
-
 ## 🤖 AI Tools
 
 <table><tr>
@@ -142,7 +132,16 @@ $ fortune
 </tr>
 </table>
 
-<br/>
+## Github Contributions
+
+<!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
+![](../images/github-user-contribution.svg)
+
+<p align="center" style="display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; gap:8px;">
+  <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
+  <img src="https://streak-stats.demolab.com/?user=eazow&theme=tokyonight" alt="GitHub Streak" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
+  <img src="https://github-readme-stats-rickstaa.vercel.app/api/top-langs/?username=eazow&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
+</p>
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=eazow.eazow)
 
