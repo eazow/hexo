@@ -141,7 +141,7 @@ $ fortune
 
 <p align="center" style="display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; gap:8px;">
   <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
-  <img src="https://streak-stats.demolab.com/?user=eazow&theme=tokyonight" alt="GitHub Streak" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
+  <img src="../images/github-streak-stats.svg" alt="GitHub Streak" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
   <img src="https://github-readme-stats-rickstaa.vercel.app/api/top-langs/?username=eazow&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
 </p>
 

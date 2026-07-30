@@ -1,0 +1,41 @@
+name: Update GitHub Streak Stats
+
+on:
+  schedule:
+    # Runs at 00:00 UTC on the 1st of every month
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-svg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest streak stats SVG
+        run: |
+          tmp_file=$(mktemp)
+          if ! curl -sL -f "https://streak-stats.demolab.com/?user=eazow&theme=tokyonight" -o "$tmp_file"; then
+            echo "Request failed, keeping existing SVG"
+            exit 0
+          fi
+          if [ ! -s "$tmp_file" ] || grep -qi "Failed to retrieve\|error" "$tmp_file" || ! grep -q "<svg" "$tmp_file"; then
+            echo "Fetched content looks invalid, keeping existing SVG"
+            exit 0
+          fi
+          mv "$tmp_file" source/images/github-streak-stats.svg
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- source/images/github-streak-stats.svg; then
+            git add source/images/github-streak-stats.svg
+            git commit -m "chore: update github streak stats snapshot"
+            git push
+          else
+            echo "No changes to commit"
+          fi
