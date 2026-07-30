@@ -124,8 +124,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -137,7 +137,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: remove
+  display: post
 
   # Sidebar padding in pixels.
   padding: 18
@@ -196,7 +196,7 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -892,7 +892,7 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: cdnjs
+  internal: local
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins

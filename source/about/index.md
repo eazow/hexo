@@ -1,6 +1,8 @@
 ---
 title: 
 date: 2013-02-22
+toc:
+  enable: false
 ---
 
 <div align="center">

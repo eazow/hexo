@@ -1,6 +1,6 @@
 if (hexo-config('toc.enable')) {
   .post-toc {
-    font-size: $font-size-small;
+    font-size: 14px;
 
     ol {
       list-style: none;
@@ -13,12 +13,18 @@ if (hexo-config('toc.enable')) {
       }
 
       a {
+        color: $grey-dark;
+        opacity: .75;
         transition: all $transition-ease;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 
     .nav-item {
-      line-height: 1.8;
+      line-height: 2.4;
       overflow: hidden;
       text-overflow: ellipsis;
 
@@ -47,10 +53,12 @@ if (hexo-config('toc.enable')) {
       .active > a {
         border-bottom-color: $sidebar-highlight;
         color: $sidebar-highlight;
+        opacity: 1;
       }
 
       .active-current > a {
         color: $sidebar-highlight;
+        opacity: 1;
 
         &:hover {
           color: $sidebar-highlight;

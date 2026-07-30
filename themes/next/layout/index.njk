@@ -16,5 +16,7 @@
 {% endblock %}
 
 {% block sidebar %}
-  {{ sidebar_template.render(false) }}
+  {% if theme.sidebar.display === 'always' %}
+    {{ sidebar_template.render(false) }}
+  {% endif %}
 {% endblock %}

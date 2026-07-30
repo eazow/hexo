@@ -22,16 +22,19 @@ if (hexo-config('back2top.enable')) {
         }
       }
     } else {
+      align-items: center;
+      border-radius: 8px;
       bottom: $b2t-position-bottom;
       box-sizing: border-box;
       color: $b2t-color;
-      padding: 0 6px;
+      display: flex;
+      gap: 4px;
+      height: 32px;
+      justify-content: center;
+      min-width: 32px;
+      padding: 0 10px;
       transition: bottom $transition-ease;
       sidebar-toggle();
-
-      if (not hexo-config('back2top.scrollpercent')) {
-        width: 24px;
-      }
 
       &:hover {
         color: $sidebar-highlight;

@@ -40,6 +40,29 @@
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+  &:hover {
+    scrollbar-color: rgba(153, 153, 153, .4) transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: rgba(153, 153, 153, .4);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 .sidebar-panel {
