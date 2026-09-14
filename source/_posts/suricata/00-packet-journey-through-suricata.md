@@ -5,13 +5,14 @@ categories: Suricata
 date: 2026-06-16
 ---
 
-一个数据包从网卡钻进 Suricata 的那一刻开始,会经过哪些地方,又是怎么一步步变成一条 EVE JSON 告警的?
+Suricata 得名于非洲草原上的猫鼬(学名 *Suricata suricatta*)——猫鼬群居,总有几只直立放哨,一有风吹草动就尖声报警。2009 年 OISF(Open Information Security Foundation)用这个名字做了一个开源、多线程的下一代 IDS/IPS 引擎,想在当时近乎单线程的 Snort 之外给出另一个选择。名字挑得很贴切:这个引擎干的也是同一件事——盯着每一个包,一有可疑动静就吼一声。
 
-它会被谁接住,在哪一步变成 `Packet`,什么时候和别的包组成 `Flow`,TCP 重组又是谁负责的?规则看起来只是一行文本,为什么加载之后却能参与几万次匹配?这些问题,光看配置手册很难得到答案——手册告诉你怎么用这台机器,不告诉你机器里齿轮怎么咬合。真正的答案藏在 Suricata 的线程、队列、状态机和那些名字并不总是直观的 C 结构体里。
+具体是怎么盯的?跟着一个包走一遍就知道了。它从网卡钻进 Suricata 的那一刻开始,会经过哪些地方,又是怎么一步步变成一条 EVE JSON 告警的?它会被谁接住,在哪一步变成 `Packet`,什么时候和别的包组成 `Flow`,TCP 重组又是谁负责的?规则看起来只是一行文本,为什么加载之后却能参与几万次匹配?这些问题,光看配置手册很难得到答案——手册告诉你怎么用这台机器,不告诉你机器里齿轮怎么咬合。真正的答案藏在 Suricata 的线程、队列、状态机和那些名字并不总是直观的 C 结构体里。
 
 把 Suricata 想象成一条工厂流水线:包从网卡或 pcap 文件进来,依次经过捕获、解码、Flow、Stream、应用层解析、规则检测这几道工位,才走到终点。先给这条产线画一张图,后面每一篇都是在往图里的某一格添细节:
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 25, "rankSpacing": 45, "padding": 5, "useMaxWidth": true}}}%%
 flowchart LR
     A["网卡 / PCAP 文件"] --> B
     subgraph B["第3篇:捕获"]
@@ -23,6 +24,12 @@ flowchart LR
     subgraph D["第5篇:Flow"]
         D1["查找 / 建立"]
     end
+    B --> C --> D
+```
+
+```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 25, "rankSpacing": 45, "padding": 5, "useMaxWidth": true}}}%%
+flowchart LR
     subgraph E["第6篇:Stream"]
         E1["TCP 重组"]
     end
@@ -35,8 +42,10 @@ flowchart LR
     subgraph H["第10篇:输出/告警"]
         H1["EVE JSON"]
     end
-    B --> C --> D --> E --> F --> G --> H
+    E --> F --> G --> H
 ```
+
+<!-- more -->
 
 这条流水线本身,靠 `TmModule` 串在线程上跑(第2篇);而线程、模块在跑起来之前先要被搭出来,这就是第1篇的内容。
 
