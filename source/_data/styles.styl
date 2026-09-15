@@ -1,0 +1,51 @@
+.site-title
+  background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6, #A78BFA)
+  background-size: 300% 100%
+  -webkit-background-clip: text
+  background-clip: text
+  color: transparent
+  animation: site-title-gradient 6s linear infinite
+
+@keyframes site-title-gradient
+  0%
+    background-position: 0% 50%
+  100%
+    background-position: 300% 50%
+
+// Code block: rounded card with a top language label
+figure.highlight
+  border-radius: 8px
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06)
+  overflow: hidden
+  background: #EAF2FE
+
+  tbody tr:nth-of-type(odd)
+    background: none
+
+  &::before
+    content: attr(data-lang)
+    display: block
+    background: #D3E4FC
+    color: #3E6099
+    font-family: $code-font-family
+    font-size: $font-size-smaller
+    font-weight: 600
+    padding: 6px 12px
+    text-transform: uppercase
+    letter-spacing: .05em
+
+  .gutter pre
+    background: #D6E6FC
+    color: #7C97BE
+    padding-right: 14px !important
+    border-right: 1px solid #B9D3F5
+
+  .code pre
+    background: transparent
+    padding-left: 14px !important
+
+  .copy-btn
+    top: 6px !important
+
+.mermaid
+  overflow-x: auto
