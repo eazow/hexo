@@ -11,39 +11,7 @@ Suricata 得名于非洲草原上的猫鼬(学名 *Suricata suricatta*)——猫
 
 把 Suricata 想象成一条工厂流水线:包从网卡或 pcap 文件进来，依次经过捕获、解码、Flow、Stream、应用层解析、规则检测这几道工位，才走到终点。先给这条产线画一张图，后面每一篇都是在往图里的某一格添细节:
 
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 25, "rankSpacing": 45, "padding": 5, "useMaxWidth": true}}}%%
-flowchart LR
-    A["网卡 / PCAP 文件"] --> B
-    subgraph B["第3篇:捕获"]
-        B1["AF_PACKET / PCAP / NFQ"]
-    end
-    subgraph C["第4篇:解码"]
-        C1["Ether / IP / TCP"]
-    end
-    subgraph D["第5篇:Flow"]
-        D1["查找 / 建立"]
-    end
-    B --> C --> D
-```
-
-```mermaid
-%%{init: {"flowchart": {"nodeSpacing": 25, "rankSpacing": 45, "padding": 5, "useMaxWidth": true}}}%%
-flowchart LR
-    subgraph E["第6篇:Stream"]
-        E1["TCP 重组"]
-    end
-    subgraph F["第7篇:应用层解析"]
-        F1["HTTP / TLS ..."]
-    end
-    subgraph G["第8-9篇:规则检测"]
-        G1["MPM + SGH"]
-    end
-    subgraph H["第10篇:输出/告警"]
-        H1["EVE JSON"]
-    end
-    E --> F --> G --> H
-```
+![Suricata 数据包流水线总览](/images/suricata/suricata-pipeline.svg)
 
 <!-- more -->
 

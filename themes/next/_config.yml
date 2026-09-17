@@ -77,8 +77,9 @@ creative_commons:
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
 open_graph:
-  enable: false
+  enable: true
   options:
+    image: /images/logo.png
     #twitter_card: <twitter:card>
     #twitter_id: <twitter:creator>
     #twitter_site: <twitter:site>
