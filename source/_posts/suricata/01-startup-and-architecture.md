@@ -129,22 +129,14 @@ while (1) {
 
 ## 6. 一张图收尾
 
-```
-main()
- ├─ SCParseCommandLine / SCLoadYamlConfig     读参数、读配置
- ├─ SuricataInit()
- │   ├─ RunModeInitializeThreadSettings()     线程数/亲和性
- │   ├─ ParseInterfacesList()                 监听哪些网卡
- │   ├─ PostConfLoadedSetup()                 各子系统初始化
- │   ├─ SCDropMainThreadCaps()                权限收敛
- │   └─ RunModeDispatch()
- │        ├─ mode->RunModeFunc()              组装 TmModule 流水线,创建工作线程
- │        │     Receive → Decode → FlowWorker(Stream+Detect) → Output
- │        ├─ FlowManagerThreadSpawn() 等       管理类线程
- │        └─ TmThreadsSealThreads()            封口
- ├─ SuricataPostInit()                        等所有线程 init 完成
- ├─ SuricataMainLoop()                        主线程:信号响应 + 健康检查
- └─ SuricataShutdown()                        杀线程、收尾
-```
+![main() 启动流程](/images/suricata/suricata-startup-flow.svg)
+
+## 7. 谁在什么时候被谁拉起来
+
+上面这张图是"竖着看"的调用顺序，但启动过程里有一刻其实是"横着"发生的：`RunModeDispatch()` 一声令下，主线程从单打独斗变成了甩手掌柜——工作线程和管理线程被 `TmThreadSpawn()` 一个个拉起来之后，就各自跑各自的循环，谁也不等谁。把这一刻的并发关系画成时序图会更直观：
+
+![启动过程中：谁在什么时候被谁拉起来](/images/suricata/suricata-startup-sequence.svg)
+
+主线程在 `SuricataPostInit()` 里等的，其实就是每个新线程把 `THV_INIT_DONE` 标志位设好；等完之后主线程自己也退到 `SuricataMainLoop()` 里去做信号响应和健康检查，三条线就这样并发跑到进程收到停止信号为止。
 
 到这里，启动流程的主线就走完了。下一篇从最关键、也最容易让人困惑的地方开始:`TmModule` 和 `RunMode` 到底怎样把一组函数变成一条正在工作的流水线？ `ThreadVars`、`TmSlot` 和模块间的队列(`Tmq`)，会把这个问题继续往下展开。
