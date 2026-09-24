@@ -49,3 +49,569 @@ figure.highlight
 
 .mermaid
   overflow-x: auto
+
+// Categories / Tags page title
+.category-all-page .category-all-title, .tag-cloud .tag-cloud-title
+  color: $grey-dark
+  font-size: $font-size-small
+  letter-spacing: .15em
+  text-transform: uppercase
+
+// Tags page: pill cloud, font size still reflects post count
+.tag-cloud .tag-cloud-tags
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  gap: 14px
+  margin-top: 28px
+
+  a
+    --accent: #A78BFA
+    --accent-bg: #F3EEFF
+    margin: 0
+    padding: .3em .9em
+    border: 1px solid transparent
+    border-radius: 999px
+    background: var(--accent-bg)
+    color: var(--accent)
+    font-weight: 600
+    line-height: 1.4
+    transition: transform .2s, box-shadow .2s, border-color .2s
+
+    &:nth-child(3n+2)
+      --accent: #60A5FA
+      --accent-bg: #EAF3FF
+
+    &:nth-child(3n)
+      --accent: #F472B6
+      --accent-bg: #FDEEF6
+
+    &::before
+      content: '#'
+      margin-right: .15em
+      opacity: .5
+
+    &:hover
+      transform: translateY(-3px)
+      border-color: var(--accent)
+      box-shadow: 0 8px 18px rgba(0, 0, 0, .08)
+
+// Categories page: card grid with gradient accents
+.category-all-page
+  .category-all
+    margin-top: 28px
+
+  .category-list
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+    gap: 16px
+
+  .category-list-item
+    --accent: #A78BFA
+    --accent-bg: #F3EEFF
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0
+    padding: 18px 18px 18px 22px
+    border: 1px solid #EEF0F4
+    border-radius: 12px
+    background: #fff
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04)
+    overflow: hidden
+    transition: transform .2s, box-shadow .2s, border-color .2s
+
+    &:nth-child(3n+2)
+      --accent: #60A5FA
+      --accent-bg: #EAF3FF
+
+    &:nth-child(3n)
+      --accent: #F472B6
+      --accent-bg: #FDEEF6
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      width: 4px
+      background: var(--accent)
+
+    &:hover
+      transform: translateY(-3px)
+      border-color: var(--accent)
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .08)
+
+  a.category-list-link
+    color: #333
+    font-size: 1.05em
+    font-weight: 600
+    border-bottom: none
+
+    // Make the whole card clickable
+    &::after
+      content: ''
+      position: absolute
+      inset: 0
+
+  .category-list-item:hover a.category-list-link
+    color: var(--accent)
+
+  .category-list-count
+    min-width: 30px
+    padding: 2px 10px
+    border-radius: 999px
+    background: var(--accent-bg)
+    color: var(--accent)
+    font-size: .85em
+    font-weight: 600
+    text-align: center
+
+    &::before, &::after
+      content: none
+
+// Archives (and category/tag detail pages): gradient timeline
+.posts-collapse .post-content
+  &::before
+    width: 3px
+    margin-left: -1.5px
+    border-radius: 3px
+    background: linear-gradient(180deg, #A78BFA, #60A5FA 50%, #F472B6)
+    opacity: .35
+
+  .collection-title
+    &::before
+      background: #A78BFA
+      box-shadow: 0 0 0 4px #F3EEFF
+
+    .collection-header
+      color: $grey-dark
+
+  .collection-year
+    margin: 48px 0 16px
+
+    &::before
+      width: 12px
+      height: 12px
+      margin-left: -6px
+      margin-top: -6px
+      background: linear-gradient(135deg, #A78BFA, #F472B6)
+      box-shadow: 0 0 0 4px #fff
+
+    .collection-header
+      display: inline-block
+      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      -webkit-background-clip: text
+      background-clip: text
+      color: transparent
+      letter-spacing: .03em
+
+  .post-header
+    margin: 4px 2px 0
+    padding: 8px 14px 8px 18px
+    border-bottom: none
+    border-radius: 10px
+    transition: background .2s
+
+    &::before
+      top: 50%
+      margin-top: -4px
+
+    &:hover
+      background: rgba(167, 139, 250, .08)
+
+      &::before
+        background: #A78BFA
+
+      .post-title a
+        color: #7C3AED
+
+  .post-meta-container time
+    padding: 2px 8px
+    border-radius: 999px
+    background: #F3F4F6
+    color: $grey-dark
+    font-family: $code-font-family
+
+  .post-title a
+    transition: color .2s
+
+// Archives header: gradient banner
+.archive.posts-collapse .post-content .collection-title .collection-header
+  display: inline-block
+  padding: 12px 22px
+  border: 1px solid rgba(167, 139, 250, .25)
+  border-radius: 14px
+  background: linear-gradient(135deg, #F3EEFF, #EAF3FF 50%, #FDEEF6)
+  box-shadow: 0 6px 18px rgba(167, 139, 250, .15)
+  color: #6D28D9
+  font-size: 1.1em
+  font-weight: 700
+  line-height: 1.5
+  letter-spacing: .02em
+
+// Pagination: centered round buttons, gradient current page
+.pagination
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  gap: 10px
+  margin: 80px 0 0
+  border-top: 0
+
+  .prev, .next, .page-number, .space
+    margin: 0
+
+  .prev, .next, .page-number
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    min-width: 38px
+    height: 38px
+    padding: 0 10px
+    border: 1px solid #EEF0F4
+    border-radius: 999px
+    background: #fff
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04)
+    color: $grey-dark
+    font-weight: 600
+    transition: transform .2s, box-shadow .2s, background .2s, color .2s, border-color .2s
+
+    &:hover
+      transform: translateY(-2px)
+      border-color: #C4B5FD
+      background: #F3EEFF
+      color: #7C3AED
+      box-shadow: 0 6px 14px rgba(167, 139, 250, .2)
+
+  .page-number.current
+    border-color: transparent
+    background: linear-gradient(135deg, #A78BFA, #F472B6)
+    color: #fff
+    box-shadow: 0 6px 14px rgba(244, 114, 182, .3)
+
+  .space
+    color: $grey
+    letter-spacing: .1em
+
+  @media (max-width: 767px)
+    gap: 6px
+
+    .prev, .next, .page-number
+      min-width: 32px
+      height: 32px
+      padding: 0 8px
+      font-size: .9em
+
+// About page
+.about-hero
+  margin: 0 -20px 40px
+  padding: 40px 24px 32px
+  border-radius: 20px
+  background: linear-gradient(135deg, #F3EEFF, #EAF3FF 50%, #FDEEF6)
+  text-align: center
+
+  .about-avatar
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 96px
+    height: 96px
+    margin: 0 auto 16px
+    border: 4px solid #fff
+    border-radius: 50%
+    background: linear-gradient(135deg, #A78BFA, #60A5FA, #F472B6)
+    box-shadow: 0 10px 28px rgba(167, 139, 250, .35)
+    font-size: 48px
+
+  h1.about-name
+    margin: 0
+    border: 0
+    color: #3B2A6B
+    font-size: 2em
+
+  .about-tagline
+    display: block
+    max-width: 100%
+    margin: 8px auto 0
+
+  .about-intro
+    max-width: 520px
+    margin: 8px auto 20px
+    color: $grey-dark
+
+  .about-links
+    display: flex
+    justify-content: center
+    gap: 12px
+
+    a
+      padding: 6px 18px
+      border: 1px solid rgba(167, 139, 250, .35)
+      border-radius: 999px
+      background: #fff
+      color: #6D28D9
+      font-weight: 600
+      transition: transform .2s, box-shadow .2s
+
+      &:hover
+        transform: translateY(-2px)
+        box-shadow: 0 6px 14px rgba(167, 139, 250, .25)
+
+.about-terminal
+  margin: 0 0 48px
+  border-radius: 12px
+  background: #1E1B2E
+  box-shadow: 0 12px 30px rgba(30, 27, 46, .25)
+  overflow: hidden
+
+  .about-terminal-bar
+    display: flex
+    align-items: center
+    gap: 8px
+    padding: 10px 14px
+    background: #2A2640
+
+    span
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background: #FF5F57
+
+      &:nth-child(2)
+        background: #FEBC2E
+
+      &:nth-child(3)
+        background: #28C840
+
+    em
+      flex: 1
+      margin-right: 60px
+      color: #8B85A8
+      font-family: $code-font-family
+      font-size: .8em
+      font-style: normal
+      text-align: center
+
+  pre
+    margin: 0
+    padding: 18px 22px
+    overflow-x: auto
+    background: transparent
+    color: #E5E7EB
+    font-size: .9em
+    line-height: 1.8
+
+    b
+      color: #F472B6
+
+    i
+      color: #A78BFA
+      font-style: normal
+      font-weight: 700
+
+.about-section
+  margin: 0 0 48px
+
+  h2.about-title
+    margin: 0 0 20px
+    padding: 0
+    border: 0
+    font-size: 1.4em
+
+    &::after
+      content: ''
+      display: block
+      width: 48px
+      height: 3px
+      margin-top: 8px
+      border-radius: 3px
+      background: linear-gradient(90deg, #A78BFA, #F472B6)
+
+  h3.about-subtitle
+    margin: 24px 0 12px
+    color: $grey-dark
+    font-size: .8em
+    letter-spacing: .15em
+    text-transform: uppercase
+
+.about-cards
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+  gap: 16px
+  margin-bottom: 16px
+
+.about-card, .about-quote
+  text-align: left
+
+.about-card
+  padding: 20px 22px
+  border: 1px solid #EEF0F4
+  border-radius: 14px
+  background: #fff
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .04)
+  transition: transform .2s, box-shadow .2s
+
+  &:hover
+    transform: translateY(-3px)
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .08)
+
+  h3
+    margin: 0 0 10px
+    font-size: 1.05em
+
+  p
+    margin: 0 0 10px
+    color: $grey-dark
+
+  ul
+    margin: 0
+    padding-left: 1.2em
+
+  li
+    margin: 4px 0
+
+.about-card-highlight
+  border-color: rgba(167, 139, 250, .35)
+  background: linear-gradient(135deg, #F3EEFF, #FDEEF6)
+
+  ul
+    padding-left: 0
+    list-style: none
+
+.about-quote
+  padding: 26px 30px
+  border-left: 4px solid #A78BFA
+  border-radius: 0 14px 14px 0
+  background: linear-gradient(90deg, #F3EEFF, rgba(243, 238, 255, 0))
+  font-family: Georgia, serif
+  font-size: 1.05em
+  font-style: italic
+
+  p
+    margin: 6px 0
+
+  b
+    color: #7C3AED
+
+.about-skills
+  display: grid
+  gap: 16px
+
+.about-skill
+  display: grid
+  grid-template-columns: 1fr auto
+  row-gap: 6px
+
+  span
+    font-weight: 600
+
+    small
+      margin-left: 6px
+      padding: 1px 8px
+      border-radius: 999px
+      background: #FDEEF6
+      color: #DB2777
+      font-size: .75em
+
+  em
+    color: $grey-dark
+    font-family: $code-font-family
+    font-style: normal
+
+.about-bar
+  grid-column: 1 / -1
+  height: 10px
+  border-radius: 999px
+  background: #F1F0F7
+  overflow: hidden
+
+  i
+    display: block
+    height: 100%
+    border-radius: 999px
+    background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+
+.post-body a.about-icons
+  display: block
+  border: 0
+  text-align: center
+
+  img
+    display: inline-block
+    max-width: 100%
+
+.about-badges
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 8px
+
+  img
+    height: 28px
+    margin: 0
+    border-radius: 4px
+
+.about-fortune
+  padding: 20px 24px
+  border: 1px dashed #C4B5FD
+  border-radius: 14px
+  text-align: center
+
+  code
+    background: none
+    color: #A78BFA
+
+  p
+    margin: 8px 0 0
+    font-size: 1.1em
+
+.about-contrib
+  display: block
+  max-width: 100%
+  margin: 0 auto 20px
+
+.about-stats
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 8px
+
+  img
+    flex: 1 1 auto
+    min-width: 0
+    height: 195px
+    margin: 0
+    border-radius: 8px
+    object-fit: contain
+
+.about-visitor
+  margin-top: 24px
+  text-align: center
+
+  img
+    display: inline-block
+    margin: 0
+
+@media (max-width: 767px)
+  .about-hero
+    margin: 0 0 32px
+
+  .about-terminal pre
+    padding: 14px 16px
+    font-size: .8em
+
+  .about-quote
+    padding: 20px 18px
+
+  .about-stats
+    flex-direction: column
+
+    img
+      width: 100%
+      height: auto

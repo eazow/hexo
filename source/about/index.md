@@ -5,90 +5,116 @@ toc:
   enable: false
 ---
 
-<div align="center">
-
-<!-- ![EAZOW](../images/eazow-logo-typing.svg) -->
-
-# 👾 Hey, I'm Eazow
-
-![Typing SVG](../images/eazow-tagline-typing.svg)
-
+<div class="about-hero">
+  <div class="about-avatar">👾</div>
+  <h1 class="about-name">Hey, I'm Eazow</h1>
+  <img class="about-tagline" src="/images/eazow-tagline-typing.svg" alt="OS explorer always.">
+  <p class="about-intro">A programmer who loves clean code, a good game, and digging into how operating systems really work.</p>
+  <div class="about-links">
+    <a href="https://github.com/eazow" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+    <a href="mailto:eazow@163.com"><i class="fa fa-envelope"></i> Email</a>
+  </div>
 </div>
 
-```bash
-$ whoami
-Eazow
+<div class="about-terminal">
+  <div class="about-terminal-bar"><span></span><span></span><span></span><em>eazow@earth: ~</em></div>
+<pre><b>$</b> whoami
+eazow
+<b>$</b> neofetch
+<i>OS</i>          Human 5.x (runs on caffeine)
+<i>Host</i>        Earth, Sol System
+<i>Kernel</i>      Linux 6.x — getting comfortable
+<i>Shell</i>       zsh
+<i>Editor</i>      neovim
+<i>Uptime</i>      since childhood, still compiling
+<i>Superpower</i>  turning caffeine into commits ☕→💻</pre>
+</div>
 
-$ neofetch
--------------------------------------------
-OS: Human 5.x (runs on caffeine)
-Host: Earth, Sol System
-Kernel: Linux 6.x — getting comfortable
-Shell: zsh
-Editor: neovim
-Uptime: since childhood, still compiling
-Languages: Python, C, Go, Rust, PHP, Java, TS, JS, Bash
--------------------------------------------
-```
+<div class="about-section">
+  <h2 class="about-title">🎮 What I'm Into</h2>
+  <div class="about-cards">
+    <div class="about-card">
+      <h3>💻 Coding</h3>
+      <ul>
+        <li>Building cool stuff</li>
+        <li>Clean code &gt; clever code</li>
+        <li>Open source contributor</li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>🎮 Gaming</h3>
+      <ul>
+        <li>Living in virtual worlds</li>
+        <li>Strategy &amp; FPS</li>
+        <li>Always one more round</li>
+      </ul>
+    </div>
+  </div>
+  <div class="about-card about-card-highlight">
+    <h3>🌱 Currently Learning: Operating Systems 🐧</h3>
+    <p>Because understanding <em>how the machine thinks</em> makes you a better programmer at every layer above it.</p>
+    <ul>
+      <li>⚙️ Process scheduling &amp; memory management</li>
+      <li>🔐 System calls &amp; kernel space</li>
+      <li>🐧 Getting dangerously comfortable with Linux internals</li>
+    </ul>
+  </div>
+</div>
 
-## 🧬 About Me
+<div class="about-section">
+  <h2 class="about-title">💬 Words I Live By</h2>
+  <div class="about-quote">
+    <p>If you are at the top of your life, remember to stay <b>humble</b>.</p>
+    <p>If you are at the bottom of your life, remember to stay <b>courageous</b>.</p>
+    <p>If you are in a problem, remember to stay <b>calm</b>.</p>
+    <p>Always remember, stay <b>kind</b> and <b>positive</b>.</p>
+  </div>
+</div>
 
-```python
-class Eazow:
-    interests  = ["Coding", "Gaming", "OS Internals"]
-    currently  = "Diving deep into Operating Systems 🐧"
-    mindset    = "Stay humble at the top. Stay courageous at the bottom."
-    superpower = "Turning caffeine into commits ☕→💻"
-```
+<div class="about-section">
+  <h2 class="about-title">📊 Skill Levels</h2>
+  <div class="about-skills">
+    <div class="about-skill"><span>Backend Development</span><em>95%</em><div class="about-bar"><i style="width: 95%"></i></div></div>
+    <div class="about-skill"><span>Systems Programming</span><em>80%</em><div class="about-bar"><i style="width: 80%"></i></div></div>
+    <div class="about-skill"><span>Linux / OS Internals <small>leveling up ↑</small></span><em>70%</em><div class="about-bar"><i style="width: 70%"></i></div></div>
+    <div class="about-skill"><span>Security (IDS/IPS)</span><em>65%</em><div class="about-bar"><i style="width: 65%"></i></div></div>
+    <div class="about-skill"><span>Frontend</span><em>60%</em><div class="about-bar"><i style="width: 60%"></i></div></div>
+  </div>
+</div>
 
+<div class="about-section">
+  <h2 class="about-title">🛠️ Toolbox</h2>
+  <h3 class="about-subtitle">Languages</h3>
+  <a class="about-icons" href="https://skillicons.dev" target="_blank" rel="noopener"><img src="https://skillicons.dev/icons?i=python,c,go,rust,php,java,ts,js,bash&perline=9" alt="Languages"></a>
+  <h3 class="about-subtitle">Technologies</h3>
+  <a class="about-icons" href="https://skillicons.dev" target="_blank" rel="noopener"><img src="https://skillicons.dev/icons?i=kafka,redis,mongodb,mysql,postgres,elasticsearch,sqlite,graphql,git,fastapi,flask,django,docker,jquery,laravel,nginx,nodejs,pnpm,yarn,react,vue,regex,sentry,vim,md&perline=13" alt="Technologies"></a>
+  <h3 class="about-subtitle">Security &amp; Big Data</h3>
+  <div class="about-badges">
+    <img src="https://img.shields.io/badge/Suricata-EF3B2D?style=for-the-badge&logo=suricata&logoColor=white" alt="Suricata">
+    <img src="https://img.shields.io/badge/Snort-CC0000?style=for-the-badge&logo=snort&logoColor=white" alt="Snort">
+    <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
+    <img src="https://img.shields.io/badge/Apache_Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black" alt="Apache Hadoop">
+    <img src="https://img.shields.io/badge/Apache_Hive-FDEE21?style=for-the-badge&logo=apachehive&logoColor=black" alt="Apache Hive">
+  </div>
+  <h3 class="about-subtitle">AI Tools</h3>
+  <div class="about-badges">
+    <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claudecode&logoColor=white" alt="Claude Code">
+    <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude">
+    <img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot">
+    <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor">
+    <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
+    <img src="https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logoColor=white" alt="ChatGPT">
+    <img src="https://img.shields.io/badge/Codex-412991?style=for-the-badge&logoColor=white" alt="Codex">
+  </div>
+</div>
 
-## 🎮 Stack & Interests
-
-| 💻 Coding | 🎮 Gaming | 🔧 Currently Exploring |
-|-----------|-----------|------------------------|
-| Building cool stuff | Living in virtual worlds | OS internals & kernels |
-| Clean code > clever code | Strategy & FPS | Memory management, syscalls |
-| Open source contributor | Always one more round | Linux under the hood |
-
-
-## 🌱 Currently Learning
-
-> **Operating Systems** — because understanding *how the machine thinks*
-> makes you a better programmer at every layer above it.
-
-- ⚙️ Process scheduling & memory management
-- 🔐 System calls & kernel space
-- 🐧 Getting dangerously comfortable with Linux internals
-
-
-## 💬 Words I Live By
-
-> *If you are at the top of your life, remember to stay humble.*
-> 
-> *If you are at the bottom of your life, remember to stay courageous.*
-> 
-> *If you are in a problem, remember to stay calm.*
-> 
-> *Always remember, stay kind and positive.*
-
-
-## 📊 Skill Levels
-
-```text
-Systems Programming  ████████████████░░░░  80%
-Backend Development  ███████████████████░  95%
-Linux / OS Internals ██████████████░░░░░░  70%  ← leveling up
-Security (IDS/IPS)   █████████████░░░░░░░  65%
-Frontend             ████████████░░░░░░░░  60%
-```
-
-## 📟 Fortune
-
-```bash
-$ fortune
-```
-
-<p id="fortune" align="center"><em>rolling the dice...</em></p>
+<div class="about-section">
+  <h2 class="about-title">📟 Fortune</h2>
+  <div class="about-fortune">
+    <code>$ fortune</code>
+    <p id="fortune"><em>rolling the dice...</em></p>
+  </div>
+</div>
 
 <script>
 (function () {
@@ -103,59 +129,13 @@ $ fortune
 })();
 </script>
 
-## 🖥️ Languages
-
-[![Languages](https://skillicons.dev/icons?i=python,c,go,rust,php,java,ts,js,bash&perline=9)](https://skillicons.dev)
-
-## 🛠️ Technologies
-
-[![Technologies](https://skillicons.dev/icons?i=kafka,redis,mongodb,mysql,postgres,elasticsearch,sqlite,graphql,git,fastapi,flask,django,docker,jquery,laravel,nginx,nodejs,pnpm,yarn,react,vue,regex,sentry,vim,md&perline=13)](https://skillicons.dev)
-
-<!-- 用表格单行排列，强制一行 -->
-<table><tr>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Suricata-EF3B2D?style=for-the-badge&logo=suricata&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Snort-CC0000?style=for-the-badge&logo=snort&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Apache_Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Apache_Hive-FDEE21?style=for-the-badge&logo=apachehive&logoColor=black"/></td>
-</tr>
-</table>
-
-## 🤖 AI Tools
-
-<table><tr>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claudecode&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logoColor=white"/></td>
-  <td style="border-width: 0"><img src="https://img.shields.io/badge/Codex-412991?style=for-the-badge&logoColor=white"/></td>
-</tr>
-</table>
-
-## Github Contributions
-
-<!--img src="http://ghchart.rshah.org/eazow" alt="Github Contributions" style="zoom:136%;" /-->
-![](../images/github-user-contribution.svg)
-
-<p align="center" style="display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; gap:8px;">
-  <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
-  <img src="../images/github-streak-stats.svg" alt="GitHub Streak" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
-  <img src="https://github-readme-stats-rickstaa.vercel.app/api/top-langs/?username=eazow&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages" style="height:195px; width:auto; min-width:0; flex:1 1 auto; object-fit:contain;"/>
-</p>
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=eazow.eazow)
-
-
-<!--
-## 🤖 AI & ML
-
-[![AI](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&perline=6)](https://skillicons.dev)
-
-
-![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/abilities.webp)
--->
-<!-- ![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/languages.png)
-![](https://hyz-blog.oss-cn-hangzhou.aliyuncs.com/technologies.png)
- -->
+<div class="about-section">
+  <h2 class="about-title">📈 GitHub</h2>
+  <img class="about-contrib" src="/images/github-user-contribution.svg" alt="GitHub Contributions">
+  <div class="about-stats">
+    <img src="https://github-readme-stats-rickstaa.vercel.app/api?username=eazow&show_icons=true&theme=tokyonight" alt="GitHub Stats">
+    <img src="/images/github-streak-stats.svg" alt="GitHub Streak">
+    <img src="https://github-readme-stats-rickstaa.vercel.app/api/top-langs/?username=eazow&layout=compact&theme=tokyonight&hide=html,css" alt="Top Languages">
+  </div>
+  <div class="about-visitor"><img src="https://visitor-badge.laobi.icu/badge?page_id=eazow.eazow" alt="Visitor Badge"></div>
+</div>
