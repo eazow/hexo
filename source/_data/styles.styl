@@ -615,3 +615,170 @@ figure.highlight
     img
       width: 100%
       height: auto
+
+// Header menu: pill nav bar, gradient active item
+.site-nav .menu
+  .menu-item
+    a
+      border-radius: 999px
+      transition: background .2s, color .2s, box-shadow .2s
+
+      i
+        color: #A78BFA
+        transition: color .2s
+
+      &:hover
+        background: #F3EEFF
+        color: #7C3AED
+
+      &.menu-item-active
+        background: linear-gradient(135deg, #A78BFA, #F472B6)
+        color: #fff
+        box-shadow: 0 4px 12px rgba(244, 114, 182, .3)
+
+        i
+          color: #fff
+
+  @media (min-width: 768px)
+    display: inline-flex
+    gap: 4px
+    padding: 5px
+    border: 1px solid #EEF0F4
+    border-radius: 999px
+    background: rgba(255, 255, 255, .75)
+    backdrop-filter: blur(8px)
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .05)
+
+    .menu-item a
+      padding: 2px 14px
+
+  @media (max-width: 767px)
+    .menu-item a
+      padding: 6px 14px
+      border-radius: 10px
+
+// Logo: terminal-prompt mark with blinking cursor + gradient title
+.site-meta .brand
+  display: inline-flex
+  align-items: center
+  gap: 10px
+
+  &::before
+    content: '>_'
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    width: 36px
+    height: 36px
+    border-radius: 10px
+    background: linear-gradient(135deg, #A78BFA, #60A5FA, #F472B6)
+    box-shadow: 0 4px 12px rgba(167, 139, 250, .35)
+    color: #fff
+    font-family: $code-font-family
+    font-size: 15px
+    font-weight: 700
+    transition: transform .3s
+    animation: logo-cursor 1.2s steps(1) infinite
+
+  &:hover::before
+    transform: rotate(-8deg) scale(1.06)
+
+  .site-title
+    font-weight: 800
+    letter-spacing: .02em
+
+@keyframes logo-cursor
+  0%
+    content: '>_'
+  50%
+    content: '> '
+
+// Push the menu to the right edge of the content column
+@media (min-width: 768px)
+  .header-inner .site-nav
+    text-align: right
+
+  // Align logo with the content column's left edge
+  .header-inner .site-brand-container
+    padding-left: 0
+
+  .site-meta .brand
+    padding-left: 0
+
+// Read more button: lavender pill, gradient on hover
+.post-button a.btn
+  padding: 6px 20px
+  border: 1px solid rgba(167, 139, 250, .4)
+  border-radius: 999px
+  background: #F3EEFF
+  color: #7C3AED
+  font-weight: 600
+  line-height: 1.6
+  transition: background .2s, color .2s, box-shadow .2s, transform .2s, border-color .2s
+
+  &:hover
+    transform: translateY(-2px)
+    border-color: transparent
+    background: linear-gradient(135deg, #A78BFA, #F472B6)
+    color: #fff
+    box-shadow: 0 6px 14px rgba(244, 114, 182, .3)
+
+// Back to top: gradient pill with scroll percent
+.back-to-top
+  height: 40px
+  min-width: 40px
+  padding: 0 14px
+  border-radius: 999px
+  background: linear-gradient(135deg, #A78BFA, #F472B6)
+  box-shadow: 0 6px 16px rgba(167, 139, 250, .4)
+  opacity: 1
+  font-weight: 600
+  transition: bottom .2s ease-in-out, transform .2s, box-shadow .2s
+
+  &:hover
+    transform: translateY(-3px)
+    color: #fff
+    box-shadow: 0 10px 22px rgba(244, 114, 182, .45)
+
+// Footer: quote on top, stats on one line
+.footer-inner
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  row-gap: 6px
+
+  @media (min-width: 768px)
+    justify-content: flex-start
+
+  @media (max-width: 767px)
+    flex-direction: column
+
+    .wordcount, .busuanzi-count
+      &::before
+        display: none
+
+  .copyright, .wordcount, .busuanzi-count
+    margin: 0
+
+  .wordcount, .busuanzi-count
+    &::before
+      content: '·'
+      margin: 0 12px
+      color: $grey-light
+
+  .footer-quote
+    order: -1
+    flex-basis: 100%
+    margin-bottom: 10px
+    font-family: Georgia, serif
+    font-size: 1.1em
+    font-style: italic
+
+    span
+      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      -webkit-background-clip: text
+      background-clip: text
+      color: transparent
