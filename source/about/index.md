@@ -6,10 +6,10 @@ toc:
 ---
 
 <div class="about-hero">
-  <div class="about-avatar">👾</div>
+  <div class="about-avatar about-glider" title="The Hacker Emblem"><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
   <h1 class="about-name">Hey, I'm Eazow</h1>
   <img class="about-tagline" src="/images/eazow-tagline-typing.svg" alt="OS explorer always.">
-  <p class="about-intro">A programmer who loves clean code, a good game, and digging into how operating systems really work.</p>
+  <p class="about-intro">Clean code in user space. Curiosity in kernel space.</p>
   <div class="about-links">
     <a href="https://github.com/eazow" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     <a href="mailto:eazow@163.com"><i class="fa fa-envelope"></i> Email</a>

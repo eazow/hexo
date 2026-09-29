@@ -329,6 +329,24 @@ figure.highlight
     box-shadow: 0 10px 28px rgba(167, 139, 250, .35)
     font-size: 48px
 
+  // Hacker Emblem: Game of Life glider on a 3x3 grid
+  .about-glider
+    display: grid
+    grid-template-columns: repeat(3, 14px)
+    grid-template-rows: repeat(3, 14px)
+    gap: 6px
+    place-content: center
+
+    i
+      width: 14px
+      height: 14px
+      border-radius: 50%
+      background: rgba(255, 255, 255, .25)
+
+      &.on
+        background: #fff
+        box-shadow: 0 0 6px rgba(255, 255, 255, .6)
+
   h1.about-name
     margin: 0
     border: 0
@@ -782,3 +800,164 @@ figure.highlight
       -webkit-background-clip: text
       background-clip: text
       color: transparent
+
+// Post titles: bold dark title, gradient hover underline
+.posts-expand .post-header .post-title
+  color: #2D2A3E
+  font-weight: 700
+  letter-spacing: .01em
+  line-height: 1.4
+
+.posts-expand .post-title-link
+  color: #2D2A3E
+  transition: color .2s
+
+  &::before
+    height: 3px
+    border-radius: 3px
+    background: linear-gradient(90deg, #A78BFA, #F472B6)
+
+  &:hover
+    color: #7C3AED
+
+// Post page: left-aligned larger title with a short gradient bar
+.main-inner.post .post-header
+  text-align: left
+
+  .post-title
+    font-size: 2em
+
+    &::after
+      content: ''
+      display: block
+      width: 56px
+      height: 4px
+      margin: 14px 0 4px
+      border-radius: 4px
+      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+
+  .post-meta
+    justify-content: flex-start
+
+// Sidebar TOC: float in the right gutter on wide screens, card overlay otherwise
+.sidebar
+  top: 90px
+
+@media (min-width: 1360px)
+  .sidebar
+    width: calc((100vw - 800px) / 2 - 32px)
+    max-width: 320px
+
+@media (min-width: 1600px)
+  .sidebar
+    width: calc((100vw - 900px) / 2 - 32px)
+
+@media (max-width: 1359px)
+  .sidebar
+    right: -340px
+    bottom: auto
+    width: 280px
+    border: 1px solid #EEF0F4
+    border-radius: 16px
+    background: rgba(255, 255, 255, .95)
+    backdrop-filter: blur(8px)
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .12)
+
+    .sidebar-inner
+      max-height: calc(100vh - 240px)
+
+  .sidebar-active .sidebar
+    right: 16px
+
+.post-toc .nav
+  .active > a, .active-current > a
+    border-bottom-color: #A78BFA
+    color: #7C3AED
+
+// Sidebar toggle: gradient button matching back-to-top
+.sidebar-toggle
+  border-radius: 12px
+  background: linear-gradient(135deg, #A78BFA, #F472B6)
+  box-shadow: 0 6px 16px rgba(167, 139, 250, .4)
+  opacity: 1
+
+// Post meta: chips with purple icons instead of "|" separated text
+.posts-expand .post-meta-container .post-meta
+  gap: 8px
+  align-items: center
+
+  .post-meta-item
+    display: inline-flex
+    align-items: center
+    gap: 4px
+    padding: 3px 10px
+    border-radius: 999px
+    background: #F6F5FB
+    color: $grey-dark
+
+    &::before
+      content: none
+
+  .post-meta-item-icon
+    margin-right: 0
+    color: #A78BFA
+
+  .post-meta-item-text
+    display: none
+
+  time
+    border-bottom: none
+
+  a
+    border-bottom: none
+    color: #7C3AED
+
+// Headings inside posts: clearer hierarchy
+.main-inner.post .post-body, .main-inner.index .post-body
+  h1, h2, h3, h4, h5, h6
+    color: #2D2A3E
+
+  h1
+    font-size: 1.55em
+
+  h2
+    position: relative
+    margin: 2.2em 0 1em
+    padding-bottom: 10px
+    border-bottom: 1px solid #EEF0F4
+    font-size: 1.35em
+
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      width: 56px
+      height: 3px
+      border-radius: 3px
+      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+
+  h3
+    position: relative
+    margin: 1.8em 0 .8em
+    padding-left: 14px
+    font-size: 1.15em
+    line-height: 1.4
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: .2em
+      bottom: .2em
+      width: 4px
+      border-radius: 4px
+      background: linear-gradient(180deg, #A78BFA, #F472B6)
+
+  h4
+    color: #7C3AED
+    font-size: 1.05em
+
+  h5, h6
+    color: $grey-dark
+    font-size: 1em
