@@ -116,4 +116,3 @@ Topics are **partitioned**, meaning a topic is spread over a number of "buckets"
 To make your data fault-tolerant and highly-available, every topic can be **replicated**, even across geo-regions or datacenters, so that there are always multiple brokers that have a copy of the data just in case things go wrong, you want to do maintenance on the brokers, and so on. A common production setting is a replication factor of 3, i.e., there will always be three copies of your data. This replication is performed at the level of topic-partitions.
 
 为了使您的数据具有容错性和高可用性，可以**复制**每个主题，甚至跨地理区域或数据中心，以便始终有多个代理拥有数据副本，以防万一出现问题，您想要对brokers进行维护，等等。一个常见的生产设置是复制因子为 3，即始终存在三个数据副本。此复制在主题分区级别执行。
-
