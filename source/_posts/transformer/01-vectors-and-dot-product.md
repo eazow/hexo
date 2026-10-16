@@ -12,7 +12,6 @@ mathjax: true
 
 <!-- more -->
 
----
 
 ## 模型读到的不是文字
 
@@ -30,7 +29,7 @@ $$v = [3, 2]$$
 
 在平面上，可以把它画成一个**箭头**：从原点出发，向右走 3，再向上走 2，连接起点和终点的那条线就是它。所以向量既有**方向**，也有**长度**。
 
-![向量 v = [3, 2] 可以画成一个箭头](/images/transformer/01-vector.png)
+<img src="/images/transformer/01-vector.png" alt="向量 v = [3, 2] 可以画成一个箭头" width="420" />
 
 ## 向量可以描述"意思"
 
@@ -47,7 +46,7 @@ $$v = [3, 2]$$
 
 画出来是这样：
 
-![意思相近的词，箭头方向也相近](/images/transformer/01-word-vectors.png)
+<img src="/images/transformer/01-word-vectors.png" alt="意思相近的词，箭头方向也相近" width="420" />
 
 可以看到：**意思相近的词，箭头方向也相近**。猫和狗几乎指向同一个方向，汽车则离它们很远。
 
