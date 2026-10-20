@@ -2,7 +2,7 @@
 title: 岳阳楼记
 date: 2024-06-12
 tags: Reading
-categories: Reading
+categories: Poetry
 ---
 
 

@@ -2,7 +2,7 @@
 title: 我喜欢的古诗词
 date: 2023-02-06 17:20:12
 tags: Poetry
-categories: Life
+categories: Poetry
 ---
 
 读书时听着老师念答案不太能读懂诗词，年纪大了便能体会到其中的韵味和阅历。每次读时，还能有不同的品味。
