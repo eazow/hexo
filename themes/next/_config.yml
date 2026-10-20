@@ -103,6 +103,7 @@ menu:
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   # books: /books/ || fa fa-book
+  series: /series/ || fa fa-layer-group
   about: /about/ || fa fa-user
   # tomcat:
   #   default: /tomcat/ || fa fa-cat
