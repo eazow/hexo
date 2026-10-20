@@ -1,5 +1,29 @@
+// Palette: 'blue' or 'purple'. Switch here, then run `hexo clean && hexo g`.
+$palette = 'blue'
+
+if $palette == 'purple'
+  $p-main = #A78BFA
+  $p-main-bg = #F3EEFF
+  $p-main-dark = #7C3AED
+  $p-main-darker = #6D28D9
+  $p-main-soft = #C4B5FD
+  $p-mid = #60A5FA
+  $p-mid-bg = #EAF3FF
+  $p-accent = #F472B6
+  $p-accent-bg = #FDEEF6
+else
+  $p-main = #60A5FA
+  $p-main-bg = #EFF6FF
+  $p-main-dark = #2563EB
+  $p-main-darker = #1D4ED8
+  $p-main-soft = #93C5FD
+  $p-mid = #38BDF8
+  $p-mid-bg = #E0F2FE
+  $p-accent = #2563EB
+  $p-accent-bg = #DBEAFE
+
 .site-title
-  background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6, #A78BFA)
+  background: linear-gradient(90deg, $p-main, $p-mid, $p-accent, $p-main)
   background-size: 300% 100%
   -webkit-background-clip: text
   background-clip: text
@@ -67,8 +91,8 @@ figure.highlight
   margin-top: 28px
 
   a
-    --accent: #A78BFA
-    --accent-bg: #F3EEFF
+    --accent: $p-main
+    --accent-bg: $p-main-bg
     margin: 0
     padding: .3em .9em
     border: 1px solid transparent
@@ -80,12 +104,12 @@ figure.highlight
     transition: transform .2s, box-shadow .2s, border-color .2s
 
     &:nth-child(3n+2)
-      --accent: #60A5FA
-      --accent-bg: #EAF3FF
+      --accent: $p-mid
+      --accent-bg: $p-mid-bg
 
     &:nth-child(3n)
-      --accent: #F472B6
-      --accent-bg: #FDEEF6
+      --accent: $p-accent
+      --accent-bg: $p-accent-bg
 
     &::before
       content: '#'
@@ -108,8 +132,8 @@ figure.highlight
     gap: 16px
 
   .category-list-item
-    --accent: #A78BFA
-    --accent-bg: #F3EEFF
+    --accent: $p-main
+    --accent-bg: $p-main-bg
     position: relative
     display: flex
     align-items: center
@@ -124,12 +148,12 @@ figure.highlight
     transition: transform .2s, box-shadow .2s, border-color .2s
 
     &:nth-child(3n+2)
-      --accent: #60A5FA
-      --accent-bg: #EAF3FF
+      --accent: $p-mid
+      --accent-bg: $p-mid-bg
 
     &:nth-child(3n)
-      --accent: #F472B6
-      --accent-bg: #FDEEF6
+      --accent: $p-accent
+      --accent-bg: $p-accent-bg
 
     &::before
       content: ''
@@ -179,13 +203,13 @@ figure.highlight
     width: 3px
     margin-left: -1.5px
     border-radius: 3px
-    background: linear-gradient(180deg, #A78BFA, #60A5FA 50%, #F472B6)
+    background: linear-gradient(180deg, $p-main, $p-mid 50%, $p-accent)
     opacity: .35
 
   .collection-title
     &::before
-      background: #A78BFA
-      box-shadow: 0 0 0 4px #F3EEFF
+      background: $p-main
+      box-shadow: 0 0 0 4px $p-main-bg
 
     .collection-header
       color: $grey-dark
@@ -198,12 +222,12 @@ figure.highlight
       height: 12px
       margin-left: -6px
       margin-top: -6px
-      background: linear-gradient(135deg, #A78BFA, #F472B6)
+      background: linear-gradient(135deg, $p-main, $p-accent)
       box-shadow: 0 0 0 4px #fff
 
     .collection-header
       display: inline-block
-      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      background: linear-gradient(90deg, $p-main, $p-mid, $p-accent)
       -webkit-background-clip: text
       background-clip: text
       color: transparent
@@ -221,13 +245,13 @@ figure.highlight
       margin-top: -4px
 
     &:hover
-      background: rgba(167, 139, 250, .08)
+      background: rgba($p-main, .08)
 
       &::before
-        background: #A78BFA
+        background: $p-main
 
       .post-title a
-        color: #7C3AED
+        color: $p-main-dark
 
   .post-meta-container time
     padding: 2px 8px
@@ -243,11 +267,11 @@ figure.highlight
 .archive.posts-collapse .post-content .collection-title .collection-header
   display: inline-block
   padding: 12px 22px
-  border: 1px solid rgba(167, 139, 250, .25)
+  border: 1px solid rgba($p-main, .25)
   border-radius: 14px
-  background: linear-gradient(135deg, #F3EEFF, #EAF3FF 50%, #FDEEF6)
-  box-shadow: 0 6px 18px rgba(167, 139, 250, .15)
-  color: #6D28D9
+  background: linear-gradient(135deg, $p-main-bg, $p-mid-bg 50%, $p-accent-bg)
+  box-shadow: 0 6px 18px rgba($p-main, .15)
+  color: $p-main-darker
   font-size: 1.1em
   font-weight: 700
   line-height: 1.5
@@ -284,16 +308,16 @@ figure.highlight
 
     &:hover
       transform: translateY(-2px)
-      border-color: #C4B5FD
-      background: #F3EEFF
-      color: #7C3AED
-      box-shadow: 0 6px 14px rgba(167, 139, 250, .2)
+      border-color: $p-main-soft
+      background: $p-main-bg
+      color: $p-main-dark
+      box-shadow: 0 6px 14px rgba($p-main, .2)
 
   .page-number.current
     border-color: transparent
-    background: linear-gradient(135deg, #A78BFA, #F472B6)
+    background: linear-gradient(135deg, $p-main, $p-accent)
     color: #fff
-    box-shadow: 0 6px 14px rgba(244, 114, 182, .3)
+    box-shadow: 0 6px 14px rgba($p-accent, .3)
 
   .space
     color: $grey
@@ -313,7 +337,7 @@ figure.highlight
   margin: 0 -20px 40px
   padding: 40px 24px 32px
   border-radius: 20px
-  background: linear-gradient(135deg, #F3EEFF, #EAF3FF 50%, #FDEEF6)
+  background: linear-gradient(135deg, $p-main-bg, $p-mid-bg 50%, $p-accent-bg)
   text-align: center
 
   .about-avatar
@@ -325,8 +349,8 @@ figure.highlight
     margin: 0 auto 16px
     border: 4px solid #fff
     border-radius: 50%
-    background: linear-gradient(135deg, #A78BFA, #60A5FA, #F472B6)
-    box-shadow: 0 10px 28px rgba(167, 139, 250, .35)
+    background: linear-gradient(135deg, $p-main, $p-mid, $p-accent)
+    box-shadow: 0 10px 28px rgba($p-main, .35)
     font-size: 48px
 
   // Hacker Emblem: Game of Life glider on a 3x3 grid
@@ -370,16 +394,16 @@ figure.highlight
 
     a
       padding: 6px 18px
-      border: 1px solid rgba(167, 139, 250, .35)
+      border: 1px solid rgba($p-main, .35)
       border-radius: 999px
       background: #fff
-      color: #6D28D9
+      color: $p-main-darker
       font-weight: 600
       transition: transform .2s, box-shadow .2s
 
       &:hover
         transform: translateY(-2px)
-        box-shadow: 0 6px 14px rgba(167, 139, 250, .25)
+        box-shadow: 0 6px 14px rgba($p-main, .25)
 
 .about-terminal
   margin: 0 0 48px
@@ -426,10 +450,10 @@ figure.highlight
     line-height: 1.8
 
     b
-      color: #F472B6
+      color: $p-accent
 
     i
-      color: #A78BFA
+      color: $p-main
       font-style: normal
       font-weight: 700
 
@@ -449,7 +473,7 @@ figure.highlight
       height: 3px
       margin-top: 8px
       border-radius: 3px
-      background: linear-gradient(90deg, #A78BFA, #F472B6)
+      background: linear-gradient(90deg, $p-main, $p-accent)
 
   h3.about-subtitle
     margin: 24px 0 12px
@@ -495,8 +519,8 @@ figure.highlight
     margin: 4px 0
 
 .about-card-highlight
-  border-color: rgba(167, 139, 250, .35)
-  background: linear-gradient(135deg, #F3EEFF, #FDEEF6)
+  border-color: rgba($p-main, .35)
+  background: linear-gradient(135deg, $p-main-bg, $p-accent-bg)
 
   ul
     padding-left: 0
@@ -504,9 +528,9 @@ figure.highlight
 
 .about-quote
   padding: 26px 30px
-  border-left: 4px solid #A78BFA
+  border-left: 4px solid $p-main
   border-radius: 0 14px 14px 0
-  background: linear-gradient(90deg, #F3EEFF, rgba(243, 238, 255, 0))
+  background: linear-gradient(90deg, $p-main-bg, rgba($p-main-bg, 0))
   font-family: Georgia, serif
   font-size: 1.05em
   font-style: italic
@@ -515,7 +539,7 @@ figure.highlight
     margin: 6px 0
 
   b
-    color: #7C3AED
+    color: $p-main-dark
 
 .about-skills
   display: grid
@@ -533,7 +557,7 @@ figure.highlight
       margin-left: 6px
       padding: 1px 8px
       border-radius: 999px
-      background: #FDEEF6
+      background: $p-accent-bg
       color: #DB2777
       font-size: .75em
 
@@ -553,7 +577,7 @@ figure.highlight
     display: block
     height: 100%
     border-radius: 999px
-    background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+    background: linear-gradient(90deg, $p-main, $p-mid, $p-accent)
 
 .post-body a.about-icons
   display: block
@@ -577,13 +601,13 @@ figure.highlight
 
 .about-fortune
   padding: 20px 24px
-  border: 1px dashed #C4B5FD
+  border: 1px dashed $p-main-soft
   border-radius: 14px
   text-align: center
 
   code
     background: none
-    color: #A78BFA
+    color: $p-main
 
   p
     margin: 8px 0 0
@@ -642,17 +666,17 @@ figure.highlight
       transition: background .2s, color .2s, box-shadow .2s
 
       i
-        color: #A78BFA
+        color: $p-main
         transition: color .2s
 
       &:hover
-        background: #F3EEFF
-        color: #7C3AED
+        background: $p-main-bg
+        color: $p-main-dark
 
       &.menu-item-active
-        background: linear-gradient(135deg, #A78BFA, #F472B6)
+        background: linear-gradient(135deg, $p-main, $p-accent)
         color: #fff
-        box-shadow: 0 4px 12px rgba(244, 114, 182, .3)
+        box-shadow: 0 4px 12px rgba($p-accent, .3)
 
         i
           color: #fff
@@ -690,8 +714,8 @@ figure.highlight
     width: 36px
     height: 36px
     border-radius: 10px
-    background: linear-gradient(135deg, #A78BFA, #60A5FA, #F472B6)
-    box-shadow: 0 4px 12px rgba(167, 139, 250, .35)
+    background: linear-gradient(135deg, $p-main, $p-mid, $p-accent)
+    box-shadow: 0 4px 12px rgba($p-main, .35)
     color: #fff
     font-family: $code-font-family
     font-size: 15px
@@ -727,10 +751,10 @@ figure.highlight
 // Read more button: lavender pill, gradient on hover
 .post-button a.btn
   padding: 6px 20px
-  border: 1px solid rgba(167, 139, 250, .4)
+  border: 1px solid rgba($p-main, .4)
   border-radius: 999px
-  background: #F3EEFF
-  color: #7C3AED
+  background: $p-main-bg
+  color: $p-main-dark
   font-weight: 600
   line-height: 1.6
   transition: background .2s, color .2s, box-shadow .2s, transform .2s, border-color .2s
@@ -738,9 +762,9 @@ figure.highlight
   &:hover
     transform: translateY(-2px)
     border-color: transparent
-    background: linear-gradient(135deg, #A78BFA, #F472B6)
+    background: linear-gradient(135deg, $p-main, $p-accent)
     color: #fff
-    box-shadow: 0 6px 14px rgba(244, 114, 182, .3)
+    box-shadow: 0 6px 14px rgba($p-accent, .3)
 
 // Back to top: gradient pill with scroll percent
 .back-to-top
@@ -748,8 +772,8 @@ figure.highlight
   min-width: 40px
   padding: 0 14px
   border-radius: 999px
-  background: linear-gradient(135deg, #A78BFA, #F472B6)
-  box-shadow: 0 6px 16px rgba(167, 139, 250, .4)
+  background: linear-gradient(135deg, $p-main, $p-accent)
+  box-shadow: 0 6px 16px rgba($p-main, .4)
   opacity: 1
   font-weight: 600
   transition: bottom .2s ease-in-out, transform .2s, box-shadow .2s
@@ -757,7 +781,7 @@ figure.highlight
   &:hover
     transform: translateY(-3px)
     color: #fff
-    box-shadow: 0 10px 22px rgba(244, 114, 182, .45)
+    box-shadow: 0 10px 22px rgba($p-accent, .45)
 
 // Footer: quote on top, stats on one line
 .footer-inner
@@ -796,7 +820,7 @@ figure.highlight
     font-style: italic
 
     span
-      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      background: linear-gradient(90deg, $p-main, $p-mid, $p-accent)
       -webkit-background-clip: text
       background-clip: text
       color: transparent
@@ -815,10 +839,10 @@ figure.highlight
   &::before
     height: 3px
     border-radius: 3px
-    background: linear-gradient(90deg, #A78BFA, #F472B6)
+    background: linear-gradient(90deg, $p-main, $p-accent)
 
   &:hover
-    color: #7C3AED
+    color: $p-main-dark
 
 // Post page: left-aligned larger title with a short gradient bar
 .main-inner.post .post-header
@@ -834,7 +858,7 @@ figure.highlight
       height: 4px
       margin: 14px 0 4px
       border-radius: 4px
-      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      background: linear-gradient(90deg, $p-main, $p-mid, $p-accent)
 
   .post-meta
     justify-content: flex-start
@@ -871,14 +895,14 @@ figure.highlight
 
 .post-toc .nav
   .active > a, .active-current > a
-    border-bottom-color: #A78BFA
-    color: #7C3AED
+    border-bottom-color: $p-main
+    color: $p-main-dark
 
 // Sidebar toggle: gradient button matching back-to-top
 .sidebar-toggle
   border-radius: 12px
-  background: linear-gradient(135deg, #A78BFA, #F472B6)
-  box-shadow: 0 6px 16px rgba(167, 139, 250, .4)
+  background: linear-gradient(135deg, $p-main, $p-accent)
+  box-shadow: 0 6px 16px rgba($p-main, .4)
   opacity: 1
 
 // Post meta: chips with purple icons instead of "|" separated text
@@ -900,7 +924,7 @@ figure.highlight
 
   .post-meta-item-icon
     margin-right: 0
-    color: #A78BFA
+    color: $p-main
 
   .post-meta-item-text
     display: none
@@ -910,7 +934,7 @@ figure.highlight
 
   a
     border-bottom: none
-    color: #7C3AED
+    color: $p-main-dark
 
 // Headings inside posts: clearer hierarchy
 .main-inner.post .post-body, .main-inner.index .post-body
@@ -935,7 +959,7 @@ figure.highlight
       width: 32px
       height: 2px
       border-radius: 2px
-      background: linear-gradient(90deg, #A78BFA, #60A5FA, #F472B6)
+      background: linear-gradient(90deg, $p-main, $p-mid, $p-accent)
 
   h3
     position: relative
@@ -952,10 +976,10 @@ figure.highlight
       bottom: .2em
       width: 4px
       border-radius: 4px
-      background: linear-gradient(180deg, #A78BFA, #F472B6)
+      background: linear-gradient(180deg, $p-main, $p-accent)
 
   h4
-    color: #7C3AED
+    color: $p-main-dark
     font-size: 1.05em
 
   h5, h6
