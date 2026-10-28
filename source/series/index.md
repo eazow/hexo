@@ -27,6 +27,8 @@ comments: false
 从向量、矩阵到神经网络，把读懂 Transformer 需要的基础一样样补齐。
 
 1. [向量与点积](/transformer/01-vectors-and-dot-product/)
+2. [矩阵乘法](/transformer/02-matrix-multiplication/)
+3. [导数与梯度下降](/transformer/03-derivative-and-gradient-descent/)
 
 ## 新概念英语第四册
 
