@@ -227,6 +227,7 @@ githubcalendar:
 
 mathjax:
   tags: none
+  packages: [ams]   # 启用 AMS 扩展：bmatrix、align、cases 等
   single_dollars: true
   cjk_width: 0.9
   normal_width: 0.6

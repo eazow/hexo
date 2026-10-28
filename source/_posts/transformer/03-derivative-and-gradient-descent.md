@@ -1,6 +1,6 @@
 ---
 title: Transformer 前置知识 03：导数与梯度下降
-date: 2026-10-28 18:00:00
+date: 2026-10-16 12:02:00
 tags: Transformer
 categories: Transformer
 mathjax: true
@@ -22,7 +22,7 @@ mathjax: true
 
 > **导数 = 参数变动一点点，结果会变多少。**
 
-![拧大 1 格，水温升高 3 度：导数就是这条切线的斜率](/images/transformer/03-derivative.png)
+<img src="/images/transformer/03-derivative.png" alt="拧大 1 格，水温升高 3 度：导数就是这条切线的斜率" title="拧大 1 格，水温升高 3 度：导数就是这条切线的斜率" width="560" style="display:block;margin:0 auto;">
 
 - 导数**大**：这个旋钮很灵敏，稍微一拧，结果变化很大
 - 导数**小**：拧了也没什么变化
@@ -65,7 +65,7 @@ $$
 
 > **照着箭头拧，水温升得最快；反着箭头拧，水温降得最快。**
 
-![梯度 (+3, −2) 指向水温升得最快的方向；反方向 (−3, +2) 降得最快](/images/transformer/03-gradient.png)
+<img src="/images/transformer/03-gradient.png" alt="梯度 (+3, −2) 指向水温升得最快的方向；反方向 (−3, +2) 降得最快" title="梯度 (+3, −2) 指向水温升得最快的方向；反方向 (−3, +2) 降得最快" width="440" style="display:block;margin:0 auto;">
 
 **考考你**：水太烫了，想尽快降温，两个龙头该怎么拧？
 
@@ -117,7 +117,7 @@ $$
 - $\nabla L$：误差对参数的梯度
 - 减号：**反着**梯度走
 
-![沿梯度反方向一步步走，越接近谷底，坡越缓，步子越小](/images/transformer/03-descent.png)
+<img src="/images/transformer/03-descent.png" alt="沿梯度反方向一步步走，越接近谷底，坡越缓，步子越小" title="沿梯度反方向一步步走，越接近谷底，坡越缓，步子越小" width="520" style="display:block;margin:0 auto;">
 
 注意图里的步子：**越接近谷底，坡越缓，梯度越小，步子也就越小**，最后稳稳停在谷底。
 
