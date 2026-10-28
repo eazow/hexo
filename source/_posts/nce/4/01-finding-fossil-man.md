@@ -17,6 +17,7 @@ Fortunately, however, ancient men made tools of stone, especially **flint**, bec
 
 | 单词 | 音标 | 词性 | 含义 | 文中用法 |
 |------|------|------|------|------|
+| **fossil** | /ˈfɒsl/ | n. | 化石 | Fossil Man（化石人，标题） |
 | **recount** | /rɪˈkaʊnt/ | v. | 详细讲述 | recount it as sagas |
 | **saga** | /ˈsɑːɡə/ | n. | 传说，英雄故事 | legends handed down ... |
 | **legend** | /ˈledʒənd/ | n. | 传说 | handed down from one generation to another |
