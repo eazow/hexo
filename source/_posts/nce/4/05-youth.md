@@ -7,18 +7,45 @@ categories: English
 
 > How does the writer like to treat young people?
 
-
 People are always talking about 'the problem of youth'. If there is one — which I **take leave to doubt** — then it is older people who create it, not the young themselves. Let us get down to **fundamentals** and agree that the young are after all human beings — people just like their elders. There is only one difference between an old man and a young one: the young man has a **glorious** future before him and the old one has a **splendid** future behind him: and maybe that is where the **rub** is.
-
 
 When I was a teenager, I felt that I was just young and uncertain — that I was a new boy in a huge school, and I would have been very pleased to be regarded as something so interesting as a problem. For one thing, being a problem gives you a certain identity, and that is one of the things the young are busily engaged in seeking.
 
-
 I find young people exciting. They have an air of freedom, and they have not a **dreary** commitment to **mean** ambitions or love of comfort. They are not anxious social climbers, and they have no **devotion** to **material** things. All this seems to me to link them with life, and the origins of things. It's as if they were, in some sense, **cosmic** beings in **violent** and lovely contrast with us **suburban** creatures. All that is in my mind when I meet a young person. He may be **conceited**, ill-mannered, **presumptuous** or **fatuous**, but I do not turn for protection to **dreary** **cliches** about respect for elders — as if mere age were a reason for respect. I accept that we are equals, and I will argue with him, as an equal, if I think he is wrong.
+
+## 📝 **文章大意**
+
+人们总在谈论"青年问题"，作者却怀疑这个问题是否存在：即使有，也是老年人制造出来的。年轻人和老年人一样都是人，唯一的区别是年轻人的好日子在前头，老年人的好日子已经过去了，这也许正是症结所在。作者回忆自己少年时只觉得茫然无措，倒巴不得被人当成"问题"，因为这能给人一种身份感。作者觉得年轻人令人兴奋：他们自由，不汲汲于名利和享受，与生命和万物的本源相连。即使年轻人自负无礼，作者也不会搬出"尊敬长辈"的陈词滥调来自保，而是把他们当作平等的人，与他们辩论。
+
+标题问题的答案：作者把年轻人**当作与自己平等的人**来对待，认为他们错了就和他们平等地争论。
+
+## 📚 **核心单词**
+
+| 单词 | 音标 | 词性 | 含义 | 文中用法 |
+|------|------|------|------|------|
+| **take leave to** | — | phr. | 冒昧地（做某事） | take leave to doubt |
+| **fundamental** | /ˌfʌndəˈmentl/ | n. | 基本原则（常用复数） | get down to fundamentals |
+| **glorious** | /ˈɡlɔːriəs/ | adj. | 光辉的 | a glorious future |
+| **splendid** | /ˈsplendɪd/ | adj. | 辉煌的，极好的 | a splendid future behind him |
+| **rub** | /rʌb/ | n. | 困难，症结 | that is where the rub is |
+| **identity** | /aɪˈdentəti/ | n. | 身份，特征 | a certain identity |
+| **dreary** | /ˈdrɪəri/ | adj. | 沉闷的，乏味的 | a dreary commitment |
+| **commitment** | /kəˈmɪtmənt/ | n. | 执着，投入 | commitment to mean ambitions |
+| **mean** | /miːn/ | adj. | 卑微的，平庸的 | mean ambitions |
+| **social climber** | — | n. | 想往上爬的人 | anxious social climbers |
+| **devotion** | /dɪˈvəʊʃn/ | n. | 热爱，献身 | no devotion to material things |
+| **material** | /məˈtɪəriəl/ | adj. | 物质的 | material things |
+| **cosmic** | /ˈkɒzmɪk/ | adj. | 宇宙的 | cosmic beings |
+| **violent** | /ˈvaɪələnt/ | adj. | 强烈的 | violent and lovely contrast |
+| **suburban** | /səˈbɜːbən/ | adj. | 郊区的；平庸的 | us suburban creatures |
+| **conceited** | /kənˈsiːtɪd/ | adj. | 自负的 | He may be conceited |
+| **presumptuous** | /prɪˈzʌmptʃuəs/ | adj. | 放肆的，冒昧的 | presumptuous or fatuous |
+| **fatuous** | /ˈfætʃuəs/ | adj. | 愚昧的 | presumptuous or fatuous |
+| **cliché** | /ˈkliːʃeɪ/ | n. | 陈词滥调 | dreary clichés |
 
 ## 📖 **难句解析**
 
-### **1. If there is one — which I take leave to doubt — then it is older people who create it, not the young themselves.**
+**1. If there is one — which I take leave to doubt — then it is older people who create it, not the young themselves.**
 
 - **结构:** `If there is one` 条件句 + 插入语 `which I take leave to doubt` + 强调句 `it is ... who ...`
 - `one` = a problem of youth，指代前面的 the problem of youth
@@ -26,7 +53,7 @@ I find young people exciting. They have an air of freedom, and they have not a *
 - `take leave to doubt` = 恕我冒昧地怀疑，措辞礼貌，语气其实很坚决
 - **译:** 如果真有"青年问题"——我可要冒昧表示怀疑——那也是老年人制造出来的，而不是年轻人自己。
 
-### **2. ...the young man has a glorious future before him and the old one has a splendid future behind him: and maybe that is where the rub is.**
+**2. ...the young man has a glorious future before him and the old one has a splendid future behind him: and maybe that is where the rub is.**
 
 - **结构:** 两个 `has a ... future` 平行对照，`the old one` 的 one = man
 - `before him` / `behind him`：未来在前，未来"在身后"，其实是说老年人的好时光已经过去了
@@ -34,14 +61,14 @@ I find young people exciting. They have an air of freedom, and they have not a *
 - `where the rub is` = 症结所在（出自《哈姆雷特》"there's the rub"）；`that` 指上面这个差别，暗示老年人是嫉妒
 - **译:** 年轻人前面有光辉的未来，老年人身后有辉煌的过去——症结也许就在这里。
 
-### **3. ...I would have been very pleased to be regarded as something so interesting as a problem.**
+**3. ...I would have been very pleased to be regarded as something so interesting as a problem.**
 
 - **结构:** `would have been pleased` 表示对过去的假设（现实中并没有人这样看他）
 - `be regarded as` = 被看作；`so interesting as a problem` 中 `so ... as` 引出比较内容
 - 把"问题"称作"有趣的东西"，是**反话**：连被当作问题都求之不得，因为说明有人在意
 - **译:** 那时要是有人把我看成"问题"这样有意思的东西，我会非常高兴。
 
-### **4. For one thing, being a problem gives you a certain identity, and that is one of the things the young are busily engaged in seeking.**
+**4. For one thing, being a problem gives you a certain identity, and that is one of the things the young are busily engaged in seeking.**
 
 - `For one thing` = 首先（列举理由，后面没有再列）
 - `a certain identity` = 某种身份、存在感
@@ -49,7 +76,7 @@ I find young people exciting. They have an air of freedom, and they have not a *
 - `be engaged in doing` = 忙于做某事
 - **译:** 首先，成为"问题"会给你一种身份，而寻找身份正是年轻人忙着做的事之一。
 
-### **5. ...they have not a dreary commitment to mean ambitions or love of comfort.**
+**5. ...they have not a dreary commitment to mean ambitions or love of comfort.**
 
 - **结构:** `have not a ...` 是较老的否定写法，等于 `do not have a ...`
 - `mean` 在这里是**卑微的、小气的**（不是"意思"，也不是"刻薄"）
@@ -57,7 +84,7 @@ I find young people exciting. They have an air of freedom, and they have not a *
 - `mean ambitions or love of comfort` 并列，都是 commitment to 的宾语
 - **译:** 他们不会沉闷乏味地执着于卑微的野心或对安逸的贪恋。
 
-### **6. It's as if they were, in some sense, cosmic beings in violent and lovely contrast with us suburban creatures.**
+**6. It's as if they were, in some sense, cosmic beings in violent and lovely contrast with us suburban creatures.**
 
 - `as if + 过去式 were`：虚拟语气，表示"好像……（其实并不是）"
 - `in some sense` = 从某种意义上说，是作者的缓和语气
@@ -66,7 +93,7 @@ I find young people exciting. They have an air of freedom, and they have not a *
 - `suburban` 本指郊区的，这里借指安稳、平庸、缺乏想象力的生活
 - **译:** 他们仿佛在某种意义上是宇宙中的生灵，与我们这些郊区居民形成强烈而可爱的对比。
 
-### **7. ...but I do not turn for protection to dreary clichés about respect for elders — as if mere age were a reason for respect.**
+**7. ...but I do not turn for protection to dreary clichés about respect for elders — as if mere age were a reason for respect.**
 
 - **结构:** `turn to sth for protection` = 求助于某物来保护自己，这里把 for protection 提前了
 - `clichés about respect for elders`：指"要尊敬长辈"之类的老生常谈

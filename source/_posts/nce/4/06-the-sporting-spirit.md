@@ -11,9 +11,41 @@ I am always amazed when I hear people saying that sport creates **goodwill** bet
 
 Nearly all the sports practised nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green, where you pick up sides and no feeling of local **patriotism** is involved, it is possible to play simply for the fun and exercise: but as soon as the question of **prestige** arises, as soon as you feel that you and some larger unit will be **disgraced** if you lose, the most **savage** **combative** instincts are aroused. Anyone who has played even in a school football match knows this. At the international level, sport is **frankly** **mimic** **warfare**. But the significant thing is not the behavior of the players but the attitude of the **spectators**; and, behind the spectators, of the nations who work themselves into **furies** over these absurd contests, and seriously believe—at any rate for short periods—that running, jumping and kicking a ball are tests of national **virtue**.
 
+## 📝 **文章大意**
+
+（本文选自乔治·奥威尔的同名文章。）有人说体育能增进各国之间的友谊，只要各国百姓能在球场上相见，就不会想在战场上相见。作者对此深感惊讶：即使不看 1936 年奥运会这样的实例，单凭常理也能推断出国际比赛会引发疯狂的仇恨。如今的体育几乎都以竞争为目的，在村头草地上随意分队比赛还可以只图娱乐，可一旦牵涉到荣誉，人们最野蛮的好斗本能就会被激发出来。在国际层面，体育简直就是模拟战争；更值得注意的是观众以及他们背后的国家，他们为这些荒唐的比赛大动肝火，还真把跑、跳、踢球当成对民族美德的检验。
+
+标题问题的答案：作者认为国际体育比赛**无异于模拟战争**（frankly mimic warfare）。
+
+## 📚 **核心单词**
+
+| 单词 | 音标 | 词性 | 含义 | 文中用法 |
+|------|------|------|------|------|
+| **goodwill** | /ˌɡʊdˈwɪl/ | n. | 友好，善意 | creates goodwill between nations |
+| **cricket** | /ˈkrɪkɪt/ | n. | 板球 | at football or cricket |
+| **inclination** | /ˌɪnklɪˈneɪʃn/ | n. | 意愿，倾向 | have no inclination to |
+| **concrete** | /ˈkɒŋkriːt/ | adj. | 具体的 | concrete examples |
+| **orgy** | /ˈɔːdʒi/ | n. | 放纵，狂欢 | orgies of hatred |
+| **hatred** | /ˈheɪtrɪd/ | n. | 仇恨 | orgies of hatred |
+| **deduce** | /dɪˈdjuːs/ | v. | 推断 | deduce it from general principles |
+| **utmost** | /ˈʌtməʊst/ | n. | 最大限度 | do your utmost to win |
+| **patriotism** | /ˈpeɪtriətɪzəm/ | n. | 爱国主义 | local patriotism |
+| **prestige** | /preˈstiːʒ/ | n. | 声望，威信 | the question of prestige |
+| **disgrace** | /dɪsˈɡreɪs/ | v. | 使丢脸 | will be disgraced if you lose |
+| **savage** | /ˈsævɪdʒ/ | adj. | 野蛮的 | the most savage instincts |
+| **combative** | /ˈkɒmbətɪv/ | adj. | 好斗的 | combative instincts |
+| **instinct** | /ˈɪnstɪŋkt/ | n. | 本能 | combative instincts are aroused |
+| **frankly** | /ˈfræŋkli/ | adv. | 坦率地说；简直 | frankly mimic warfare |
+| **mimic** | /ˈmɪmɪk/ | adj. | 模拟的 | mimic warfare |
+| **warfare** | /ˈwɔːfeə(r)/ | n. | 战争 | mimic warfare |
+| **spectator** | /spekˈteɪtə(r)/ | n. | 观众 | the attitude of the spectators |
+| **fury** | /ˈfjʊəri/ | n. | 狂怒 | work themselves into furies |
+| **absurd** | /əbˈsɜːd/ | adj. | 荒唐的 | these absurd contests |
+| **virtue** | /ˈvɜːtʃuː/ | n. | 美德 | tests of national virtue |
+
 ## 📖 **难句解析**
 
-### **1. I am always amazed when I hear people saying that sport creates goodwill between nations, and that if only the common peoples of the world could meet one another at football or cricket, they would have no inclination to meet on the battle field.**
+**1. I am always amazed when I hear people saying that sport creates goodwill between nations, and that if only the common peoples of the world could meet one another at football or cricket, they would have no inclination to meet on the battle field.**
 
 - `hear sb doing` = 听到某人在说（强调正在说的过程）
 - 两个并列的 `that` 宾语从句：`that sport creates ...` 和 `that if only ... they would ...`
@@ -22,7 +54,7 @@ Nearly all the sports practised nowadays are competitive. You play to win, and t
 - `the common peoples` 的 peoples 是"各民族"，common 是"普通的"
 - **译:** 每当听到有人说体育能增进国与国之间的友好，说只要世界各国的普通人能在足球场或板球场上相见，他们就不会想在战场上相见，我总是感到惊讶。
 
-### **2. Even if one didn't know from concrete examples (the 1936 Olympic Games, for instance) that international sporting contests lead to orgies of hatred, one could deduce it from general principles.**
+**2. Even if one didn't know from concrete examples (the 1936 Olympic Games, for instance) that international sporting contests lead to orgies of hatred, one could deduce it from general principles.**
 
 - `Even if + 过去式 ..., one could ...`：虚拟语气，表示"即使不知道……也能推断出"
 - `one` 泛指"人"，正式用法
@@ -31,14 +63,14 @@ Nearly all the sports practised nowadays are competitive. You play to win, and t
 - `orgies of hatred` = 仇恨的狂欢，orgy 本指纵酒狂欢，这里带强烈贬义
 - **译:** 即使不是从具体事例（比如 1936 年奥运会）中得知国际体育比赛会引发疯狂的仇恨，人们也可以从一般原理推断出来。
 
-### **3. ...the game has little meaning unless you do your utmost to win.**
+**3. ...the game has little meaning unless you do your utmost to win.**
 
 - `little` 是否定词，`has little meaning` = 几乎没有意义（a little 才是"有一点"）
 - `unless` = if not，`unless you do your utmost` = 除非你竭尽全力
 - `do one's utmost to do` = 竭尽全力做某事
 - **译:** 除非你全力以赴去赢，否则比赛几乎没有意义。
 
-### **4. On the village green, where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for the fun and exercise...**
+**4. On the village green, where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for the fun and exercise...**
 
 - `where` 引导非限制性定语从句，修饰 the village green，里面两个分句用 and 连接
 - `pick up sides` = （随意）分队；`involved` 是"牵涉其中"
@@ -46,7 +78,7 @@ Nearly all the sports practised nowadays are competitive. You play to win, and t
 - `simply for` 的 simply = 仅仅，注意不是"简单地"
 - **译:** 在村里的草地上，大家随便分成两队，不涉及任何地方爱国情绪，这时可以只是为了玩乐和锻炼而比赛。
 
-### **5. ...but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused.**
+**5. ...but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused.**
 
 - `as soon as` 连用两次，是**排比**，加强"一旦……立刻"的语气
 - `the question of prestige arises` 的 arise 是不及物动词，意思是"出现"，不能用被动
@@ -56,7 +88,7 @@ Nearly all the sports practised nowadays are competitive. You play to win, and t
 - `be aroused` 是被动，arouse = 唤起、激起
 - **译:** 但是一旦涉及声誉问题，一旦你觉得输了就会使你和某个更大的集体蒙羞，最野蛮的好斗本能就会被激发出来。
 
-### **6. But the significant thing is not the behavior of the players but the attitude of the spectators; and, behind the spectators, of the nations who work themselves into furies over these absurd contests, and seriously believe ... that running, jumping and kicking a ball are tests of national virtue.**
+**6. But the significant thing is not the behavior of the players but the attitude of the spectators; and, behind the spectators, of the nations who work themselves into furies over these absurd contests, and seriously believe ... that running, jumping and kicking a ball are tests of national virtue.**
 
 - 主干：`the significant thing is not A but B`（重要的不是 A 而是 B）
 - 后面的 `of the nations ...` 与 `of the spectators` **并列**，都是 `the attitude` 的修饰语，所以 and 之后 behind the spectators 是插入语

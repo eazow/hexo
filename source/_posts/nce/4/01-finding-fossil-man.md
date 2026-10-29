@@ -13,6 +13,12 @@ But the first people who were like ourselves lived so long ago that even their s
 
 Fortunately, however, ancient men made tools of stone, especially **flint**, because this is easier to shape than other kinds. They may also have used wood and skins, but these have **rotted** away. Stone does not **decay**, and so the tools of long ago have remained when even the bones of the men who made them have disappeared without **trace**.
 
+## 📝 **文章大意**
+
+我们能读到 5000 年前近东地区的文字记载，但世界上有些地方至今仍没有文字，那里的人只能靠代代相传的传说来保存历史。这些传说能告诉我们古代人类迁徙的情况，例如波利尼西亚人的传说说明，他们的一部分祖先大约 2000 年前来自印度尼西亚。然而最早的"现代人"生活的年代太久远，即使有过传说也早已失传，考古学家既没有历史记载也没有传说可以依靠。幸运的是，古人用石头（特别是燧石）制作工具，木头和兽皮早已腐烂，石头却不会腐烂，所以即使制造者的骨头都已消失，石器依然保存了下来。
+
+标题问题的答案：传说能告诉我们**很久以前人类迁徙的情况**，而那些人自己并没有留下文字记载。
+
 ## 📚 **核心单词**
 
 | 单词 | 音标 | 词性 | 含义 | 文中用法 |

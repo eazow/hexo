@@ -14,6 +14,12 @@ Spiders are not insects, as many people think, not even nearly related to them. 
 How many spiders are engaged in this work on our **behalf**? One authority on spiders made a **census** of the spiders in a grass field in the south of England, and he estimated that there were more than 2,250,000 in one **acre**; that is something like 6,000,000 spiders of different kinds on a football **pitch**. Spiders are busy for at least half the year in killing insects. It is impossible to make more than the wildest guess at how many they kill, but they are hungry creatures, not content with only three meals a day. It has been estimated that the weight of all the insects destroyed by spiders in Britain in one year would be greater than the total weight of all the human beings in the country.
 
 
+## 📝 **文章大意**
+
+蜘蛛是人类的朋友，因为它们消灭了大量昆虫，而昆虫是人类最大的敌人之一：要不是有食虫动物保护，昆虫会吃光庄稼、咬死牲畜，让人类无法生存。鸟兽吃掉的昆虫加起来也只是蜘蛛消灭的一小部分，而且蜘蛛对人类毫无危害。蜘蛛并不是昆虫，一眼就能分辨：蜘蛛有八条腿，昆虫最多六条。一位专家统计，英格兰南部的草地上每英亩有 225 万多只蜘蛛，一年中至少有半年在捕食昆虫。据估计，英国的蜘蛛一年消灭的昆虫，重量超过全国人口的总重量。
+
+标题问题的答案：蜘蛛每年**至少有半年**在捕食昆虫（at least half the year）。
+
 ## 📚 **核心单词**
 
 | 单词 | 音标 | 词性 | 含义 | 文中用法 |
