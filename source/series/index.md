@@ -26,9 +26,15 @@ comments: false
 
 从向量、矩阵到神经网络，把读懂 Transformer 需要的基础一样样补齐。
 
-1. [向量与点积](/transformer/01-vectors-and-dot-product/)
-2. [矩阵乘法](/transformer/02-matrix-multiplication/)
-3. [导数与梯度下降](/transformer/03-derivative-and-gradient-descent/)
+- 01 · [向量与点积](/transformer/01-vectors-and-dot-product/)
+- 02 · [矩阵乘法](/transformer/02-matrix-multiplication/)
+- 03 · [导数与梯度下降](/transformer/03-derivative-and-gradient-descent/)
+- 03B · [链式法则与反向传播](/transformer/03b-chain-rule-and-backprop/)
+- 04 · [指数、对数与 softmax](/transformer/04-exp-log-softmax/)
+- 05 · [概率与交叉熵](/transformer/05-probability-and-cross-entropy/)
+- 06 · [神经网络：线性层与激活函数](/transformer/06-neural-network/)
+- 07 · [分词与词嵌入](/transformer/07-tokenization-and-embedding/)
+- 08 · [位置编码](/transformer/08-positional-encoding/)
 
 ## 新概念英语第四册
 
