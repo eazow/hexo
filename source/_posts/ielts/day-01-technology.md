@@ -1,6 +1,6 @@
 ---
 title: 雅思词汇 Day 1：科技与社会
-date: 2026-10-30 20:00:00
+date: 2025-10-30 20:00:00
 tags: IELTS
 categories: English
 ---

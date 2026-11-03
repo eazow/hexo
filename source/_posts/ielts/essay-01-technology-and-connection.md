@@ -1,6 +1,6 @@
 ---
 title: 雅思范文 01：科技让人更亲近，还是更疏远？
-date: 2026-10-30 21:00:00
+date: 2025-10-30 21:00:00
 tags: IELTS
 categories: English
 ---
