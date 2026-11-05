@@ -36,6 +36,12 @@ comments: false
 - 07 · [分词与词嵌入](/transformer/07-tokenization-and-embedding/)
 - 08 · [位置编码](/transformer/08-positional-encoding/)
 
+## 新概念英语第三册
+
+逐课精读，只讲重难点句子。
+
+- [Lesson 03 An Unknown Goddess](/nce/3/03-an-unknown-goddess/)
+
 ## 新概念英语第四册
 
 逐课精读，只讲重难点句子。
