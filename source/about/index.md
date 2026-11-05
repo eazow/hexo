@@ -18,16 +18,17 @@ toc:
 
 <div class="about-terminal">
   <div class="about-terminal-bar"><span></span><span></span><span></span><em>eazow@earth: ~</em></div>
-<pre><b>$</b> whoami
-eazow
-<b>$</b> neofetch
-<i>OS</i>          Human 5.x (runs on caffeine)
-<i>Host</i>        Earth, Sol System
-<i>Kernel</i>      Linux 6.x — getting comfortable
-<i>Shell</i>       zsh
-<i>Editor</i>      neovim
-<i>Uptime</i>      since childhood, still compiling
-<i>Superpower</i>  turning caffeine into commits ☕→💻</pre>
+<pre><span class="t-line"><b>$</b> <span class="t-cmd">whoami</span></span>
+<span class="t-out">eazow</span>
+<span class="t-line"><b>$</b> <span class="t-cmd">neofetch</span></span>
+<span class="t-out"><i>OS</i>          Human 5.x (runs on caffeine)</span>
+<span class="t-out"><i>Host</i>        Earth, Sol System</span>
+<span class="t-out"><i>Kernel</i>      Linux 6.x — getting comfortable</span>
+<span class="t-out"><i>Shell</i>       zsh</span>
+<span class="t-out"><i>Editor</i>      neovim</span>
+<span class="t-out"><i>Uptime</i>      since childhood, still compiling</span>
+<span class="t-out"><i>Superpower</i>  turning caffeine into commits ☕→💻</span>
+<span class="t-line"><b>$</b> <span class="t-cursor"></span></span></pre>
 </div>
 
 <div class="about-section">
@@ -139,3 +140,47 @@ eazow
   </div>
   <div class="about-visitor"><img src="https://visitor-badge.laobi.icu/badge?page_id=eazow.eazow" alt="Visitor Badge"></div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/SplitText.min.js"></script>
+<script>
+(function () {
+  if (!window.gsap || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+  // Hero: letters of the name bounce in one by one
+  var name = new SplitText('.about-name', { type: 'words,chars' });
+  gsap.from(name.chars, { y: 40, opacity: 0, duration: 0.7, ease: 'back.out(2.5)', stagger: 0.04 });
+  // Terminal: type each command, then print its output line by line
+  var pre = document.querySelector('.about-terminal pre');
+  var cursor = pre.querySelector('.t-cursor');
+  var rows = pre.querySelectorAll('.t-line, .t-out');
+  var term = gsap.timeline({ scrollTrigger: { trigger: pre, start: 'top 80%' } });
+  gsap.set(rows, { visibility: 'hidden' });
+  rows.forEach(function (row) {
+    if (row.classList.contains('t-out')) {
+      term.set(row, { visibility: 'visible' }, '+=0.06');
+      return;
+    }
+    term.set(row, { visibility: 'visible' }, '+=0.3').call(function () { row.appendChild(cursor); });
+    var cmd = row.querySelector('.t-cmd');
+    if (!cmd) return;
+    var text = cmd.textContent;
+    var typed = { n: 0 };
+    cmd.textContent = '';
+    term.to(typed, { n: text.length, duration: text.length * 0.09, ease: 'none', onUpdate: function () { cmd.textContent = text.slice(0, Math.round(typed.n)); } })
+      .to({}, { duration: 0.25 });
+  });
+  // Skill bars: grow from 0 and count up
+  document.querySelectorAll('.about-skill').forEach(function (el) {
+    var bar = el.querySelector('.about-bar i');
+    var num = el.querySelector('em');
+    var target = parseInt(num.textContent, 10);
+    var counter = { v: 0 };
+    num.textContent = '0%';
+    gsap.timeline({ scrollTrigger: { trigger: el, start: 'top 85%' } })
+      .from(bar, { width: 0, duration: 1.4, ease: 'power3.out' }, 0)
+      .to(counter, { v: target, duration: 1.4, ease: 'power3.out', onUpdate: function () { num.textContent = Math.round(counter.v) + '%'; } }, 0);
+  });
+})();
+</script>
